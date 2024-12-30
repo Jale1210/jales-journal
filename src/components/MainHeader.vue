@@ -1,7 +1,35 @@
 <template>
   <header class="header">
-    <h1 class="elegant-text" style="color: #f8d3a5;">
+    <div style="display: flex;display: flex;align-items: baseline;
+                justify-content: space-between;">
+      <img src="../assets/J5.png">
+      
+      
+      <h1 class="elegant-text" style="color: #f8d3a5;">
       Welcome to My Blog!</h1>
+
+
+      <!-- Hamburger Button -->
+      <!--        <div class="hamburger-container">-->
+
+      <button class="hamburger" @click="toggleMenu">
+        ☰
+      </button>
+      <nav v-if="isMenuOpen" class="mobile-menu nav">
+        <a class="navTxt">Welcome</a>
+        <a href="#about"
+           @click.prevent="scrollToComponent('about')" class="navTxt" >
+          About Me
+        </a>
+        <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>
+        <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>
+        <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>
+        <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>
+        <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>
+      </nav>
+      <!--        </div>-->
+    </div>
+
 
     <div>
       <span class="main-txt">
@@ -37,12 +65,22 @@
 
 export default {
   name: "MainHeader",
+  data(){
+    return{
+      isMenuOpen: false
+    }
+  },
 
   mounted() {
     this.handleScroll = this.onScroll.bind(this);
     window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
+
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+
     onScroll() {
       const element = this.$el.querySelector('.elegant-text');
       const position = element.getBoundingClientRect();

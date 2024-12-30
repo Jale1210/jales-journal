@@ -1,13 +1,14 @@
 .mobile-menu {
     display: block;
-    background: #333;
+    background: #F8D398;
     color: white;
     position: absolute;
-    top: 50px;
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 20px 0;
+  z-index: 1;
+    height:  100vh ;
+    top: 0;
 }
 
 
@@ -20,11 +21,19 @@
         height: 100vh;
     }
 
+    .navTxt{
+        color: #9F5A35;
+    }
+
     .frostedGlass{
         display: none !important;
     }
 
     .hamburger {
+        display: flex;
+        height: fit-content;
+        padding: 20px;
+        z-index: 9999;
         display: block;
     }
 

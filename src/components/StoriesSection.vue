@@ -112,7 +112,7 @@ export default {
   font-size: 16px;
   border: none;
   color: #111;
-  cursor: pointer;
+  /*cursor: pointer;*/
   outline: none;
   overflow: hidden;
   width: 400px;

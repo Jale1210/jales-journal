@@ -2,7 +2,8 @@
   <div class="top-page">
 
     <router-link to="/">
-      <button class="animated-border-button">Go Back Home</button>
+      <button
+          class="animated-border-button">Go Back Home</button>
     </router-link>
 
 
@@ -107,7 +108,7 @@ export default {
   border: none;
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
-  cursor: pointer;
+  /*cursor: pointer;*/
   position: relative;
   overflow: hidden;
   transition: color 0.3s ease, transform 0.3s ease;

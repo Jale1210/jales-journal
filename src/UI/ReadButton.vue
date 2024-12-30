@@ -1,13 +1,11 @@
 <template>
   <div>
-    <button v-if="readMore" class="animated-border-button">
+    <button   type="button"
+              data-cursor-hover
+              v-if="readMore" class="animated-border-button">
       {{ readMore }}
     </button>
-
-
-
   </div>
-
 </template>
 
 <script>
@@ -29,7 +27,7 @@ export default {
   background-color: transparent;
   border: none;
   outline: none;
-  cursor: pointer;
+  /*cursor: pointer;*/
   text-transform: uppercase;
   letter-spacing: 1.5px;
   transition: color 0.3s ease;

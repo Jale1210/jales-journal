@@ -22,23 +22,7 @@
       <!--      </main>-->
 
       <main id="background-container">
-        <!-- Hamburger Button -->
-<!--        <div class="hamburger-container">-->
 
-
-          <button class="hamburger" @click="toggleMenu">
-            ☰
-          </button>
-          <nav v-if="isMenuOpen" class="mobile-menu nav">
-            <a class="navTxt">Welcome</a>
-            <a href="#about" @click.prevent="scrollToComponent('about')" class="navTxt">About Me</a>
-            <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>
-            <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>
-            <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>
-            <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>
-            <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>
-          </nav>
-<!--        </div>-->
 
 
         <!-- Navigation Menu -->
@@ -47,13 +31,13 @@
             :class="{ 'menu-open': isMenuOpen }"
         >
           <nav class="nav">
-            <a class="navTxt">Welcome</a>
-            <a href="#" @click.prevent="scrollToComponent('about')" class="navTxt">About Me</a>
-            <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>
-            <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>
-            <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>
-            <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>
-            <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>
+            <a  data-cursor-hover class="navTxt">Welcome</a>
+            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('about')" class="navTxt">About Me</a>
+            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>
+            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>
+            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>
+            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>
+            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>
           </nav>
         </div>
       </main>
@@ -62,7 +46,7 @@
     </div>
 
 
-    <div ref="about" class="page-section">
+    <div ref="about"   class="page-section">
       <AboutPage :key="componentKeys.about"/>
     </div>
     <div ref="music" class="page-section">
@@ -144,7 +128,7 @@ export default {
   data() {
     return {
       // currentComponent: 'AboutPage', // Default component to show
-      isMenuOpen: false ,
+
       observer: null, // Intersection Observer instance
       componentKeys: {
         welcome: 0,
@@ -159,9 +143,6 @@ export default {
   },
   methods: {
 
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-    },
 
     scrollToTop() {
       window.scrollTo({

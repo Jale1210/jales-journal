@@ -25,18 +25,20 @@
       <CardSection/>
     </div>
 
-    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;
-    padding-bottom: 50px">
+    <div
+        style=  "display: flex; justify-content: center; align-items: center; flex-direction: column;
+                padding-bottom: 50px">
       <span style="font-size: 42px;font-family: 'Tangerine', cursive;  color: rgb(112, 55, 25);">
         Don't know what to listen?
       </span>
 
 
-
-        <button
-            style="font-family: 'Cardo', serif; font-size: 1.125rem;margin: 50px 0" class="shiny-button">
-          Let me help</button>
-
+        <button   type="button"
+                  data-cursor-hover
+                  style="font-family: 'Cardo', serif; font-size: 1.125rem;margin: 50px 0"
+                  class="shiny-button">
+          Let me help
+        </button>
     </div>
 
     <div style="display: flex; align-items: center; flex-direction: row; padding-bottom: 50px;
@@ -149,7 +151,7 @@ export default {
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6),
   inset 1px 0 1px rgba(0, 0, 0, 0.3),
   inset 0 -1px 1px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .vinyl-jacket::before {
@@ -272,7 +274,7 @@ export default {
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6),
   inset 1px 0 1px rgba(0, 0, 0, 0.3),
   inset 0 -1px 1px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .vinyl-jacket2::before {
@@ -287,7 +289,7 @@ export default {
   transform: translateY(8%) scaleY(-1) scaleX(1.18) rotateX(-20deg);
   -webkit-mask-image: linear-gradient(transparent 80%, rgba(255, 255, 255, 0.1));
   mask-image: linear-gradient(transparent 80%, rgba(255, 255, 255, 0.1));
-  pointer-events: none;
+  /*pointer-events: none;*/
 }
 
 .vinyl-wrapper2 {
@@ -395,7 +397,7 @@ export default {
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6),
   inset 1px 0 1px rgba(0, 0, 0, 0.3),
   inset 0 -1px 1px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .vinyl-jacket3::before {
@@ -519,7 +521,7 @@ export default {
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6),
   inset 1px 0 1px rgba(0, 0, 0, 0.3),
   inset 0 -1px 1px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .vinyl-jacket4::before {
@@ -780,7 +782,7 @@ span {
   border: 2px solid transparent;
   border-image: linear-gradient(45deg, #e19050, #a9652c, #703719, #573019);
   border-image-slice: 1;
-  cursor: pointer;
+  /*cursor: pointer;*/
   overflow: hidden;
   transition: background-color 0.3s ease, border 0.3s ease;
 }
