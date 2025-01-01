@@ -1,53 +1,118 @@
 <template>
   <header class="header">
-    <div style="display: flex;display: flex;align-items: baseline;
-                justify-content: space-between;">
-      <img src="../assets/J5.png">
-      
-      
-      <h1 class="elegant-text" style="color: #f8d3a5;">
-      Welcome to My Blog!</h1>
+    <div class="header-nav">
 
 
-      <!-- Hamburger Button -->
-      <!--        <div class="hamburger-container">-->
+      <!--       show on mobile   -->
+      <div class="nav-mobile show-mobile">
 
-      <button class="hamburger" @click="toggleMenu">
-        ☰
-      </button>
-      <nav v-if="isMenuOpen" class="mobile-menu nav">
-        <a class="navTxt">Welcome</a>
-        <a href="#about"
-           @click.prevent="scrollToComponent('about')" class="navTxt" >
-          About Me
-        </a>
-        <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>
-        <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>
-        <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>
-        <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>
-        <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>
-      </nav>
-      <!--        </div>-->
+        <img class="main-logo" style="width: 50px" src="../assets/logo.png">
+
+        <div id="sidemenu">
+          <button class="sidemenu__btn" v-on:click="isMenuOpen=!isMenuOpen"
+                  v-bind:class="{active:isMenuOpen}">
+            <span class="top"></span>
+            <span class="mid"></span>
+            <span class="bottom"></span>
+          </button>
+          <transition name="translateX">
+            <nav v-show="isMenuOpen">
+              <div class="sidemenu__wrapper">
+                <ul class="sidemenu__list">
+
+
+                  <!--        <a href="#about"-->
+                  <!--           @click.prevent="scrollToComponent('about')" class="navTxt">-->
+                  <!--          About Me-->
+                  <!--        </a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
+
+                  <!--                <li class="sidemenu__item"> <a class="navTxt">Welcome</a></li>-->
+
+
+                  <li class="sidemenu__item">
+                    <a href="#about" @click.prevent="scrollToComponent('about')">
+                      About Me
+                    </a>
+                  </li>
+                  <li class="sidemenu__item">
+                    <a href="" @click.prevent="scrollToComponent('music')">
+                      Music
+                    </a>
+                  </li>
+                  <li class="sidemenu__item">
+                    <a href="" @click.prevent="scrollToComponent('stories')">
+                      Stories
+                    </a>
+                  </li>
+                  <li class="sidemenu__item">
+                    <a href="" @click.prevent="scrollToComponent('thoughts')">
+                      Thoughts
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </transition>
+        </div>
+
+      </div>
+
+
+
+      <div class="show-desktop">
+
+        <img class="main-logo" src="../assets/J5.png">
+
+      </div>
+
+      <!--      -->
+      <!--      <button class="hamburger" @click="toggleMenu">-->
+      <!--        ☰-->
+      <!--      </button>-->
+
+      <!--      <nav v-if="isMenuOpen" class="mobile-menu nav">-->
+      <!--        <a class="navTxt">Welcome</a>-->
+      <!--        <a href="#about"-->
+      <!--           @click.prevent="scrollToComponent('about')" class="navTxt">-->
+      <!--          About Me-->
+      <!--        </a>-->
+      <!--        <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>-->
+      <!--        <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>-->
+      <!--        <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>-->
+      <!--        <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
+      <!--        <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
+      <!--      </nav>-->
+
+      <h1 class="elegant-text" style="color: #e5b5a1">
+        Welcome to My Blog!</h1>
+      <!--      color: #f8d3a5;-->
+
     </div>
 
 
     <div>
       <span class="main-txt">
-        I'm thrilled to have you here! This space is a reflection of my passions, interests, and experiences, and I’m excited to share it all with you. Whether you're here to find insightful articles, practical tips, or just to enjoy some engaging stories, you’re in the right place.
+      I'm thrilled to have you here! This space is a reflection of my passions, interests, and experiences, and I’m excited to share it all with you.
+        <!-- Whether you're here to find insightful articles, practical tips, or just to enjoy some engaging stories, you’re in the right place.-->
 
-        My goal is to create a community where we can explore ideas, learn together, and inspire each other. I believe in the power of connection, and through this blog, I hope to connect with you on topics that matter to us both.
+        <!--        My goal is to create a community where we can explore ideas, learn together, and inspire each other. I believe in the power of connection, and through this blog, I hope to connect with you on topics that matter to us both.-->
 
         Feel free to explore, leave your thoughts, and make yourself at home. I look forward to this journey with you—let’s make it a great one!
       </span>
 
 
       <span style="font-family: 'Tangerine', cursive; font-size: 34px;
-      padding-top: 30px; display: flex">
+      padding-top: 30px; display: flex; position:relative;">
       -Sincerely Yours, Jale
+        <img class="heart-img" src="../assets/decorations/heart.png">
       </span>
-      
-      <img class="heart-img" src="../assets/decorations/heart.png">
-      
+
+
     </div>
 
     <!--  animated  closing icon-->
@@ -65,8 +130,8 @@
 
 export default {
   name: "MainHeader",
-  data(){
-    return{
+  data() {
+    return {
       isMenuOpen: false
     }
   },
@@ -76,7 +141,32 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+      });
 
+      let scroll = document.querySelector('.scroll');
+      scroll.style.display = "none";
+
+      document.addEventListener('scroll', function () {
+        if (document.documentElement.scrollTop > 20) {
+          scroll.style.display = "block";
+        } else {
+          scroll.style.display = "none";
+          console.log(scroll.style.opacity);
+        }
+      });
+    },
+
+
+    scrollToComponent(refName) {
+      const component = this.$refs[refName];
+      if (component) {
+        component.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+    },
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
@@ -99,62 +189,14 @@ export default {
 </script>
 
 <style scoped>
-header {
+.header {
   position: relative;
-  padding: 0 70px;
+  padding: 0px 70px;
   font-family: 'Garamond', serif;
   display: flex;
-  /* align-items: center; */
-  /*text-align: left;*/
-  /* justify-content: space-between; */
-  /*padding-top: 0px;*/
-  /* padding-left: 50px;*/
-  /* background: transparent;*/
   flex-direction: column;
   gap: 40px;
-  /*background-color: rgba(247, 231, 206, 1); !* Champagne *!*/
 }
-
-
-/*.icon {*/
-/*  width: 20px;*/
-/*  height: 20px;*/
-/*  position:relative;*/
-/*  background-color:green;*/
-/*}*/
-/*.icon span{*/
-/*  display:block;*/
-/*  width: 20px;*/
-/*  height: 4px;*/
-/*  margin-bottom:3px;*/
-/*  background-color: red;*/
-/*  transition:400ms;*/
-/*  position:absolute;*/
-/*}*/
-/*.icon span:nth-of-type(1){*/
-/*  top:0;*/
-/*}*/
-/*.icon span:nth-of-type(2){*/
-/*  top:50%;*/
-/*  transform:translatey(-50%);*/
-/*}*/
-/*.icon span:nth-of-type(3){*/
-/*  bottom:-3px;*/
-/*}*/
-/*.icon:hover span:nth-of-type(2){*/
-/*  opacity:0;*/
-/*  visibility:hiddin;*/
-/*  width:0;*/
-/*}*/
-/*.icon:hover span:nth-of-type(1){*/
-/*  top:50%;*/
-/*  transform: translateY(-50%) rotate(-45deg);*/
-/*}*/
-/*.icon:hover span:nth-of-type(3){*/
-/*  bottom:50%;*/
-/*  transform: translateY(140%) rotate(45deg);*/
-/*}*/
-
 
 @keyframes fadeIn {
   from {
@@ -181,12 +223,13 @@ header {
   letter-spacing: 1px;
 }
 
-.heart-img{
+.heart-img {
+  position: absolute;
   position: absolute;
   height: 50px;
-  left: 33%;
-  top: 70%;
-  transform: rotate(30deg);
+  left: 190px;
+  top: 50px;
+  transform: rotate(40deg);
 }
 
 .elegant-text:hover {

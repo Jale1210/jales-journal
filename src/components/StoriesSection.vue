@@ -5,9 +5,9 @@
       <div style="width: 100%; display: flex; justify-content: center; position: relative;">
         <img style="height: 300px; position: absolute; left: 0" src="../assets/decorations/details3.png" />
         <img style="height: 300px; position: absolute; right: 0" src="../assets/decorations/pages.png" />
-        <h1 class="elegant-text" style="color: #703719; border-bottom: 1px solid #703719; padding: 0 17px">
+        <span class="elegant-text" style="color: #703719; border-bottom: 1px solid #703719; padding: 0 17px">
           Stories
-        </h1>
+        </span>
       </div>
     </div>
 

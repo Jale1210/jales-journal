@@ -1,18 +1,16 @@
 <template>
   <div id="app" class="gradient-background" :style="gradientStyle">
 
-
     <!--    <router-link to="/">Main Page</router-link>-->
     <!--    <router-link to="/top">Top Page</router-link>-->
     <router-view></router-view>
-
-
-    <cursor-fx color="#ffffff" color-hover="#f1c40f"></cursor-fx>
+    <cursor-fx color="#ffffff" color-hover="#FFC7B9"></cursor-fx>
     <!--    <MainPage/>-->
   </div>
 </template>
 
 <script>
+
 // import MainPage from "./views/MainPage.vue";
 import style from "../src/assets/css/style.css"
 import {CursorFx} from '@luxdamore/vue-cursor-fx';
@@ -40,7 +38,7 @@ export default {
   computed: {
 
     gradientStyle() {
-      // Calculate the gradient based on scroll position
+
       const scrollPercent = this.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
       const color0 = `#3a1a0a`;   //1
       const color1 = `#b26840`;   //1
@@ -120,7 +118,7 @@ export default {
   watch: {},
   mounted() {
 
-    this.updateClickables();
+    // this.updateClickables();
 
   },
 
@@ -221,7 +219,7 @@ body {
 
 h1 {
   margin-bottom: 0.7em;
-  font-size: 3em;
+  /*font-size: 3em;*/
   font-weight: 800;
   text-align: center;
 }

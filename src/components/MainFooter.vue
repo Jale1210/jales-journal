@@ -13,8 +13,8 @@
             <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>
             <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>
             <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>
-            <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>
-            <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>
+<!--            <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
+<!--            <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
           </nav>
 
         <p class="footer-txt">© 2024 Ismayilova Jale. All rights reserved.</p></div>

@@ -30,14 +30,16 @@
             class="frostedGlass"
             :class="{ 'menu-open': isMenuOpen }"
         >
+<!--          -->
+
           <nav class="nav">
             <a  data-cursor-hover class="navTxt">Welcome</a>
             <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('about')" class="navTxt">About Me</a>
             <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>
             <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>
             <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>
-            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>
-            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>
+<!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
+<!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
           </nav>
         </div>
       </main>
@@ -58,12 +60,12 @@
     <div ref="thoughts" class="page-section">
       <ThoughtsPage :key="componentKeys.thoughts"/>
     </div>
-    <div ref="thankYou" class="page-section">
-      <ThankYouPage :key="componentKeys.thankYou"/>
-    </div>
-    <div ref="charity" class="page-section">
-      <CharityPage :key="componentKeys.charity"/>
-    </div>
+<!--    <div ref="thankYou" class="page-section">-->
+<!--      <ThankYouPage :key="componentKeys.thankYou"/>-->
+<!--    </div>-->
+<!--    <div ref="charity" class="page-section">-->
+<!--      <CharityPage :key="componentKeys.charity"/>-->
+<!--    </div>-->
 
 
     <!--    <RunningPage />-->
@@ -86,10 +88,10 @@
                @click.prevent="scrollToComponent('stories')">Stories</a>
             <a href="#" class="footer-link-txt"
                @click.prevent="scrollToComponent('thoughts')">Thoughts</a>
-            <a href="#" class="footer-link-txt"
-               @click.prevent="scrollToComponent('thankYou')">Thank you</a>
-            <a href="#" class="footer-link-txt"
-               @click.prevent="scrollToComponent('charity')">Charity</a>
+<!--            <a href="#" class="footer-link-txt"-->
+<!--               @click.prevent="scrollToComponent('thankYou')">Thank you</a>-->
+<!--            <a href="#" class="footer-link-txt"-->
+<!--               @click.prevent="scrollToComponent('charity')">Charity</a>-->
           </nav>
 
           <p class="footer-txt">© 2024 Ismayilova Jale. All rights reserved.</p></div>
@@ -109,15 +111,15 @@ import AboutPage from "@/components/AboutSection";
 import MusicPage from "@/components/MusicSection";
 import StoriesPage from "@/components/StoriesSection.vue";
 import ThoughtsPage from "@/components/ThoughtsSection.vue";
-import ThankYouPage from "@/components/ThankYouSection.vue";
-import CharityPage from "@/components/CharitySection.vue";
+// import ThankYouPage from "@/components/ThankYouSection.vue";
+// import CharityPage from "@/components/CharitySection.vue";
 import MainFooter from "@/components/MainFooter";
 // import RunningPage from "@/components/RunningPage";
 export default {
   name: "MainPage",
   components: {
-    CharityPage,
-    ThankYouPage,
+    // CharityPage,
+    // ThankYouPage,
     ThoughtsPage,
     StoriesPage,
     MusicPage,

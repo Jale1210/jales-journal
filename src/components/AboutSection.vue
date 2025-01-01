@@ -1,8 +1,8 @@
 <template>
-  <div class="aboutPage" style="margin: auto; display: flex; align-items: center">
+  <div class="aboutPage" >
     <!--    class="frostedGlass"     -->
 
-
+<div class="imagesContainer">
       <div class="imgContainer">
         <img src="@/assets/images/sea.jpg" class="img">
 
@@ -33,14 +33,14 @@
         </div>
       </div>
 
-
+  </div>
 
     
 
     <div style="width: auto; display: flex; flex-direction: column;  padding: 0 70px">
       <img src="../assets/decorations/details1.png" style="position:absolute; width: 170px;    top: 2%;
     right: 2%;" />
-      <h1 class="elegant-text" style="margin-top: 0;   color: #f8d3a5;">About me</h1>
+      <span class="elegant-text" style="margin-top: 0;   color: #f8d3a5;">About me</span>
 
       <span class="main-txt">
        My name is Jale and I am a frontend developer with a passion for music, stories, poetry, mythology, and philosophy.
@@ -67,7 +67,13 @@ export default {
 
 <style scoped>
 
+.imagesContainer{
+  display: flex;
+  flex-direction: row;
+}
+
 .aboutPage {
+  margin: auto;  align-items: center;
   overflow: hidden;
   z-index: 1;
   position: relative;
