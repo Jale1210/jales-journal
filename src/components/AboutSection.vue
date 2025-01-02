@@ -37,10 +37,9 @@
 
     
 
-    <div style="width: auto; display: flex; flex-direction: column;  padding: 0 70px">
-      <img src="../assets/decorations/details1.png" style="position:absolute; width: 170px;    top: 2%;
-    right: 2%;" />
-      <span class="elegant-text" style="margin-top: 0;   color: #f8d3a5;">About me</span>
+    <div class="aboutContainer"  >
+      <img class="bow" src="../assets/decorations/details1.png"   />
+      <h1 class="elegant-text" style="margin-top: 0;   color: #f8d3a5;">About me</h1>
 
       <span class="main-txt">
        My name is Jale and I am a frontend developer with a passion for music, stories, poetry, mythology, and philosophy.
@@ -67,9 +66,18 @@ export default {
 
 <style scoped>
 
+.bow{
+  position:absolute; width: 170px;    top: 2%;
+  right: 2%;
+}
+
 .imagesContainer{
   display: flex;
   flex-direction: row;
+}
+
+.aboutContainer{
+  width: auto; display: flex; flex-direction: column;  padding: 0 70px
 }
 
 .aboutPage {

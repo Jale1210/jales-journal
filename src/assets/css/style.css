@@ -3,22 +3,49 @@
     left: 0;
     top: 0px;
     padding: 20px 70px;
-    width: 100%;
+    width: calc(100% - 140px);
     justify-content: space-between;
-
     display: flex;
     position: fixed;
+
+    background: inherit;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+
+
+.nav-mobile:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.93);
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+
+
+.header{
+    justify-content: center;
 }
 
 .header-nav {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     gap: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .main-logo {
-    width: 350px;
+    width: 300px;
 }
 
 #sidemenu {
@@ -140,7 +167,7 @@
     }
 
     .header {
-        padding: 100px 70px!important;
+        padding: 100px 70px !important;
         /*height: 100vh;*/
         justify-content: center;
         gap: 0 !important;
@@ -150,8 +177,10 @@
         display: none;
     }
 
-    .imagesContainer> div {
-        width: 50px!important;
+
+
+    .vinylContainer {
+        display: none !important;
     }
 
     .frostedGlass {
@@ -162,7 +191,7 @@
         flex-direction: column;
     }
 
-    .aboutPage{
+    .aboutPage {
         justify-content: space-between;
         flex-direction: column;
     }
@@ -174,7 +203,8 @@
         flex-direction: column;
     }
 
-    .header{
+    .header {
+        gap: 20px;
         padding: 100px 70px;
     }
 
@@ -183,6 +213,10 @@
     }
 
     #sidemenu {
+        display: none !important;
+    }
+
+    .vinylContainer {
         display: none !important;
     }
 
@@ -202,7 +236,15 @@
         flex-direction: column;
     }
 
-    .aboutPage{
+    /*.imgContainer {*/
+    /*    height: 50% !important;*/
+    /*}*/
+
+    .bow {
+        top: 50% !important;
+    }
+
+    .aboutPage {
         justify-content: space-between;
         flex-direction: column;
     }
@@ -211,8 +253,21 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .bow {
+        top: 2% !important;
+    }
+
+    .main-logo{
+        width:250px;
+    }
+
+    .elegant-text{
+        font-size: 26px!important;
+    }
+
+
     .header-nav {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .footer-links {
@@ -223,25 +278,42 @@
         flex-direction: row;
     }
 
+    .vinylContainer {
+        display: none !important;
+    }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .bow {
+        top: 2% !important;
+    }
+    .elegant-text{
+        font-size: 28px!important;
+    }
+
+    .main-logo{
+        width:250px;
+    }
+
     .header-nav {
+        justify-content: flex-start;
         flex-direction: row;
     }
 
-    .aboutPage{
+    .aboutPage {
         justify-content: space-between;
         flex-direction: column;
     }
 
-    .imgContainer{
-        width: 100px;
-        height: auto;
-        justify-content: flex-start;
+    .imgContainer {
+        /*width: 100px;*/
+        /*height: auto;*/
+        /*justify-content: flex-start;*/
     }
+
     .frostedGlass {
         display: flex !important;
     }
@@ -249,35 +321,34 @@
     #sidemenu {
         display: none;
     }
+
+    .vinylContainer {
+        display: flex !important;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .aboutPage{
+    .aboutPage {
         flex-direction: row;
     }
 
+    .main-logo{
+        width: 350px;
+    }
+
+    .elegant-text{
+        font-size: 44px!important;
+    }
+
+    .header-nav {
+        flex-direction: row;
+    }
 }
 
 
-/* Small devices (e.g., phones) - default styles */
 
 
-/* Show hamburger menu on smaller screens and hide the normal menu*/
-@media (max-width: 768px) {
-
-    /*header {*/
-    /*    height: 100vh;*/
-    /*}*/
-    /*.navTxt {*/
-    /*    color: #9F5A35;*/
-    /*}*/
-    /*.footer-links {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-
-}
 
 
 

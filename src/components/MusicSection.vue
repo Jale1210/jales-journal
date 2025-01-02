@@ -41,8 +41,7 @@
         </button>
     </div>
 
-    <div style="display: flex; align-items: center; flex-direction: row; padding-bottom: 50px;
-    gap: 125px">
+    <div class="vinylContainer" >
       <!--      first vinyl-->
       <div style="z-index: 999; position: relative; margin-left: 40px">
         <div class="vinyl-jacket">
@@ -135,6 +134,10 @@ export default {
 }
 
 
+.vinylContainer{
+  display: flex; align-items: center; flex-direction: row; padding-bottom: 50px;
+  gap: 125px
+}
 
 /* first vinyl*/
 

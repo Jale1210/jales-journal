@@ -4,7 +4,7 @@
 
 
       <!--       show on mobile   -->
-      <div class="nav-mobile show-mobile">
+      <div class="nav-mobile show-mobile " >
 
         <img class="main-logo" style="width: 50px" src="../assets/logo.png">
 

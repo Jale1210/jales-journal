@@ -271,7 +271,7 @@ h1 + hr {
   z-index: 1;
   width: 30vw;
   height: 100vh;
-  padding: 0 50px
+  /*padding: 0 50px*/
 }
 
 .frostedGlass:before {
