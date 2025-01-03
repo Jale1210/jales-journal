@@ -6,6 +6,10 @@
     <router-view></router-view>
     <cursor-fx color="#ffffff" color-hover="#FFC7B9"></cursor-fx>
     <!--    <MainPage/>-->
+
+
+
+
   </div>
 </template>
 
@@ -141,36 +145,17 @@ export default {
 #app {
   margin: 0;
   padding: 0;
-  /*height: 220vh;*/
-  /*background:   linear-gradient(to left top, blue, red);*/
-  /*background-attachment: fixed; !*edit*!*/
-  /*font-family: Avenir, Helvetica, Arial, sans-serif;*/
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
-  /*text-align: center;*/
-  /*color: #2c3e50;*/
-  /*margin-top: 60px;*/
 }
 
 body {
   margin: 0;
 }
 
-
 .gradient-background {
   position: relative;
   min-height: 100vh;
   transition: background 0.5s ease; /* Adjust the transition duration as needed */
 }
-
-.content {
-  padding: 20px;
-}
-
-main {
-  /*padding: 20px;*/
-}
-
 
 button.primary {
   background-color: rgba(193, 227, 216, 1); /* Mint green */
@@ -194,19 +179,8 @@ button:hover {
   opacity: 0.9;
 }
 
-/* tryin to fix the cursor*/
-
-/* play with vars for different effets */
-:root {
-  /*--color-cursor: 220, 90, 90;*/
-  /*--cursor-outline-shade: 0.3;*/
-  /*--cursor-size: 10px;*/
-  /*--cursor-outline-size: 12px;*/
-}
-
 html,
 body {
-  /*cursor: none;*/
   background-color: #2f2c2c;
   color: #fff;
   font-family: "Inter", sans-serif;
@@ -259,7 +233,6 @@ h1 + hr {
 
 
 /* frosted glass*/
-
 
 .frostedGlass {
   justify-content: center;

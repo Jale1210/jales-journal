@@ -1,8 +1,8 @@
 <template>
-  <div class="aboutPage"  :class="{ 'menu-open': isMenuOpen }">
+  <div class="aboutPage" :class="{ 'menu-open': isMenuOpen }">
     <!--    class="frostedGlass"     -->
 
-<div class="imagesContainer show-desktop">
+    <div class="imagesContainer show-desktop">
       <div class="imgContainer">
         <img src="@/assets/images/sea.jpg" class="img">
 
@@ -32,12 +32,11 @@
           <span>can</span>
         </div>
       </div>
-  </div>
+    </div>
 
-    
 
-    <div class="aboutContainer"  >
-      <img class="bow" src="../assets/decorations/details1.png"   />
+    <div class="aboutContainer">
+      <img class="bow" src="../assets/decorations/details1.png"/>
       <h1 class="elegant-text" style="margin-top: 0; color: rgb(181 113 52);">About me</h1>
 
       <span class="main-txt txt-brown">
@@ -65,23 +64,27 @@ export default {
 
 <style scoped>
 
-.bow{
-  position:absolute; width: 170px;
+.bow {
+  position: absolute;
+  width: 170px;
   top: 2%;
   right: 2%;
 }
 
-.txt-brown{
+.txt-brown {
   color: rgb(181 113 52);
 }
 
-.imagesContainer{
+.imagesContainer {
   display: flex;
   flex-direction: row;
 }
 
-.aboutContainer{
-  width: auto; display: flex; flex-direction: column;  padding: 0 70px
+.aboutContainer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 70px
 }
 
 .aboutPage {
@@ -104,7 +107,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: -20px 0 -20px  0px;
+  margin: -20px 0 -20px 0px;
   /*margin: -20px;*/
   box-shadow: inset 0 0 500px rgba(255, 255, 255, .4);
   filter: blur(10px);
@@ -160,13 +163,23 @@ export default {
   color: #e19d72;
 }
 
+/* less than 600 */
+@media only screen and (max-width: 600px) {
+  .aboutContainer {
+    padding: 0 50px
+  }
+  .aboutPage{
+    z-index: 0;
+  }
+}
 
 /* less than 1160 */
 @media only screen and (max-width: 1160px) {
-   .aboutPage{
-     flex-direction: column;
-   }
-  .show-desktop{
+  .aboutPage {
+    flex-direction: column;
+  }
+
+  .show-desktop {
     display: none;
   }
 }
@@ -174,7 +187,7 @@ export default {
 
 /* less than 1275px */
 @media only screen and (max-width: 1275px) {
-  .imgContainer, .img{
+  .imgContainer, .img {
     width: 230px;
   }
 }

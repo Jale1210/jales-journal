@@ -24,9 +24,6 @@
   <!--  </footer>-->
   <footer>
     <div class="parallax" >
-<!--  style="position:relative;z-index: 0"    -->
-
-
 
     <div style=" justify-content: center; display: flex">
       <!--    z-index: 1;  style="position: absolute; bottom: 30px; width: 100%;"    -->
@@ -45,10 +42,6 @@
              @click.prevent="scrollToComponent('stories')">Stories</a>
           <a href="#" class="footer-link-txt"
              @click.prevent="scrollToComponent('contact')">Contact</a>
-          <!--            <a href="#" class="footer-link-txt"-->
-          <!--               @click.prevent="scrollToComponent('thankYou')">Thank you</a>-->
-          <!--            <a href="#" class="footer-link-txt"-->
-          <!--               @click.prevent="scrollToComponent('charity')">Charity</a>-->
         </nav>
 
         <span class="footer-txt">© 2024 Ismayilova Jale. All rights reserved.</span></div>
@@ -69,12 +62,10 @@ footer {
   justify-content: center;
   margin: auto;
   position: relative;
-
   font-family: 'Playfair Display', serif;
   font-style: italic;
   color: white;
 }
-
 
 /* Style for the parallax image */
 .parallax {

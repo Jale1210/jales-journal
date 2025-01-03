@@ -413,10 +413,10 @@ ul li a:hover span:nth-child(4) {
     gap: 20px
   }
 
+  .mainTxt{
+    padding: 0;
+  }
 }
 
-.parallax {
-  width: 100vw;
-}
 
 </style>
