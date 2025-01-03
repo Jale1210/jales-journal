@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutPage" :class="{ 'menu-open': isMenuOpen }">
+  <div class="aboutPage">
     <!--    class="frostedGlass"     -->
 
     <div class="imagesContainer show-desktop">
@@ -35,6 +35,49 @@
     </div>
 
 
+    <!--    trying to fix  -->
+    <div class="film-container show-laptop ">
+      <div style="flex-direction: row; display: flex; background-color: #D2E1D8 ">
+        <div class="film-strip ">
+          <img alt="" src="@/assets/images/sea.jpg">
+        </div>
+
+        <div class="film-strip">
+          <div class="imgTxt" style="opacity: 1;  width: 140px;
+                                      margin: auto; background: transparent;
+                                       position: relative;">
+            <span>Life is beautiful</span>
+          </div>
+        </div>
+        <div class="film-strip">
+          <img alt="" src="@/assets/images/flowers.jpg">
+        </div>
+
+        <div class="film-strip">
+          <div class="imgTxt" style="opacity: 1;  width: 140px;
+                                      margin: auto; background: transparent;
+                                       position: relative;">
+            <span>Don't give up</span>
+          </div>
+        </div>
+
+
+        <div class="film-strip">
+          <img alt="" src="@/assets/images/sky.jpg">
+        </div>
+
+        <div class="film-strip">
+          <div class="imgTxt" style="opacity: 1; width: 140px;
+                                      margin: auto; background: transparent;
+                                       position: relative;">
+            <span>Yes, You can</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
     <div class="aboutContainer">
       <img class="bow" src="../assets/decorations/details1.png"/>
       <h1 class="elegant-text" style="margin-top: 0; color: rgb(181 113 52);">About me</h1>
@@ -57,12 +100,17 @@
 </template>
 
 <script>
+
 export default {
-  name: "AboutSection"
+  name: "AboutSection",
+  components: {}
 }
 </script>
 
 <style scoped>
+.show-laptop {
+  display: none;
+}
 
 .bow {
   position: absolute;
@@ -137,7 +185,7 @@ export default {
   position: absolute;
   z-index: 99;
   font-family: 'Tangerine', cursive;
-  font-size: 52px;
+  font-size: 42px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -168,8 +216,9 @@ export default {
   .aboutContainer {
     padding: 0 50px
   }
-  .aboutPage{
-    z-index: 0;
+
+  .aboutPage {
+    z-index: auto;
   }
 }
 
@@ -191,5 +240,80 @@ export default {
     width: 230px;
   }
 }
+
+
+/* film strip */
+
+
+.film-container {
+  width: 100vw;
+  justify-content: center;
+  /*display: flex;*/
+  flex-direction: row;
+  background: #faebd7c7;
+
+  max-height: 160px;
+}
+
+
+.film-strip {
+  --s: 12px;
+  --c: #222;
+  aspect-ratio: 1.25;
+  background: conic-gradient(at 50% var(--s), var(--c) 75%, #0000 0) 0 0/calc(2 * var(--s)) calc(100% - var(--s)) padding-box;
+  border: var(--s) solid var(--c);
+  padding: calc(var(--s) * 2.5) calc(var(--s) * 1.5);
+  box-sizing: content-box;
+
+  height: min-content;
+}
+
+.film-strip > img {
+  width: 140px;
+}
+
+
+/* less than 1160 */
+@media only screen and (max-width: 1160px) {
+
+  .bow {
+    display: none;
+  }
+
+  .show-laptop {
+    display: flex;
+  }
+
+  .aboutContainer {
+    padding: 30px 50px 0 50px
+  }
+
+  .film-container {
+    flex-direction: row;
+    background: #222222;
+    width: -webkit-fill-available;;
+    /*margin: auto;*/
+    /*max-width: calc(100vw - 72px);*/
+  }
+
+  .film-strip {
+    border-top: 9px solid var(--c);
+    border-bottom: 9px solid var(--c);
+    border-left: 0;
+    border-right: 0;
+    /*padding: 0;*/
+    margin: 0;
+    padding: calc(var(--s) * 1.3) 10px;
+    display: flex;
+    align-items: center;
+    /*height: min-content;*/
+  }
+
+  .film-strip > img {
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
 
 </style>

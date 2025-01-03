@@ -336,6 +336,9 @@ ul li a:hover span:nth-child(4) {
   .contactPage{
     flex-direction: column;
   }
+
+
+
   .film-container{
     flex-direction: row;
     background: #222222;
@@ -371,6 +374,8 @@ ul li a:hover span:nth-child(4) {
   .show-desktop{
     display: flex;
   }
+
+
 }
 
 /* less than 670px */
@@ -398,6 +403,10 @@ ul li a:hover span:nth-child(4) {
 
   ul li a span {
     display: none;
+  }
+
+  .text-container{
+    margin: 30px 50px auto 50px ;
   }
 }
 

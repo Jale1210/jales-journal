@@ -1,18 +1,18 @@
 <template>
   <div class="runningPage ticker-wrapper">
     <div class="ticker-wrapper__first-half">
-      <img src="../assets/icons/go.png" alt="leadership">
+      <img src= "../assets/images/sea.jpg"  alt="leadership">
       <p>Don't you dare to give up !</p>
-      <img src="../assets/icons/letsGo.png" alt="leadership">
+      <img src="../assets/images/sky.jpg" alt="leadership">
       <p>I'm proud of you</p>
-      <img src="../assets/icons/motivate.png" alt="leadership">
+<!--      <img src="../assets/icons/motivate.png" alt="leadership">-->
     </div>
     <div class="ticker-wrapper__second-half"  ><p>Don't you dare to give up !</p>
-      <img src="../assets/icons/go.png" alt="leadership">
+      <img src= "../assets/images/sea.jpg"  alt="leadership">
 
-      <img src="../assets/icons/letsGo.png" alt="leadership">
+<!--      <img src="../assets/icons/letsGo.png" alt="leadership">-->
       <p>I'm proud of you</p>
-      <img src="../assets/icons/motivate.png" alt="leadership">
+      <img src="../assets/images/sky.jpg" alt="leadership">
     </div>
 
   </div>
