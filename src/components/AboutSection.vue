@@ -42,16 +42,16 @@
           <img alt="" src="@/assets/images/sea.jpg">
         </div>
 
-        <div class="film-strip">
+        <div class="film-strip" style="width: 70px; height: 112px">
           <div class="imgTxt" >
             <span>Life is beautiful</span>
           </div>
         </div>
-        <div class="film-strip">
+        <div class="film-strip" >
           <img alt="" src="@/assets/images/flowers.jpg">
         </div>
 
-        <div class="film-strip">
+        <div class="film-strip"  style="width: 70px; height: 112px">
           <div class="imgTxt" >
             <span>Don't give up</span>
           </div>
@@ -62,7 +62,7 @@
           <img alt="" src="@/assets/images/sky.jpg">
         </div>
 
-        <div class="film-strip">
+        <div class="film-strip" style="width: 70px; height: 112px">
           <div class="imgTxt" >
             <span>Yes, You can</span>
           </div>
@@ -176,13 +176,15 @@ export default {
 }
 
 .imgTxt {
-  opacity: 1;  width: 140px;
-  margin: auto; background: transparent;
+  opacity: 1;
+  width: 140px;
+  margin: auto;
+  background: transparent;
   position: relative;
 
 
   font-family: 'Tangerine', cursive;
-  font-size: 42px;
+  font-size: 32px;
   height: 100px;
   display: flex;
   justify-content: center;
