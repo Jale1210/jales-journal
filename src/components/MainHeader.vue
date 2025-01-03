@@ -2,9 +2,8 @@
   <header class="header">
     <div class="header-nav">
 
-
       <!--       show on mobile   -->
-      <div class="nav-mobile show-mobile " >
+      <div class="nav-mobile show-mobile ">
 
         <img class="main-logo" style="width: 50px" src="../assets/logo.png">
 
@@ -20,7 +19,6 @@
               <div class="sidemenu__wrapper">
                 <ul class="sidemenu__list">
 
-
                   <!--        <a href="#about"-->
                   <!--           @click.prevent="scrollToComponent('about')" class="navTxt">-->
                   <!--          About Me-->
@@ -33,25 +31,29 @@
 
                   <!--                <li class="sidemenu__item"> <a class="navTxt">Welcome</a></li>-->
 
-
-                  <li class="sidemenu__item">
+                  <li class="sidemenu__item" @click="this.toggleMenu">
+                    <a href="#welcome" @click.prevent="scrollToTop()">
+                      Welcome
+                    </a>
+                  </li>
+                  <li class="sidemenu__item" @click="this.toggleMenu">
                     <a href="#about" @click.prevent="scrollToComponent('about')">
                       About Me
                     </a>
                   </li>
-                  <li class="sidemenu__item">
-                    <a href="" @click.prevent="scrollToComponent('music')">
+                  <li class="sidemenu__item" @click="this.toggleMenu">
+                    <a href="#music" @click.prevent="scrollToComponent('music')">
                       Music
                     </a>
                   </li>
-                  <li class="sidemenu__item">
+                  <li class="sidemenu__item" @click="this.toggleMenu">
                     <a href="" @click.prevent="scrollToComponent('stories')">
                       Stories
                     </a>
                   </li>
-                  <li class="sidemenu__item">
-                    <a href="" @click.prevent="scrollToComponent('thoughts')">
-                      Thoughts
+                  <li class="sidemenu__item" @click="this.toggleMenu">
+                    <a href="#contact" @click.prevent="scrollToComponent('contact')">
+                      Contact
                     </a>
                   </li>
                 </ul>
@@ -63,35 +65,14 @@
       </div>
 
 
-
       <div class="show-desktop">
-
         <img class="main-logo" src="../assets/J5.png">
-
       </div>
 
-      <!--      -->
-      <!--      <button class="hamburger" @click="toggleMenu">-->
-      <!--        ☰-->
-      <!--      </button>-->
-
-      <!--      <nav v-if="isMenuOpen" class="mobile-menu nav">-->
-      <!--        <a class="navTxt">Welcome</a>-->
-      <!--        <a href="#about"-->
-      <!--           @click.prevent="scrollToComponent('about')" class="navTxt">-->
-      <!--          About Me-->
-      <!--        </a>-->
-      <!--        <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>-->
-      <!--        <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>-->
-      <!--        <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>-->
-      <!--        <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
-      <!--        <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
-      <!--      </nav>-->
 
       <h1 class="elegant-text" style="color: #e5b5a1">
         Welcome to My Blog!</h1>
       <!--      color: #f8d3a5;-->
-
     </div>
 
 
@@ -99,10 +80,8 @@
       <span class="main-txt">
       I'm thrilled to have you here! This space is a reflection of my passions, interests, and experiences, and I’m excited to share it all with you.
         <!-- Whether you're here to find insightful articles, practical tips, or just to enjoy some engaging stories, you’re in the right place.-->
-
         <!--        My goal is to create a community where we can explore ideas, learn together, and inspire each other. I believe in the power of connection, and through this blog, I hope to connect with you on topics that matter to us both.-->
-
-        Feel free to explore, leave your thoughts, and make yourself at home. I look forward to this journey with you—let’s make it a great one!
+        I look forward to this journey with you—let’s make it a great one!
       </span>
 
 
@@ -112,17 +91,7 @@
         <img class="heart-img" src="../assets/decorations/heart.png">
       </span>
 
-
     </div>
-
-    <!--  animated  closing icon-->
-    <!--    <div class="icon">-->
-    <!--      <span></span>-->
-    <!--      <span></span>-->
-    <!--      <span></span>-->
-    <!--    </div>-->
-    <!--    animated closing icon-->
-
   </header>
 </template>
 
@@ -144,7 +113,7 @@ export default {
     scrollToTop() {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Smooth scrolling
+        behavior: 'smooth'
       });
 
       let scroll = document.querySelector('.scroll');
@@ -233,7 +202,20 @@ export default {
 }
 
 .elegant-text:hover {
-  color: #e19d72; /* Saddle brown color on hover for a subtle, sophisticated effect */
+  color: #e19d72;
+}
+
+/* Extra small devices (phones, 770px and down) */
+@media only screen and (max-width: 770px) {
+  .elegant-text {
+    font-size: 32px;
+  }
+  .header{
+    gap:20px
+  }
+  .main-logo{
+    width: 220px;
+  }
 }
 
 </style>

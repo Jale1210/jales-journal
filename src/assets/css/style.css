@@ -1,3 +1,11 @@
+h1{
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.aboutPage.menu-open {
+    z-index: 0; /* z-index when menu is open */
+}
 
 .nav-mobile {
     left: 0;
@@ -7,14 +15,10 @@
     justify-content: space-between;
     display: flex;
     position: fixed;
-
     background: inherit;
     overflow: hidden;
     z-index: 1;
-
 }
-
-
 
 .nav-mobile:before {
     content: '';
@@ -29,8 +33,6 @@
     filter: blur(10px);
     z-index: -1;
 }
-
-
 
 
 .header{
@@ -56,9 +58,14 @@
 }
 
 #sidemenu nav {
+    font-family: 'Tangerine', cursive;
+
+
+
+
     width: 100%;
     height: 100%;
-    background: grey;
+    background: #b26840;
     position: fixed;
     top: 0;
     left: 0;
@@ -118,10 +125,14 @@
 }
 
 #sidemenu .sidemenu__list {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     list-style: none;
     padding: 0;
-    margin: 0;
+    /*margin: 0;*/
+    margin: auto;
+/*    */
+
+
 }
 
 #sidemenu .sidemenu__item a {
@@ -161,6 +172,9 @@
         flex-direction: column;
     }
 
+    .main-txt, .description{
+        font-size: 14px;
+    }
 
     .elegant-text {
         font-size: 24px !important;
@@ -177,7 +191,10 @@
         display: none;
     }
 
-
+    .imagesContainer {
+        display: none;
+        flex-direction: column;
+    }
 
     .vinylContainer {
         display: none !important;
@@ -187,9 +204,7 @@
         display: none !important;
     }
 
-    .footer-links {
-        flex-direction: column;
-    }
+
 
     .aboutPage {
         justify-content: space-between;
@@ -220,9 +235,6 @@
         display: none !important;
     }
 
-    .footer-links {
-        flex-direction: column;
-    }
 
     .show-desktop {
         display: flex;
@@ -233,6 +245,7 @@
     }
 
     .imagesContainer {
+        display: none;
         flex-direction: column;
     }
 
@@ -248,11 +261,21 @@
         justify-content: space-between;
         flex-direction: column;
     }
+    /*.contactPage{*/
+    /*    flex-direction: column;*/
+    /*}*/
+
+    /*.film-container{*/
+    /*    flex-direction: row!important;*/
+    /*    height: 100px;*/
+    /*}*/
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+
     .bow {
         top: 2% !important;
     }
@@ -275,12 +298,15 @@
     }
 
     .imagesContainer {
+        display: flex;
         flex-direction: row;
     }
 
     .vinylContainer {
         display: none !important;
     }
+
+
 
 }
 
@@ -291,7 +317,7 @@
         top: 2% !important;
     }
     .elegant-text{
-        font-size: 28px!important;
+        font-size: 40px!important;
     }
 
     .main-logo{
@@ -305,7 +331,7 @@
 
     .aboutPage {
         justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .imgContainer {
@@ -338,6 +364,8 @@
     }
 
     .elegant-text{
+        margin: auto!important;
+        padding: 10px!important;
         font-size: 44px!important;
     }
 

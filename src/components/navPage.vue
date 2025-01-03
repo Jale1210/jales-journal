@@ -8,9 +8,9 @@
       <a class="navTxt">About Me</a>
       <a class="navTxt">Music</a>
       <a class="navTxt">Stories</a>
-      <a class="navTxt">Thoughts</a>
-      <a class="navTxt">Thank you</a>
-      <a class="navTxt">Charity</a>
+      <a class="navTxt">Contact</a>
+<!--      <a class="navTxt">Thank you</a>-->
+<!--      <a class="navTxt">Charity</a>-->
     </nav>
 
   </div>

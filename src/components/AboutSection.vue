@@ -1,8 +1,8 @@
 <template>
-  <div class="aboutPage" >
+  <div class="aboutPage"  :class="{ 'menu-open': isMenuOpen }">
     <!--    class="frostedGlass"     -->
 
-<div class="imagesContainer">
+<div class="imagesContainer show-desktop">
       <div class="imgContainer">
         <img src="@/assets/images/sea.jpg" class="img">
 
@@ -32,25 +32,24 @@
           <span>can</span>
         </div>
       </div>
-
   </div>
 
     
 
     <div class="aboutContainer"  >
       <img class="bow" src="../assets/decorations/details1.png"   />
-      <h1 class="elegant-text" style="margin-top: 0;   color: #f8d3a5;">About me</h1>
+      <h1 class="elegant-text" style="margin-top: 0; color: rgb(181 113 52);">About me</h1>
 
-      <span class="main-txt">
+      <span class="main-txt txt-brown">
        My name is Jale and I am a frontend developer with a passion for music, stories, poetry, mythology, and philosophy.
       </span>
-      <span class="main-txt">
+      <span class="main-txt  txt-brown">
          For a long time, I wanted to create a place where people could find strength, energy and motivation.
        </span>
-      <span class="main-txt">
+      <span class="main-txt  txt-brown">
          When I was creating this website, I aimed to craft a space that feels like a warm home — a place where we can escape reality and gather the strength to achieve the most wonderful things.
        </span>
-      <span class="main-txt">
+      <span class="main-txt  txt-brown">
          I believe that I can inspire you to become the best version of yourself.
       </span>
     </div>
@@ -67,8 +66,13 @@ export default {
 <style scoped>
 
 .bow{
-  position:absolute; width: 170px;    top: 2%;
+  position:absolute; width: 170px;
+  top: 2%;
   right: 2%;
+}
+
+.txt-brown{
+  color: rgb(181 113 52);
 }
 
 .imagesContainer{
@@ -81,14 +85,15 @@ export default {
 }
 
 .aboutPage {
-  margin: auto;  align-items: center;
+  margin: auto;
+  align-items: center;
   overflow: hidden;
   z-index: 1;
   position: relative;
   background: inherit;
   display: flex;
-  /*padding: 30px 0;*/
-  height: 100vh
+  padding: 30px 0;
+  /*height: 100vh*/
 }
 
 .aboutPage:before {
@@ -99,7 +104,8 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: -20px;
+  margin: -20px 0 -20px  0px;
+  /*margin: -20px;*/
   box-shadow: inset 0 0 500px rgba(255, 255, 255, .4);
   filter: blur(10px);
   z-index: -1;
@@ -129,8 +135,6 @@ export default {
   z-index: 99;
   font-family: 'Tangerine', cursive;
   font-size: 52px;
-
-
   height: 100%;
   display: flex;
   justify-content: center;
@@ -143,17 +147,36 @@ export default {
   color: white;
   text-align: center;
   /*padding: 10px;*/
-  opacity: 0; /* Hide the overlay */
-  transition: opacity 0.3s ease; /* Smooth transition for showing the overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-/* Show the overlay when hovering over the container */
+
 .imgContainer:hover .imgTxt {
-  opacity: 1; /* Show the overlay */
+  opacity: 1;
 }
 
 .elegant-text:hover {
-  color: #e19d72; /* Saddle brown color on hover for a subtle, sophisticated effect */
+  color: #e19d72;
+}
+
+
+/* less than 1160 */
+@media only screen and (max-width: 1160px) {
+   .aboutPage{
+     flex-direction: column;
+   }
+  .show-desktop{
+    display: none;
+  }
+}
+
+
+/* less than 1275px */
+@media only screen and (max-width: 1275px) {
+  .imgContainer, .img{
+    width: 230px;
+  }
 }
 
 </style>

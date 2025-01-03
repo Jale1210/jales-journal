@@ -218,7 +218,7 @@ body {
 }
 
 h1 {
-  margin-bottom: 0.7em;
+  /*margin-bottom: 0.7em;*/
   /*font-size: 3em;*/
   font-weight: 800;
   text-align: center;
@@ -254,7 +254,7 @@ hr {
 }
 
 h1 + hr {
-  margin: 0 auto 2em;
+  /*margin: 0 auto 2em;*/
 }
 
 
@@ -282,7 +282,9 @@ h1 + hr {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: -20px;
+  margin: -20px 0 -20px -20px;
+
+  /*margin: -20px;*/
   box-shadow: inset 0 0 500px rgba(255, 255, 255, .4);
   filter: blur(10px);
   z-index: -1;
@@ -291,6 +293,7 @@ h1 + hr {
 /* */
 
 .main-txt {
+  font-weight: 700;
   font-family: 'Garamond', serif;
   line-height: 30px;
   text-align: justify;

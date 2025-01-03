@@ -1,5 +1,7 @@
 <template>
   <div>
+
+<!--    <h1>Opening my heart to you, dear reader.</h1>-->
   <div class="storiesPage" style="margin: 50px 0">
     <div style="display: flex; flex-direction: row-reverse; width: 100%; justify-content: space-between;">
       <div style="width: 100%; display: flex; justify-content: center; position: relative;">

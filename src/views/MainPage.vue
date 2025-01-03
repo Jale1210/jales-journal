@@ -26,18 +26,15 @@
 
 
         <!-- Navigation Menu -->
-        <div
-            class="frostedGlass"
-            :class="{ 'menu-open': isMenuOpen }"
-        >
-<!--          -->
+        <div class="frostedGlass" >
+<!--            :class="{ 'menu-open': isMenuOpen }" -->
 
           <nav class="nav">
             <a  data-cursor-hover class="navTxt">Welcome</a>
             <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('about')" class="navTxt">About Me</a>
             <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>
             <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>
-            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>
+            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('contact')" class="navTxt">Contact</a>
 <!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
 <!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
           </nav>
@@ -51,15 +48,18 @@
     <div ref="about"   class="page-section">
       <AboutPage :key="componentKeys.about"/>
     </div>
-    <div ref="music" class="page-section">
-      <MusicPage :key="componentKeys.music"/>
+<!--    <div ref="music" class="page-section">-->
+<!--      <MusicPage :key="componentKeys.music"/>-->
+<!--    </div>-->
+<!--    <div ref="stories" class="page-section">-->
+<!--      <StoriesPage :key="componentKeys.stories"/>-->
+<!--    </div>-->
+    <div ref="contact" class="page-section">
+      <ContactPage :key="componentKeys.contact"/>
     </div>
-    <div ref="stories" class="page-section">
-      <StoriesPage :key="componentKeys.stories"/>
-    </div>
-    <div ref="thoughts" class="page-section">
-      <ThoughtsPage :key="componentKeys.thoughts"/>
-    </div>
+
+
+
 <!--    <div ref="thankYou" class="page-section">-->
 <!--      <ThankYouPage :key="componentKeys.thankYou"/>-->
 <!--    </div>-->
@@ -70,33 +70,7 @@
 
     <!--    <RunningPage />-->
 
-    <footer>
-      <div class="parallax">
-      </div>
-
-      <div style="position: absolute; bottom: 30px; width: 100%;">
-        <div style="display: flex; justify-content: center; flex-direction: column">
-
-          <nav class="footer-links">
-            <a href="#" class="footer-link-txt"
-               @click.prevent="scrollToTop()">Welcome</a>
-            <a href="#" class="footer-link-txt"
-               @click.prevent="scrollToComponent('about')">About Me</a>
-            <a href="#" class="footer-link-txt"
-               @click.prevent="scrollToComponent('music')">Music</a>
-            <a href="#" class="footer-link-txt"
-               @click.prevent="scrollToComponent('stories')">Stories</a>
-            <a href="#" class="footer-link-txt"
-               @click.prevent="scrollToComponent('thoughts')">Thoughts</a>
-<!--            <a href="#" class="footer-link-txt"-->
-<!--               @click.prevent="scrollToComponent('thankYou')">Thank you</a>-->
-<!--            <a href="#" class="footer-link-txt"-->
-<!--               @click.prevent="scrollToComponent('charity')">Charity</a>-->
-          </nav>
-
-          <p class="footer-txt">© 2024 Ismayilova Jale. All rights reserved.</p></div>
-      </div>
-    </footer>
+<MainFooter />
 
 
   </div>
@@ -108,9 +82,11 @@
 import MainHeader from "@/components/MainHeader";
 // import NavPage from "@/components/navPage";
 import AboutPage from "@/components/AboutSection";
-import MusicPage from "@/components/MusicSection";
-import StoriesPage from "@/components/StoriesSection.vue";
-import ThoughtsPage from "@/components/ThoughtsSection.vue";
+// import MusicPage from "@/components/MusicSection";
+// import StoriesPage from "@/components/StoriesSection.vue";
+import ContactPage from "@/components/ContactSection.vue";
+
+
 // import ThankYouPage from "@/components/ThankYouSection.vue";
 // import CharityPage from "@/components/CharitySection.vue";
 import MainFooter from "@/components/MainFooter";
@@ -118,14 +94,14 @@ import MainFooter from "@/components/MainFooter";
 export default {
   name: "MainPage",
   components: {
+    MainFooter,
     // CharityPage,
     // ThankYouPage,
-    ThoughtsPage,
-    StoriesPage,
-    MusicPage,
+    ContactPage,
+    // StoriesPage,
+    // MusicPage,
     AboutPage,
-    MainHeader,
-    // MainFooter
+    MainHeader
   },
   data() {
     return {
@@ -137,9 +113,9 @@ export default {
         about: 0,
         music: 0,
         stories: 0,
-        thoughts: 0,
-        thankYou: 0,
-        charity: 0
+        contact: 0,
+        // thankYou: 0,
+        // charity: 0
       }
     }
   },
@@ -340,7 +316,7 @@ footer {
 
 
 .parallax {
-  height: 200px;
+  /*height: 200px;*/
   background-color: rgba(240, 229, 207, 1); /* Pale gold */
   padding: 10px;
   text-align: center;
