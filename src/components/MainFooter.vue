@@ -131,11 +131,9 @@ footer {
 /* Extra small devices (phones, 945px and down) */
 @media only screen and (max-width: 945px) {
 .parallax{
-  z-index: 0;
+  background-attachment: initial;
 }
-  footer{
-    background-image: url('../assets/images/red-roses.jpg');
-  }
+
 }
 
 </style>
