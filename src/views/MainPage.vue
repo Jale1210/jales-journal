@@ -109,12 +109,12 @@ import ContactPage from "@/components/ContactSection.vue";
 
 // import ThankYouPage from "@/components/ThankYouSection.vue";
 // import CharityPage from "@/components/CharitySection.vue";
-import MainFooter from "@/components/MainFooter";
+// import MainFooter from "@/components/MainFooter";
 // import RunningPage from "@/components/RunningPage";
 export default {
   name: "MainPage",
   components: {
-    MainFooter,
+    // MainFooter,
     // CharityPage,
     // ThankYouPage,
     ContactPage,
@@ -441,9 +441,6 @@ footer {
   .parallax{
     background-attachment: initial;
   }
-
 }
-
-
 
 </style>
