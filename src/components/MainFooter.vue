@@ -131,7 +131,7 @@ footer {
 /* Extra small devices (phones, 945px and down) */
 @media only screen and (max-width: 945px) {
 .parallax{
-  background-size: 100% 100%;
+  background-size:  cover;
 }
 }
 
