@@ -43,9 +43,7 @@
         </div>
 
         <div class="film-strip">
-          <div class="imgTxt" style="opacity: 1;  width: 140px;
-                                      margin: auto; background: transparent;
-                                       position: relative;">
+          <div class="imgTxt" >
             <span>Life is beautiful</span>
           </div>
         </div>
@@ -54,9 +52,7 @@
         </div>
 
         <div class="film-strip">
-          <div class="imgTxt" style="opacity: 1;  width: 140px;
-                                      margin: auto; background: transparent;
-                                       position: relative;">
+          <div class="imgTxt" >
             <span>Don't give up</span>
           </div>
         </div>
@@ -67,9 +63,7 @@
         </div>
 
         <div class="film-strip">
-          <div class="imgTxt" style="opacity: 1; width: 140px;
-                                      margin: auto; background: transparent;
-                                       position: relative;">
+          <div class="imgTxt" >
             <span>Yes, You can</span>
           </div>
         </div>
@@ -182,24 +176,26 @@ export default {
 }
 
 .imgTxt {
-  position: absolute;
-  z-index: 99;
+  opacity: 1;  width: 140px;
+  margin: auto; background: transparent;
+  position: relative;
+
+
   font-family: 'Tangerine', cursive;
   font-size: 42px;
-  height: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  bottom: 0; /* Align the overlay at the bottom of the container */
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  /*bottom: 0; !* Align the overlay at the bottom of the container *!*/
+  /*left: 0;*/
+
   color: white;
   text-align: center;
   /*padding: 10px;*/
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  /*opacity: 0;*/
+  /*transition: opacity 0.3s ease;*/
 }
 
 
