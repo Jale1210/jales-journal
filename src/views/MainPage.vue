@@ -23,8 +23,6 @@
 
       <main id="background-container">
 
-
-
         <!-- Navigation Menu -->
         <div class="frostedGlass" >
 <!--            :class="{ 'menu-open': isMenuOpen }" -->
@@ -48,9 +46,9 @@
     <div ref="about"   class="page-section">
       <AboutPage :key="componentKeys.about"/>
     </div>
-<!--    <div ref="music" class="page-section">-->
-<!--      <MusicPage :key="componentKeys.music"/>-->
-<!--    </div>-->
+    <div ref="music" class="page-section">
+      <MusicPage :key="componentKeys.music"/>
+    </div>
 <!--    <div ref="stories" class="page-section">-->
 <!--      <StoriesPage :key="componentKeys.stories"/>-->
 <!--    </div>-->
@@ -102,7 +100,7 @@
 import MainHeader from "@/components/MainHeader";
 // import NavPage from "@/components/navPage";
 import AboutPage from "@/components/AboutSection";
-// import MusicPage from "@/components/MusicSection";
+import MusicPage from "@/components/MusicSection";
 // import StoriesPage from "@/components/StoriesSection.vue";
 import ContactPage from "@/components/ContactSection.vue";
 
@@ -119,7 +117,7 @@ export default {
     // ThankYouPage,
     ContactPage,
     // StoriesPage,
-    // MusicPage,
+    MusicPage,
     AboutPage,
     MainHeader
   },
