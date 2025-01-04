@@ -117,7 +117,7 @@
 
         <div class="film-strip" style="width: 70px; height: 112px">
           <div class="smallImgTxt" >
-            <span>Life is beautiful</span>
+            <span>You are the art</span>
           </div>
         </div>
 
@@ -177,7 +177,7 @@ export default {
   position: relative;
   background: inherit;
   display: flex;
-  padding: 30px 0;
+  padding: 30px 0 ;
   /*height: 100vh*/
 }
 
@@ -243,7 +243,6 @@ export default {
   margin: auto;
   background: transparent;
   position: relative;
-
 
   font-family: 'Tangerine', cursive;
   font-size: 32px;
@@ -311,7 +310,6 @@ export default {
   /*display: flex;*/
   flex-direction: row;
   background: #faebd7c7;
-
   max-height: 162px;
 }
 
@@ -341,11 +339,16 @@ export default {
   }
 
   .show-laptop {
+
     display: flex;
   }
 
+  .aboutPage {
+    padding: 0;
+  }
+
   .aboutContainer {
-    padding: 30px 50px 0 50px
+    padding: 30px 50px 30px 50px
   }
 
   .film-container {
