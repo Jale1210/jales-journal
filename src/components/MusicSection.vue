@@ -7,9 +7,8 @@
     <img src="../assets/music-img/nirvana.png"
          style="height: 200px; position: absolute; top: 15%; left: -5%; transform: rotate(25deg); "/>
 
-
-    <img src="../assets/decorations/details4.png"
-         style="width: 170px; position: absolute; top: 0%; right: 1%; transform: rotate(10deg);"/>
+<!--    <img src="../assets/decorations/details4.png"-->
+<!--         style="width: 170px; position: absolute; top: 0%; right: 1%; transform: rotate(10deg);"/>-->
 
     <div class="container" style="padding-bottom: 50px">
       <h1 style="display: flex">
@@ -25,12 +24,11 @@
       <CardSection/>
     </div>
 
-    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;
-                padding-bottom: 50px">
+    <div class="musicTxtContainer">
 
-<!--      <span style="font-size: 42px;font-family: 'Tangerine', cursive; color: white ">-->
-<!--        Did you know?-->
-<!--      </span>-->
+      <!--      <span style="font-size: 42px;font-family: 'Tangerine', cursive; color: white ">-->
+      <!--        Did you know?-->
+      <!--      </span>-->
 
       <span style="font-size: 42px;font-family: 'Tangerine', cursive; color: white ">
 <!--      color: rgb(112, 55, 25);  Don't know what to listen?-->
@@ -48,7 +46,8 @@
 
     <div class="vinylContainer">
       <!--      first vinyl-->
-      <div style="z-index: 999; position: relative; margin-left: 40px">
+      <div style="z-index: 999; position: relative; ">
+        <!--       margin-left: 40px  -->
         <div class="vinyl-jacket">
           <div class="vinyl-wrapper">
             <div class="vinyl"></div>
@@ -134,16 +133,27 @@ export default {
 <style scoped>
 
 .music {
-  padding: 50px 0px 50px 0;
+  padding: 50px 30px;
   /*height: 100vh*/
+}
+
+.musicTxtContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 30px
 }
 
 
 .vinylContainer {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /*justify-content: space-evenly;*/
   align-items: center;
   flex-direction: row;
-  padding-bottom: 50px;
+  /*padding : 0 10px 50px 10px;*/
   gap: 125px
 }
 

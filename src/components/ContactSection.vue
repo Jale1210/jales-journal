@@ -6,7 +6,7 @@
     <div class="film-container show-mobile"
          style="flex-direction: row; ">
 
-      <div class="show-mobile"  style="flex-direction: row;  background-color: #D2E1D8 ">
+      <div class="show-mobile" style="flex-direction: row;  background-color: #D2E1D8 ">
         <div class="film-strip">
           <img alt="" src="../assets/contact/contact1.jpeg">
         </div>
@@ -40,9 +40,10 @@
       </h1>
 
       <span class="description">
-          Feel free to explore, leave your thoughts, and make yourself at home.
-          I genuanely care about you and your thoughts. Thank you for being here with me.<br/>
-          P.S. Please take care.
+         Feel free to explore, leave your thoughts, and make yourself at home.
+          I’ve added every detail here for you, hoping it inspires you.
+          I’ll be adding stories and thoughts over time—you can help me with that just by sending your favorite stories. <br/>
+          P.S. Thank you for being here with me. Please take care.
         </span>
 
       <div>
@@ -305,18 +306,19 @@ ul li a:hover span:nth-child(4) {
 }
 
 
-
 /* less than 480px */
 @media only screen and (max-width: 480px) {
 
   ul li {
-  flex-direction: initial;
-}
- ul li a {
-   height: auto;
-   line-height: 0;
-   margin: 0 10px 0 0;
- }
+    flex-direction: initial;
+  }
+
+  ul li a {
+    height: auto;
+    line-height: 0;
+    margin: 0 10px 0 0;
+  }
+
   .film-strip > img {
     max-width: 100px;
   }
@@ -325,20 +327,21 @@ ul li a:hover span:nth-child(4) {
 
 /* less than 500px */
 @media only screen and (max-width: 500px) {
-.show-desktop{
-  display: none!important;
-}
-  .show-mobile{
+  .show-desktop {
+    display: none !important;
+  }
+
+  .show-mobile {
     justify-content: center;
     display: flex;
   }
-  .contactPage{
+
+  .contactPage {
     flex-direction: column;
   }
 
 
-
-  .film-container{
+  .film-container {
     flex-direction: row;
     background: #222222;
     width: -webkit-fill-available;;
@@ -346,14 +349,14 @@ ul li a:hover span:nth-child(4) {
     /*max-width: calc(100vw - 72px);*/
   }
 
-  .film-strip{
+  .film-strip {
     border-top: 9px solid var(--c);
     border-bottom: 9px solid var(--c);
     border-left: 0;
     border-right: 0;
     /*padding: 0;*/
     margin: 0;
-    padding: calc(var(--s)* 1.3) 10px  ;
+    padding: calc(var(--s) * 1.3) 10px;
     display: flex;
     align-items: center;
     /*height: min-content;*/
@@ -365,12 +368,14 @@ ul li a:hover span:nth-child(4) {
     object-fit: cover;
   }
 }
+
 /* more than 670px */
 @media only screen and (min-width: 670px) {
-  .show-mobile{
+  .show-mobile {
     display: none;
   }
-  .show-desktop{
+
+  .show-desktop {
     display: flex;
   }
 
@@ -388,7 +393,7 @@ ul li a:hover span:nth-child(4) {
   }
 
   ul {
-    gap: 0!important;
+    gap: 0 !important;
   }
 
   ul li a {
@@ -404,8 +409,8 @@ ul li a:hover span:nth-child(4) {
     display: none;
   }
 
-  .text-container{
-    margin: 30px 50px auto 50px ;
+  .text-container {
+    margin: 30px 50px auto 50px;
   }
 }
 
@@ -421,7 +426,7 @@ ul li a:hover span:nth-child(4) {
     gap: 20px
   }
 
-  .mainTxt{
+  .mainTxt {
     padding: 0;
   }
 }

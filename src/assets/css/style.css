@@ -1,6 +1,6 @@
 h1{
     padding: 0!important;
-    margin: 0!important;
+    margin: 0
 }
 
 
@@ -198,6 +198,8 @@ h1{
         display: none !important;
     }
 
+
+
     .frostedGlass {
         display: none !important;
     }
@@ -229,7 +231,11 @@ h1{
         display: none !important;
     }
 
-    .vinylContainer {
+    /*.vinylContainer {*/
+    /*    display: none !important;*/
+    /*}*/
+
+   .vinyl-jacket3, .vinyl-jacket4 {
         display: none !important;
     }
 
@@ -299,8 +305,8 @@ h1{
         flex-direction: row;
     }
 
-    .vinylContainer {
-        display: none !important;
+    .vinylContainer, .vinyl-jacket3, .vinyl-jacket4 {
+        display: flex !important;
     }
 
 

@@ -46,25 +46,25 @@ export default {
 
       cards: [
         {
-          title: 'Behind the Band Name',
-          content: 'What is the significance of the name "21 Pilots"?',
-          image: '',
-        },
-        {
           title: 'Seven Musical Notes',
           content: 'Who breathed names into the seven notes?"',
-          // image: '',
-        },
-        {
-          title: 'Who is Sandman?',
-          content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
           image: '',
         },
-        {
-          title: 'Explore The Cavas',
-          content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          image: 'https://images.unsplash.com/photo-1580986475035-f0778c60f5ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=633&q=80',
-        },
+        // {
+        //   title: 'Behind the Band Name',
+        //   content: 'What is the significance of the name "21 Pilots"?',
+        //   image: '',
+        // },
+        // {
+        //   title: 'Who is Sandman?',
+        //   content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        //   image: '',
+        // },
+        // {
+        //   title: 'Explore The Cavas',
+        //   content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        //   image: 'https://images.unsplash.com/photo-1580986475035-f0778c60f5ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=633&q=80',
+        // },
       ],
     };
   },
@@ -92,6 +92,9 @@ body {
 
 .card-section {
   padding-bottom: 50px;
+
+  margin: auto;
+  display: flex
 }
 
 .page-content {
@@ -100,12 +103,12 @@ body {
   padding: 1rem;
   max-width: 1024px;
   margin: 0 auto;
-  font-family: 'Rubik', sans-serif; /* Updated directly */
+  font-family: 'Rubik', sans-serif;
 }
 
 @media (min-width: 600px) {
   .page-content {
-    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-columns: repeat(2, 1fr);*/
   }
 }
 
@@ -134,6 +137,8 @@ body {
 @media (min-width: 600px) {
   .d_card {
     height: 350px;
+  /*  added by me */
+    width: 350px;
   }
 }
 
@@ -185,11 +190,11 @@ body {
 }
 
 .d_card:nth-child(1):before {
-  background-image: url('../assets/music-img/top.jpg');
+  background-image: url('../assets/music-img/piano.jpg');
 }
 
 .d_card:nth-child(2):before {
-  background-image: url('../assets/music-img/piano.jpg');
+  background-image: url('../assets/music-img/top.jpg');
 }
 
 .d_card:nth-child(3):before {
