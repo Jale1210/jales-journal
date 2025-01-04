@@ -42,8 +42,7 @@
       <span class="description">
           Feel free to explore, leave your thoughts, and make yourself at home.
           I genuanely care about you and your thoughts. Thank you for being here with me.<br/>
-          Please take care.
-          P.S
+          P.S. Please take care.
         </span>
 
       <div>

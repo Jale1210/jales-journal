@@ -90,6 +90,46 @@
       </span>
     </div>
 
+
+    <!--    trying to fix  -->
+    <div class="film-container show-laptop ">
+      <div style="flex-direction: row; display: flex; background-color: #D2E1D8 ">
+        <div class="film-strip" style="width: 70px; height: 112px">
+          <div class="smallImgTxt" >
+             <span>Don't give up</span>
+          </div>
+        </div>
+
+        <div class="film-strip ">
+          <img alt="" src="@/assets/images/sea.jpg">
+        </div>
+
+        <div class="film-strip"  style="width: 70px; height: 112px">
+          <div class="smallImgTxt" >
+            <span>Yes, You can</span>
+          </div>
+        </div>
+
+        <div class="film-strip" >
+          <img alt="" src="@/assets/images/eyes.jpeg">
+        </div>
+
+
+        <div class="film-strip" style="width: 70px; height: 112px">
+          <div class="smallImgTxt" >
+            <span>Life is beautiful</span>
+          </div>
+        </div>
+
+        <div class="film-strip">
+          <img alt="" src="@/assets/images/sky.jpg">
+        </div>
+
+
+
+      </div>
+
+    </div>
   </div>
 </template>
 

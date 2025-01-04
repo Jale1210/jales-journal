@@ -25,23 +25,28 @@
       <CardSection/>
     </div>
 
-    <div
-        style=  "display: flex; justify-content: center; align-items: center; flex-direction: column;
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;
                 padding-bottom: 50px">
-      <span style="font-size: 42px;font-family: 'Tangerine', cursive;  color: rgb(112, 55, 25);">
-        Don't know what to listen?
+
+<!--      <span style="font-size: 42px;font-family: 'Tangerine', cursive; color: white ">-->
+<!--        Did you know?-->
+<!--      </span>-->
+
+      <span style="font-size: 42px;font-family: 'Tangerine', cursive; color: white ">
+<!--      color: rgb(112, 55, 25);  Don't know what to listen?-->
+        According to a legend: When a song gets stuck in your head, your soulmate is singing that very song at the same moment.
       </span>
 
 
-        <button   type="button"
-                  data-cursor-hover
-                  style="font-family: 'Cardo', serif; font-size: 1.125rem;margin: 50px 0"
-                  class="shiny-button">
-          Let me help
-        </button>
+      <!--        <button   type="button"-->
+      <!--                  data-cursor-hover-->
+      <!--                  style="font-family: 'Cardo', serif; font-size: 1.125rem;margin: 50px 0"-->
+      <!--                  class="shiny-button">-->
+      <!--          Let me help-->
+      <!--        </button>-->
     </div>
 
-    <div class="vinylContainer" >
+    <div class="vinylContainer">
       <!--      first vinyl-->
       <div style="z-index: 999; position: relative; margin-left: 40px">
         <div class="vinyl-jacket">
@@ -134,8 +139,11 @@ export default {
 }
 
 
-.vinylContainer{
-  display: flex; align-items: center; flex-direction: row; padding-bottom: 50px;
+.vinylContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 50px;
   gap: 125px
 }
 
@@ -654,7 +662,9 @@ h1 {
   margin: 0 auto;
 
 @media screen and (max-width: 800px) {
-  font-size: 30px
+  font-size:
+
+30px
 }
 
 }
@@ -781,7 +791,7 @@ span {
   font-size: 16px;
   color: #573019;
   letter-spacing: 1.5px;
-  background-color:transparent;
+  background-color: transparent;
   border: 2px solid transparent;
   border-image: linear-gradient(45deg, #e19050, #a9652c, #703719, #573019);
   border-image-slice: 1;
@@ -808,7 +818,7 @@ span {
 
 .shiny-button:hover {
   color: white;
-  background-color:#e19050;
+  background-color: #e19050;
   border-color: transparent;
 }
 
