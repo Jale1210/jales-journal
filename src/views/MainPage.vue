@@ -198,11 +198,18 @@ export default {
         contact: 0,
         // thankYou: 0,
         // charity: 0
-      }
+      },
+
+
+
+        isMenuOpen: false
+
     }
   },
   methods: {
-
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
 
     scrollToTop() {
       window.scrollTo({
