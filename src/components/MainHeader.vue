@@ -3,7 +3,7 @@
     <div class="header-nav">
 
       <!--       show on mobile   -->
-      <div class="nav-mobile show-mobile "  style="position:relative; z-index: 9999">
+      <div class="nav-mobile show-mobile "  >
 
         <img class="main-logo" style="width: 50px" src="../assets/logo.png">
 
@@ -15,7 +15,7 @@
             <span class="bottom"></span>
           </button>
           <transition name="translateX">
-            <nav v-show="isMenuOpen">
+            <nav v-show="isMenuOpen"  >
               <div class="sidemenu__wrapper">
                 <ul class="sidemenu__list">
 
