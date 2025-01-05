@@ -2,6 +2,70 @@
   <div class="mainPage">
     <div class="flex">
 
+<!--       test  start -->
+      <!--       show on mobile   -->
+      <div class="nav-mobile show-mobile "  >
+
+        <img class="main-logo" style="width: 50px" src="../assets/logo.png">
+
+        <div id="sidemenu">
+          <button class="sidemenu__btn" v-on:click="isMenuOpen=!isMenuOpen"
+                  v-bind:class="{active:isMenuOpen}">
+            <span class="top"></span>
+            <span class="mid"></span>
+            <span class="bottom"></span>
+          </button>
+          <transition name="translateX">
+            <nav v-show="isMenuOpen"  >
+              <div class="sidemenu__wrapper">
+                <ul class="sidemenu__list">
+
+                  <!--        <a href="#about"-->
+                  <!--           @click.prevent="scrollToComponent('about')" class="navTxt">-->
+                  <!--          About Me-->
+                  <!--        </a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
+                  <!--        <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
+
+                  <!--                <li class="sidemenu__item"> <a class="navTxt">Welcome</a></li>-->
+
+                  <li class="sidemenu__item" @click="this.toggleMenu">
+                    <a href="#welcome" @click.prevent="scrollToTop()">
+                      Welcome
+                    </a>
+                  </li>
+                  <li class="sidemenu__item" @click="this.toggleMenu">
+                    <a href="#about" @click.prevent="scrollToComponent('about')">
+                      About Me
+                    </a>
+                  </li>
+                  <li class="sidemenu__item" @click="this.toggleMenu">
+                    <a href="#music" @click.prevent="scrollToComponent('music')">
+                      Music
+                    </a>
+                  </li>
+                  <li class="sidemenu__item" @click="this.toggleMenu">
+                    <a href="" @click.prevent="scrollToComponent('stories')">
+                      Stories
+                    </a>
+                  </li>
+                  <li class="sidemenu__item" @click="this.toggleMenu">
+                    <a href="#contact" @click.prevent="scrollToComponent('contact')">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </transition>
+        </div>
+
+      </div>
+<!--       test end  -->
+
       <MainHeader/>
 
       <!--      <main id="background-container">-->
