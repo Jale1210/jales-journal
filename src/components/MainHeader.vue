@@ -1,9 +1,9 @@
 <template>
-  <header class="header">
+  <header class="header"  >
     <div class="header-nav">
 
       <!--       show on mobile   -->
-      <div class="nav-mobile show-mobile ">
+      <div class="nav-mobile show-mobile "  style="position:relative; z-index: 9999">
 
         <img class="main-logo" style="width: 50px" src="../assets/logo.png">
 

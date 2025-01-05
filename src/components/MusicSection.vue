@@ -1,24 +1,23 @@
 <template>
   <div class="music" style="position: relative">
 
-    <img src="../assets/music-img/arctic.png"
-         style="height: 220px; position: absolute; top: 0%; left: 0%;  "/>
+    <img src="../assets/music-img/arctic.png" class="arctic"/>
 
-    <img src="../assets/music-img/nirvana.png"
-         style="height: 200px; position: absolute; top: 15%; left: -5%; transform: rotate(25deg); "/>
+    <img src="../assets/music-img/nirvana.png" class="nirvana"/>
 
-<!--    <img src="../assets/decorations/details4.png"-->
-<!--         style="width: 170px; position: absolute; top: 0%; right: 1%; transform: rotate(10deg);"/>-->
+    <img src="../assets/music-img/cassette.png" class="cassette"/>
+
+    <!--    <img src="../assets/decorations/details4.png"-->
+    <!--         style="width: 170px; position: absolute; top: 0%; right: 1%; transform: rotate(10deg);"/>-->
 
     <div class="container" style="padding-bottom: 50px">
-      <h1 style="display: flex">
+      <h1 style="display: flex ; " >
         <div class="animation">
           <div class="animation-left"><span>MUSIC</span></div>
           <div class="animation-right"><span>MUSIC</span></div>
         </div>
       </h1>
     </div>
-
 
     <div>
       <CardSection/>
@@ -34,7 +33,6 @@
 <!--      color: rgb(112, 55, 25);  Don't know what to listen?-->
         According to a legend: When a song gets stuck in your head, your soulmate is singing that very song at the same moment.
       </span>
-
 
       <!--        <button   type="button"-->
       <!--                  data-cursor-hover-->
@@ -74,8 +72,6 @@
           <div class="vinyl4"></div>
         </div>
       </div>
-
-
     </div>
 
 
@@ -110,19 +106,14 @@
 
     <!--      <img src="../assets/linkin-park.png"-->
     <!--           style="position: absolute;width: 19%; left: -6%; bottom: -28%;"/>-->
-
-
     <!--    </div>-->
-
 
   </div>
 </template>
 
 <script>
 
-
 import CardSection from "@/components/CardSection";
-
 
 export default {
   name: "MusicSection",
@@ -137,6 +128,29 @@ export default {
   /*height: 100vh*/
 }
 
+.arctic {
+  height: 220px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.nirvana {
+  height: 200px;
+  position: absolute;
+  top: 15%;
+  left: -5%;
+  transform: rotate(25deg);
+}
+
+.cassette {
+  width: 130px;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  transform: rotate(20deg);
+}
+
 .musicTxtContainer {
   display: flex;
   justify-content: center;
@@ -144,7 +158,6 @@ export default {
   flex-direction: column;
   padding: 50px 30px
 }
-
 
 .vinylContainer {
   display: flex;
@@ -526,7 +539,6 @@ export default {
   image-rendering: crisp-edges;
 }
 
-
 /*  forth vinyl  */
 
 .vinyl-jacket4 {
@@ -650,9 +662,6 @@ export default {
   image-rendering: crisp-edges;
 }
 
-
-/*        */
-
 .container {
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -668,7 +677,7 @@ h1 {
   text-transform: uppercase;
   /*font-family: Helvetica, Arial, sans-serif;*/
   font-size: 50px;
-  color: #fff;
+  color: #733C23;
   margin: 0 auto;
 
 @media screen and (max-width: 800px) {
@@ -695,7 +704,7 @@ div {
   position: absolute;
   width: 0%;
   height: 4px;
-  background: #fff;
+  background: #733C23;
 }
 
 }
@@ -854,4 +863,41 @@ span {
     background-position: 100%;
   }
 }
+
+/*   responsive */
+
+/* less than 370 */
+@media only screen and (max-width: 370px) {
+  .arctic {
+    height: 110px!important;
+  }
+
+  .nirvana {
+    height: 95px!important;
+    top: 6%!important;
+  }
+  .cassette {
+    width: 80px!important;
+    right: 2%;
+  }
+
+}
+
+/* less than 600 */
+@media only screen and (max-width: 600px) {
+  .arctic {
+    height: 140px;
+  }
+
+  .nirvana {
+    height: 120px;
+    top: 8%
+  }
+
+  .cassette {
+    width: 100px;
+    right: 2%;
+  }
+}
+
 </style>
