@@ -8,6 +8,8 @@
 
         <img class="main-logo" style="width: 50px" src="../assets/logo.png">
 
+      </div>
+
         <div id="sidemenu">
           <button class="sidemenu__btn" v-on:click="isMenuOpen=!isMenuOpen"
                   v-bind:class="{active:isMenuOpen}">
@@ -63,7 +65,7 @@
           </transition>
         </div>
 
-      </div>
+<!--      </div>-->
 <!--       test end  -->
 
       <MainHeader/>
