@@ -47,7 +47,7 @@ export default {
       cards: [
         {
           title: 'Seven Musical Notes',
-          content: 'Who breathed names into the seven notes?"',
+          content: 'Who breathed names into the seven notes?',
           image: '',
         },
         // {
