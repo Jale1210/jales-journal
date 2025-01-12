@@ -137,7 +137,7 @@ export default {
   position: absolute;
   position: absolute;
   height: 50px;
-  right: 50%;
+  right: 30%;
   /*left: 190px;*/
   top: 50px;
   transform: rotate(40deg);
