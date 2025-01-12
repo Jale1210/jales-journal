@@ -8,11 +8,11 @@
           <p class="data-content">{{ card.content }}</p>
 
 
-            <router-link v-if="index == '0' " to="/top">
+            <router-link v-if="index == '0' " to="/notes">
               <ReadButton :readMore="readMore" />
             </router-link>
 
-          <router-link v-if="index == 1 "   to="/notes">
+          <router-link v-if="index == 1 "   to="/top">
             <ReadButton :readMore="readMore" />
           </router-link>
 

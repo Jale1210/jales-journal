@@ -1,14 +1,15 @@
 <template>
   <div class="mainPage">
     <div class="flex">
-
       <!--       test  start -->
       <!--       show on mobile   -->
       <div class="nav-mobile show-mobile ">
-
+        <router-link  to="/">
         <img class="main-logo" style="width: 50px" src="../assets/logo.png">
-
+        </router-link>
       </div>
+
+
 
       <div id="sidemenu">
         <button class="sidemenu__btn" v-on:click="isMenuOpen=!isMenuOpen"
@@ -100,8 +101,6 @@
             <a data-cursor-hover href="#" @click.prevent="scrollToComponent('music')" class="navTxt">{{loca.music}}</a>
             <a data-cursor-hover href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">{{loca.stories}}</a>
             <a data-cursor-hover href="#" @click.prevent="scrollToComponent('contact')" class="navTxt">{{loca.contact}}</a>
-            <!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
-            <!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
           </nav>
         </div>
       </main>
@@ -122,15 +121,6 @@
     <div ref="contact" class="page-section">
       <ContactPage :key="componentKeys.contact"/>
     </div>
-
-    <!--    <div ref="thankYou" class="page-section">-->
-    <!--      <ThankYouPage :key="componentKeys.thankYou"/>-->
-    <!--    </div>-->
-    <!--    <div ref="charity" class="page-section">-->
-    <!--      <CharityPage :key="componentKeys.charity"/>-->
-    <!--    </div>-->
-
-    <!--    <RunningPage />-->
 
     <footer>
       <div class="parallax">
@@ -189,9 +179,7 @@ export default {
   },
   data() {
     return {
-      // currentComponent: 'AboutPage', // Default component to show
-
-      observer: null, // Intersection Observer instance
+      observer: null,
       componentKeys: {
         welcome: 0,
         about: 0,
@@ -262,15 +250,8 @@ export default {
     }
   },
 
-  // beforeDestroy() {
-  //   // Clean up Intersection Observer when the component is destroyed
-  //   if (this.observer) {
-  //     this.observer.disconnect();
-  //   }
-  // },
   mounted() {
     this.$nextTick(() => {
-      // Create an Intersection Observer instance
       this.observer = new IntersectionObserver(this.handleIntersection, {
         root: null, // Use the viewport as the root
         rootMargin: '0px',
@@ -285,6 +266,10 @@ export default {
         }
       });
     });
+
+
+
+    console.log('mainpage' + JSON.stringify(this.loca))
   },
   beforeDestroy() {
     // Clean up Intersection Observer when the component is destroyed
@@ -390,65 +375,13 @@ export default {
 
 
 .navTxt {
-  /*font-size: 48px; big desktop*/
   font-size: 30px;
   font-family: 'Playfair Display', cursive;
   /*font-family: 'Tangerine', cursive;*/
   width: 100%;
   display: block;font-style: italic;
-  /*margin: 60px 0; big desktop*/
   margin: 36px 0
 }
-
-
-
-/*  footer  */
-
-/*footer {*/
-/*  position: relative;*/
-/*}*/
-
-
-/*.parallax {*/
-/*  !*height: 200px;*!*/
-/*  background-color: rgba(240, 229, 207, 1); !* Pale gold *!*/
-/*  padding: 10px;*/
-/*  text-align: center;*/
-/*  background-image: url('../assets/images/red-roses.jpg');*/
-/*  filter: brightness(40%);*/
-/*  background-attachment: fixed;*/
-/*  background-repeat: no-repeat;*/
-/*  background-size: 100% auto;*/
-/*}*/
-
-/*.parallax {*/
-/*  !*width: 100vw;*!*/
-/*}*/
-
-/*.footer-links {*/
-/*  padding-bottom: 30px;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  gap: 50px*/
-/*}*/
-
-/*.footer-txt {*/
-/*  font-family: "Playfair Display", serif;*/
-/*  font-weight: 400;*/
-/*  font-style: normal;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-content: center;*/
-/*  flex-direction: column;*/
-/*  font-size: 18px;*/
-/*}*/
-
-/*.footer-link-txt {*/
-/*  font-family: "Playfair Display", serif;*/
-/*  font-weight: 400;*/
-/*  font-style: normal;*/
-/*  font-size: 22px;*/
-/*}*/
 
 footer {
   display: flex;

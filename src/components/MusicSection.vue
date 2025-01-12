@@ -11,10 +11,10 @@
     <!--         style="width: 170px; position: absolute; top: 0%; right: 1%; transform: rotate(10deg);"/>-->
 
     <div class="container" style="padding-bottom: 50px">
-      <h1 style="display: flex ; " >
+      <h1 style="display: flex ; ">
         <div class="animation">
-          <div class="animation-left"><span>{{loca.music}}</span></div>
-          <div class="animation-right"><span>{{loca.music}}</span></div>
+          <div class="animation-left"><span>{{ loca.music }}</span></div>
+          <div class="animation-right"><span>{{ loca.music }}</span></div>
         </div>
       </h1>
     </div>
@@ -29,9 +29,9 @@
       <!--        Did you know?-->
       <!--      </span>-->
 
-      <span style="font-size: 32px;font-style: italic;  font-family: 'Playfair Display', cursive;color: white ">
+      <span class="legend">
 <!--      color: rgb(112, 55, 25);  Don't know what to listen?-->
-          {{loca.legend}}
+          {{ loca.legend }}
       </span>
 
       <!--        <button   type="button"-->
@@ -137,6 +137,13 @@ export default {
   position: absolute;
   top: 0%;
   left: 0%;
+}
+
+.legend {
+  font-size: 32px;
+  font-style: italic;
+  font-family: 'Playfair Display', cursive;
+  color: white
 }
 
 .nirvana {
@@ -873,15 +880,16 @@ span {
 /* less than 370 */
 @media only screen and (max-width: 370px) {
   .arctic {
-    height: 110px!important;
+    height: 110px !important;
   }
 
   .nirvana {
-    height: 95px!important;
-    top: 6%!important;
+    height: 95px !important;
+    top: 6% !important;
   }
+
   .cassette {
-    width: 80px!important;
+    width: 80px !important;
     right: 2%;
   }
 
@@ -891,6 +899,10 @@ span {
 @media only screen and (max-width: 600px) {
   .arctic {
     height: 140px;
+  }
+
+  .legend{
+    font-size: 22px;
   }
 
   .nirvana {

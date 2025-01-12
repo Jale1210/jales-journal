@@ -3,7 +3,9 @@
     <div class="header-nav">
 
       <div class="show-desktop">
-        <img class="main-logo" src="../assets/J5.png">
+        <router-link to="/">
+          <img class="main-logo" src="../assets/J5.png">
+        </router-link>
       </div>
 
       <h1 class="elegant-text" style="color: #e5b5a1">
@@ -19,8 +21,7 @@
         <!--        My goal is to create a community where we can explore ideas, learn together, and inspire each other. I believe in the power of connection, and through this blog, I hope to connect with you on topics that matter to us both.-->
       </span>
 
-      <span style="   font-family: 'Playfair Display', cursive;font-style: italic; font-size: 34px;
-      padding-top: 30px; display: flex; position:relative;">
+      <span class="sincerelyYours">
       {{ loca.sincerelyYours }}
         <img class="heart-img" src="../assets/decorations/heart.png">
       </span>
@@ -136,10 +137,19 @@ export default {
   position: absolute;
   position: absolute;
   height: 50px;
-  right: 54%;
+  right: 50%;
   /*left: 190px;*/
   top: 50px;
   transform: rotate(40deg);
+}
+
+.sincerelyYours {
+  font-family: 'Playfair Display', cursive;
+  font-style: italic;
+  font-size: 34px;
+  padding-top: 30px;
+  display: flex;
+  position: relative;
 }
 
 .elegant-text:hover {
@@ -150,6 +160,10 @@ export default {
 @media only screen and (max-width: 770px) {
   .elegant-text {
     font-size: 32px;
+  }
+
+  .sincerelyYours {
+    font-size: 24px;
   }
 
   .header {
