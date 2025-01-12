@@ -167,7 +167,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding:0 30px 30px 30px;
+  padding:0 0  30px 0;
 }
 
 .vinylContainer {
