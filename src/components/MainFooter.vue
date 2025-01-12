@@ -102,7 +102,7 @@ footer {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
 }

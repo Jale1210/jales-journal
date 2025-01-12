@@ -36,18 +36,15 @@
     <div class="text-container">
 
       <h1 class="elegant-text" style="color:white">
-        Get In Touch
+        {{loca.contactTitle}}
       </h1>
 
       <span class="description">
-         Feel free to explore, leave your thoughts, and make yourself at home.
-          I’ve added every detail here for you, hoping it inspires you.
-          I’ll be adding stories and thoughts over time—you can help me with that just by sending your favorite stories. <br/>
-          P.S. Thank you for being here with me. Please take care.
+         {{loca.contactDesc}}
         </span>
 
       <div>
-        <span class="mainTxt">Social Links</span>
+        <span class="mainTxt">{{loca.socialLinks}}</span>
 
         <div class="icons">
           <ul>
@@ -99,8 +96,6 @@
         <img alt="" src="../assets/contact/contact1.jpeg">
       </div>
     </div>
-
-
   </div>
 
   <!--    <div class="content">  </div>-->
@@ -120,7 +115,19 @@
 
 
 <script>
-export default {}
+import {mapActions, mapState} from 'vuex';
+
+export default {
+  name: "ContactSection",
+  data() {
+    return {
+    }
+  },
+  computed: {
+    ...mapState(['loca']),
+
+  },
+}
 </script>
 
 <style scoped>
@@ -184,7 +191,7 @@ export default {}
   display: block;
   padding: 30px 0;
   font-size: 40px;
-  font-family: 'Tangerine', cursive;
+  font-family: "Dancing Script", serif;
 }
 
 /*icons*/

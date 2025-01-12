@@ -13,8 +13,8 @@
     <div class="container" style="padding-bottom: 50px">
       <h1 style="display: flex ; " >
         <div class="animation">
-          <div class="animation-left"><span>MUSIC</span></div>
-          <div class="animation-right"><span>MUSIC</span></div>
+          <div class="animation-left"><span>{{loca.music}}</span></div>
+          <div class="animation-right"><span>{{loca.music}}</span></div>
         </div>
       </h1>
     </div>
@@ -29,9 +29,9 @@
       <!--        Did you know?-->
       <!--      </span>-->
 
-      <span style="font-size: 42px;font-family: 'Tangerine', cursive; color: white ">
+      <span style="font-size: 32px;font-style: italic;  font-family: 'Playfair Display', cursive;color: white ">
 <!--      color: rgb(112, 55, 25);  Don't know what to listen?-->
-        According to a legend: When a song gets stuck in your head, your soulmate is singing that very song at the same moment.
+          {{loca.legend}}
       </span>
 
       <!--        <button   type="button"-->
@@ -112,12 +112,16 @@
 </template>
 
 <script>
-
+import {mapActions, mapState} from 'vuex';
 import CardSection from "@/components/CardSection";
 
 export default {
   name: "MusicSection",
-  components: {CardSection}
+  components: {CardSection},
+  computed: {
+    ...mapState(['loca']),
+
+  },
 }
 </script>
 

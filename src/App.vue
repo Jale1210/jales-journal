@@ -7,9 +7,6 @@
     <cursor-fx color="#ffffff" color-hover="#FFC7B9"></cursor-fx>
     <!--    <MainPage/>-->
 
-
-
-
   </div>
 </template>
 
@@ -17,6 +14,7 @@
 
 // import MainPage from "./views/MainPage.vue";
 import style from "../src/assets/css/style.css"
+import {mapActions, mapState} from 'vuex';
 import {CursorFx} from '@luxdamore/vue-cursor-fx';
 
 export default {
@@ -40,7 +38,7 @@ export default {
     };
   },
   computed: {
-
+    ...mapState([ 'loca']),
     gradientStyle() {
 
       const scrollPercent = this.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
@@ -140,7 +138,8 @@ export default {
 <style src="@luxdamore/vue-cursor-fx/dist/CursorFx.css"></style>
 <style scoped src="./assets/css/style.css"></style>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap');
 
 #app {
   margin: 0;

@@ -222,7 +222,7 @@ h1{
 
     .header {
         gap: 20px;
-        padding: 100px 70px;
+        /*padding: 100px 70px;*/
     }
 
     .show-desktop {

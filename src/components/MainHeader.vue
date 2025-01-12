@@ -1,33 +1,27 @@
 <template>
-  <header class="header"  >
+  <header class="header">
     <div class="header-nav">
-
-
-
 
       <div class="show-desktop">
         <img class="main-logo" src="../assets/J5.png">
       </div>
 
-
       <h1 class="elegant-text" style="color: #e5b5a1">
-        Welcome to My Blog!</h1>
+        {{ loca.welcomeTxt }}</h1>
       <!--      color: #f8d3a5;-->
     </div>
 
 
     <div>
       <span class="main-txt">
-      I'm thrilled to have you here! This space is a reflection of my passions, interests, and experiences, and I’m excited to share it all with you.
+     {{ loca.welcomeDesc }}
         <!-- Whether you're here to find insightful articles, practical tips, or just to enjoy some engaging stories, you’re in the right place.-->
         <!--        My goal is to create a community where we can explore ideas, learn together, and inspire each other. I believe in the power of connection, and through this blog, I hope to connect with you on topics that matter to us both.-->
-        I look forward to this journey with you—let’s make it a great one!
       </span>
 
-
-      <span style="font-family: 'Tangerine', cursive; font-size: 34px;
+      <span style="   font-family: 'Playfair Display', cursive;font-style: italic; font-size: 34px;
       padding-top: 30px; display: flex; position:relative;">
-      -Sincerely Yours, Jale
+      {{ loca.sincerelyYours }}
         <img class="heart-img" src="../assets/decorations/heart.png">
       </span>
 
@@ -36,6 +30,7 @@
 </template>
 
 <script>
+import {mapActions, mapState} from 'vuex';
 
 export default {
   name: "MainHeader",
@@ -48,6 +43,11 @@ export default {
   mounted() {
     this.handleScroll = this.onScroll.bind(this);
     window.addEventListener('scroll', this.handleScroll);
+  },
+
+  computed: {
+    ...mapState(['loca']),
+
   },
   methods: {
     scrollToTop() {
@@ -136,7 +136,8 @@ export default {
   position: absolute;
   position: absolute;
   height: 50px;
-  left: 190px;
+  right: 54%;
+  /*left: 190px;*/
   top: 50px;
   transform: rotate(40deg);
 }
@@ -150,10 +151,12 @@ export default {
   .elegant-text {
     font-size: 32px;
   }
-  .header{
-    gap:20px
+
+  .header {
+    gap: 20px
   }
-  .main-logo{
+
+  .main-logo {
     width: 220px;
   }
 }

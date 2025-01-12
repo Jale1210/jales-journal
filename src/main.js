@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store';
+
 
 import { CursorFx } from '@luxdamore/vue-cursor-fx';
 import '@luxdamore/vue-cursor-fx/dist/CursorFx.css';
@@ -16,6 +18,7 @@ Vue.config.productionTip = false
 
 new Vue({
   router, // Make sure router is passed to the Vue instance
-  render: h => h(App)
+  render: h => h(App),
+  store,
 }).$mount('#app')
 

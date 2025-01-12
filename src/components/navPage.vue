@@ -32,7 +32,7 @@ export default {
 
 .navTxt {
   /*font-size: 48px; big desktop*/
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Tangerine', cursive;
   width: 100%;
   display: block;

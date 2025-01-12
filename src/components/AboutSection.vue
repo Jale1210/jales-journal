@@ -74,19 +74,10 @@
 
     <div class="aboutContainer">
       <img class="bow" src="../assets/decorations/details1.png"/>
-      <h1 class="elegant-text" style="margin-top: 0; color: rgb(181 113 52);">About me</h1>
+      <h1 class="elegant-text" style="margin-top: 0; color: rgb(181 113 52);">{{loca.about}}</h1>
 
       <span class="main-txt txt-brown">
-       My name is Jale and I am a frontend developer with a passion for music, stories, poetry, mythology, and philosophy.
-      </span>
-      <span class="main-txt  txt-brown">
-         For a long time, I wanted to create a place where people could find strength, energy and motivation.
-       </span>
-      <span class="main-txt  txt-brown">
-         When I was creating this website, I aimed to craft a space that feels like a warm home — a place where we can escape reality and gather the strength to achieve the most wonderful things.
-       </span>
-      <span class="main-txt  txt-brown">
-         I believe that I can inspire you to become the best version of yourself.
+        {{loca.aboutDesc}}
       </span>
     </div>
 
@@ -125,8 +116,6 @@
           <img alt="" src="@/assets/images/sky.jpg">
         </div>
 
-
-
       </div>
 
     </div>
@@ -134,10 +123,20 @@
 </template>
 
 <script>
+import {mapActions, mapState} from 'vuex';
 
 export default {
   name: "AboutSection",
-  components: {}
+  components: {},
+  data() {
+    return {
+
+    }
+  },
+  computed: {
+    ...mapState(['loca']),
+
+  },
 }
 </script>
 

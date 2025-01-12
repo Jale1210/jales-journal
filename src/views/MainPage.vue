@@ -2,71 +2,71 @@
   <div class="mainPage">
     <div class="flex">
 
-<!--       test  start -->
+      <!--       test  start -->
       <!--       show on mobile   -->
-      <div class="nav-mobile show-mobile "  >
+      <div class="nav-mobile show-mobile ">
 
         <img class="main-logo" style="width: 50px" src="../assets/logo.png">
 
       </div>
 
-        <div id="sidemenu">
-          <button class="sidemenu__btn" v-on:click="isMenuOpen=!isMenuOpen"
-                  v-bind:class="{active:isMenuOpen}">
-            <span class="top"></span>
-            <span class="mid"></span>
-            <span class="bottom"></span>
-          </button>
-          <transition name="translateX">
-            <nav v-show="isMenuOpen"  >
-              <div class="sidemenu__wrapper">
-                <ul class="sidemenu__list">
+      <div id="sidemenu">
+        <button class="sidemenu__btn" v-on:click="isMenuOpen=!isMenuOpen"
+                v-bind:class="{active:isMenuOpen}">
+          <span class="top"></span>
+          <span class="mid"></span>
+          <span class="bottom"></span>
+        </button>
+        <transition name="translateX">
+          <nav v-show="isMenuOpen">
+            <div class="sidemenu__wrapper">
+              <ul class="sidemenu__list">
 
-                  <!--        <a href="#about"-->
-                  <!--           @click.prevent="scrollToComponent('about')" class="navTxt">-->
-                  <!--          About Me-->
-                  <!--        </a>-->
-                  <!--        <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>-->
-                  <!--        <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>-->
-                  <!--        <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>-->
-                  <!--        <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
-                  <!--        <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
+                <!--        <a href="#about"-->
+                <!--           @click.prevent="scrollToComponent('about')" class="navTxt">-->
+                <!--          About Me-->
+                <!--        </a>-->
+                <!--        <a href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>-->
+                <!--        <a href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>-->
+                <!--        <a href="#" @click.prevent="scrollToComponent('thoughts')" class="navTxt">Thoughts</a>-->
+                <!--        <a href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
+                <!--        <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
 
-                  <!--                <li class="sidemenu__item"> <a class="navTxt">Welcome</a></li>-->
+                <!--                <li class="sidemenu__item"> <a class="navTxt">Welcome</a></li>-->
 
-                  <li class="sidemenu__item" @click="this.toggleMenu">
-                    <a href="#welcome" @click.prevent="scrollToTop()">
-                      Welcome
-                    </a>
-                  </li>
-                  <li class="sidemenu__item" @click="this.toggleMenu">
-                    <a href="#about" @click.prevent="scrollToComponent('about')">
-                      About Me
-                    </a>
-                  </li>
-                  <li class="sidemenu__item" @click="this.toggleMenu">
-                    <a href="#music" @click.prevent="scrollToComponent('music')">
-                      Music
-                    </a>
-                  </li>
-                  <li class="sidemenu__item" @click="this.toggleMenu">
-                    <a href="" @click.prevent="scrollToComponent('stories')">
-                      Stories
-                    </a>
-                  </li>
-                  <li class="sidemenu__item" @click="this.toggleMenu">
-                    <a href="#contact" @click.prevent="scrollToComponent('contact')">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </transition>
-        </div>
+                <li class="sidemenu__item" @click="this.toggleMenu">
+                  <a href="#welcome" @click.prevent="scrollToTop()">
+                    {{ loca.welcome }}
+                  </a>
+                </li>
+                <li class="sidemenu__item" @click="this.toggleMenu">
+                  <a href="#about" @click.prevent="scrollToComponent('about')">
+                    {{ loca.about }}
+                  </a>
+                </li>
+                <li class="sidemenu__item" @click="this.toggleMenu">
+                  <a href="#music" @click.prevent="scrollToComponent('music')">
+                    {{ loca.music }}
+                  </a>
+                </li>
+                <li class="sidemenu__item" @click="this.toggleMenu">
+                  <a href="" @click.prevent="scrollToComponent('stories')">
+                    {{ loca.stories }}
+                  </a>
+                </li>
+                <li class="sidemenu__item" @click="this.toggleMenu">
+                  <a href="#contact" @click.prevent="scrollToComponent('contact')">
+                    {{ loca.contact }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </transition>
+      </div>
 
-<!--      </div>-->
-<!--       test end  -->
+      <!--      </div>-->
+      <!--       test end  -->
 
       <MainHeader/>
 
@@ -90,17 +90,18 @@
       <main id="background-container">
 
         <!-- Navigation Menu -->
-        <div class="frostedGlass" >
-<!--            :class="{ 'menu-open': isMenuOpen }" -->
+        <div class="frostedGlass">
+          <!--            :class="{ 'menu-open': isMenuOpen }" -->
+          <LangContainer/>
 
           <nav class="nav">
-            <a  data-cursor-hover class="navTxt">Welcome</a>
-            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('about')" class="navTxt">About Me</a>
-            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('music')" class="navTxt">Music</a>
-            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">Stories</a>
-            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('contact')" class="navTxt">Contact</a>
-<!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
-<!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
+            <a data-cursor-hover class="navTxt">{{ loca.welcome }}</a>
+            <a data-cursor-hover href="#" @click.prevent="scrollToComponent('about')" class="navTxt">{{loca.about}}</a>
+            <a data-cursor-hover href="#" @click.prevent="scrollToComponent('music')" class="navTxt">{{loca.music}}</a>
+            <a data-cursor-hover href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">{{loca.stories}}</a>
+            <a data-cursor-hover href="#" @click.prevent="scrollToComponent('contact')" class="navTxt">{{loca.contact}}</a>
+            <!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('thankYou')" class="navTxt">Thank you</a>-->
+            <!--            <a  data-cursor-hover href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>-->
           </nav>
         </div>
       </main>
@@ -109,49 +110,46 @@
     </div>
 
 
-    <div ref="about"   class="page-section">
+    <div ref="about" class="page-section">
       <AboutPage :key="componentKeys.about"/>
     </div>
     <div ref="music" class="page-section">
       <MusicPage :key="componentKeys.music"/>
     </div>
-<!--    <div ref="stories" class="page-section">-->
-<!--      <StoriesPage :key="componentKeys.stories"/>-->
-<!--    </div>-->
+    <!--    <div ref="stories" class="page-section">-->
+    <!--      <StoriesPage :key="componentKeys.stories"/>-->
+    <!--    </div>-->
     <div ref="contact" class="page-section">
       <ContactPage :key="componentKeys.contact"/>
     </div>
 
-
-
-<!--    <div ref="thankYou" class="page-section">-->
-<!--      <ThankYouPage :key="componentKeys.thankYou"/>-->
-<!--    </div>-->
-<!--    <div ref="charity" class="page-section">-->
-<!--      <CharityPage :key="componentKeys.charity"/>-->
-<!--    </div>-->
-
+    <!--    <div ref="thankYou" class="page-section">-->
+    <!--      <ThankYouPage :key="componentKeys.thankYou"/>-->
+    <!--    </div>-->
+    <!--    <div ref="charity" class="page-section">-->
+    <!--      <CharityPage :key="componentKeys.charity"/>-->
+    <!--    </div>-->
 
     <!--    <RunningPage />-->
 
     <footer>
-      <div class="parallax" >
+      <div class="parallax">
         <div style=" justify-content: center; display: flex">
           <div style="  display: flex;
                   justify-content: center; flex-direction: column">
             <nav class="footer-links">
               <a href="#" class="footer-link-txt"
-                 @click.prevent="scrollToTop()">Welcome</a>
+                 @click.prevent="scrollToTop()">{{loca.welcome}}</a>
               <a href="#" class="footer-link-txt"
-                 @click.prevent="scrollToComponent('about')">About Me</a>
+                 @click.prevent="scrollToComponent('about')">{{loca.about}}</a>
               <a href="#" class="footer-link-txt"
-                 @click.prevent="scrollToComponent('music')">Music</a>
+                 @click.prevent="scrollToComponent('music')">{{loca.music}}</a>
               <a href="#" class="footer-link-txt"
-                 @click.prevent="scrollToComponent('stories')">Stories</a>
+                 @click.prevent="scrollToComponent('stories')">{{loca.stories}}</a>
               <a href="#" class="footer-link-txt"
-                 @click.prevent="scrollToComponent('contact')">Contact</a>
+                 @click.prevent="scrollToComponent('contact')">{{loca.contact}}</a>
             </nav>
-            <span class="footer-txt">© 2024 Ismayilova Jale. All rights reserved.</span></div>
+            <span class="footer-txt">{{loca.copyright}}</span></div>
         </div>
       </div>
     </footer>
@@ -162,13 +160,14 @@
 
 <script>
 
-
+import {mapActions, mapState} from 'vuex';
 import MainHeader from "@/components/MainHeader";
 // import NavPage from "@/components/navPage";
 import AboutPage from "@/components/AboutSection";
 import MusicPage from "@/components/MusicSection";
 // import StoriesPage from "@/components/StoriesSection.vue";
 import ContactPage from "@/components/ContactSection.vue";
+import LangContainer from "@/UI/LangContainer";
 
 
 // import ThankYouPage from "@/components/ThankYouSection.vue";
@@ -178,6 +177,7 @@ import ContactPage from "@/components/ContactSection.vue";
 export default {
   name: "MainPage",
   components: {
+    LangContainer,
     // MainFooter,
     // CharityPage,
     // ThankYouPage,
@@ -202,11 +202,13 @@ export default {
         // charity: 0
       },
 
-
-
-        isMenuOpen: false
+      isMenuOpen: false
 
     }
+  },
+  computed: {
+    ...mapState(['loca']),
+
   },
   methods: {
     toggleMenu() {
@@ -389,13 +391,16 @@ export default {
 
 .navTxt {
   /*font-size: 48px; big desktop*/
-  font-size: 40px;
-  font-family: 'Tangerine', cursive;
+  font-size: 30px;
+  font-family: 'Playfair Display', cursive;
+  /*font-family: 'Tangerine', cursive;*/
   width: 100%;
-  display: block;
+  display: block;font-style: italic;
   /*margin: 60px 0; big desktop*/
   margin: 36px 0
 }
+
+
 
 /*  footer  */
 
@@ -477,7 +482,7 @@ footer {
 }
 
 .footer-links {
-  padding: 0 10px 20px 10px ;
+  padding: 0 10px 20px 10px;
   font-size: 22px;
   display: flex;
   justify-content: center;
@@ -490,26 +495,27 @@ footer {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
 }
 
 /* 625px and down) */
 @media only screen and (max-width: 625px) {
-  .footer-links{
+  .footer-links {
     font-size: 20px;
     flex-wrap: wrap;
   }
-  .parallax{
-    padding: 30px 0 ;
+
+  .parallax {
+    padding: 30px 0;
   }
 }
 
 
 /* Extra small devices (phones, 945px and down) */
 @media only screen and (max-width: 945px) {
-  .parallax{
+  .parallax {
     background-attachment: initial;
   }
 }
