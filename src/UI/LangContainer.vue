@@ -1,8 +1,6 @@
 <template>
-  <div class="container header-container"
-  style="    padding: 0 50px;
-    display: flex;
-    justify-content: flex-end;">
+  <div  data-cursor-hover class="container header-container"
+  style=" display: flex;  justify-content: flex-end;">
     <div class="header">
       <Transition name="scale-lang">
         <div class="flags-container" :class="{scaleAnimation: isDropped}" @click="isDropped = !isDropped" >

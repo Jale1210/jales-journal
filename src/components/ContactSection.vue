@@ -49,7 +49,7 @@
         <div class="icons">
           <ul>
             <li>
-              <a class="envelope" href="#">
+              <a  data-cursor-hover class="envelope" href="#">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -64,7 +64,7 @@
             </li>
 
             <li>
-              <a class="instagram" href="#">
+              <a  data-cursor-hover class="instagram" href="#">
                 <span></span>
                 <span></span>
                 <span></span>

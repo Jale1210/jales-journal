@@ -8,8 +8,10 @@ h1{
 .nav-mobile {
     left: 0;
     top: 0px;
-    padding: 20px 70px;
-    width: calc(100% - 140px);
+    padding: 10px 50px;
+    width: calc(100% - 100px);
+    /*padding: 20px 70px;*/
+    /*width: calc(100% - 140px);*/
     justify-content: space-between;
     display: flex;
     position: fixed;

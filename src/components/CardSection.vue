@@ -7,27 +7,21 @@
           <h2 class="heading">{{ card.title }}</h2>
           <p class="data-content">{{ card.content }}</p>
 
-
-            <router-link v-if="index == '0' " to="/notes">
+            <router-link  data-cursor-hover v-if="index == '0' " to="/notes">
               <ReadButton :readMore="readMore" />
             </router-link>
 
-          <router-link v-if="index == 1 "   to="/top">
+          <router-link data-cursor-hover v-if="index == 1 "   to="/top">
             <ReadButton :readMore="readMore" />
           </router-link>
 
-          <router-link v-if="index == 2 "  to="">
+          <router-link  data-cursor-hover v-if="index == 2 "  to="">
             <ReadButton :readMore="readMore" />
           </router-link>
-
-<!--          <router-link v-if="index == 3 "  to="">-->
-<!--            <ReadButton/>-->
-<!--          </router-link>-->
 
         </div>
       </div>
     </main>
-
 
   </div>
 </template>
@@ -41,7 +35,6 @@ export default {
   components: {ReadButton},
   data() {
     return {
-
       readMore: "Read more",
 
       cards: [

@@ -5,10 +5,10 @@
       <!--       show on mobile   -->
       <div class="nav-mobile show-mobile ">
         <router-link  to="/">
-        <img class="main-logo" style="width: 50px" src="../assets/logo.png">
+          <img class="main-logo" style="width: 120px;" src="../assets/../assets/J5.png">
+<!--        <img class="main-logo" style="width: 50px" src="../assets/logo.png">-->
         </router-link>
       </div>
-
 
 
       <div id="sidemenu">
@@ -93,7 +93,7 @@
         <!-- Navigation Menu -->
         <div class="frostedGlass">
           <!--            :class="{ 'menu-open': isMenuOpen }" -->
-          <LangContainer/>
+          <LangContainer style=" padding: 0 50px;"/>
 
           <nav class="nav">
             <a data-cursor-hover class="navTxt">{{ loca.welcome }}</a>
@@ -377,7 +377,6 @@ export default {
 .navTxt {
   font-size: 30px;
   font-family: 'Playfair Display', cursive;
-  /*font-family: 'Tangerine', cursive;*/
   width: 100%;
   display: block;font-style: italic;
   margin: 36px 0
