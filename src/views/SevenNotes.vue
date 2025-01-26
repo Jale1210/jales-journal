@@ -562,13 +562,12 @@ li {
   }
 
   .notes-page  {
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 100vw;
-    height: 100vh;
-    background: url("../assets/roses-bg-mobile.jpg") no-repeat center center;
+background: none;
   }
 
+  #app{
+    background: url('../assets/roses-bg.jpg') no-repeat center center fixed;
+  }
 
   #sidemenu
   {
