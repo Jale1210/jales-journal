@@ -568,7 +568,7 @@ li {
     overflow-x: hidden;
     overflow-y: auto;
     width: 100vw;
-     height: 100vh;
+     height: calc(100vh + 50px);
     background: url("../assets/roses-bg-mobile.jpg") no-repeat center center ;
   }
 
