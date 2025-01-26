@@ -561,7 +561,7 @@ li {
     display: flex;
   }
 
-  .notes-page: {
+  .notes-page  {
     content: '';
     position: fixed; /* Keeps the background in place */
     top: 0;
