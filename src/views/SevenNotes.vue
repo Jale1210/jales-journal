@@ -3,10 +3,18 @@
 
     <!--       mobile version -->
     <div class="nav-mobile show-mobile ">
-      <router-link  to="/">
+      <router-link to="/">
         <img class="main-logo" style="width: 120px;" src="../assets/../assets/J5.png">
       </router-link>
     </div>
+
+<!--    <LangContainer class="show-mobile" style="display: block;-->
+<!--right: 100px;-->
+<!--    top: 20px;-->
+
+<!--    position: fixed;-->
+<!--    z-index: 100;-->
+<!--    cursor: pointer;" />-->
 
     <div id="sidemenu">
       <button class="sidemenu__btn" v-on:click="isMenuOpen=!isMenuOpen"
@@ -50,10 +58,10 @@
       </transition>
     </div>
 
-<!--    mobile version end-->
+    <!--    mobile version end-->
 
     <!-- Header Section -->
-    <header class="header">
+    <header class="header show-desktop">
       <router-link to="/" data-cursor-hover>
         <img class="main-logo" src="../assets/J5.png" alt="Jale's Journal Logo"/>
       </router-link>
@@ -69,7 +77,6 @@
             loca.contact
           }}</a>
       </nav>
-
 
 
       <LangContainer/>
@@ -92,12 +99,12 @@
         <span class="elegant-text">Почему До-Ре-Ми?</span>
 
         <div>
-          <span class="description">
+          <span class="description justify">
             Однажды Гвидо, чтобы облегчить заучивание незнакомых мелодий для песнопений, придумал систему сольмизации на основе молитвы к Иоанну Крестителю:
           </span>
 
           <div class="listContainer">
-            <ul class="description"  >
+            <ul class="description">
               <li>
                 UT queant laxis
               </li>
@@ -125,7 +132,7 @@
 
           </div>
 
-          <span class="description">
+          <span class="description justify">
             Перевод с латинского:
            "Чтобы слуги твои голосами своими смогли воспеть чудные деяния твои, очисти грех с наших порочных уст, о, Святой Иоанн".
             <br/>
@@ -136,32 +143,32 @@
         <span class="elegant-text">Что означают названия нот?</span>
 
         <div>
-          <span class="description block"  >
+          <span class="description block">
             Каждое название имеет латинский корень и свой смысл:
           </span>
 
           <div class="listContainer">
-            <ul class="description"  >
+            <ul class="description">
               <li>
-                <a class="description">До – Dominus (Господь)</a>
+                <a class="description">До – Dominus <br/>(Господь)</a>
               </li>
               <li>
-                <a class="description">Ре – Rerum (Материя)</a>
+                <a class="description">Ре – Rerum <br/>(Материя)</a>
               </li>
               <li>
-                <a class="description">Ми – Miraculum (Чудо)</a>
+                <a class="description">Ми – Miraculum <br/>(Чудо)</a>
               </li>
               <li>
                 <a class="description">Фа – Familias Planetarium <br/>(Семья планет, то есть Солнечная система)</a>
               </li>
               <li>
-                <a class="description">Соль – Solis (Солнце)</a>
+                <a class="description">Соль – Solis <br/>(Солнце)</a>
               </li>
               <li>
-                <a class="description">Ля – Lactea Via (Млечный путь)</a>
+                <a class="description">Ля – Lactea Via <br/>(Млечный путь)</a>
               </li>
               <li>
-                <a class="description">Си – Siderae (Небеса)</a>
+                <a class="description">Си – Siderae <br/>(Небеса)</a>
               </li>
             </ul>
 
@@ -253,11 +260,35 @@ export default {
         }
       });
     },
+
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+
   }
 };
 </script>
 
 <style scoped>
+
+.nav-mobile{
+
+  padding: 20px 50px;
+  text-align: center;
+  color: #f2cd9d;  background:none;
+}
+
+.nav-mobile:before{
+  background-color: rgba(16, 76, 56, 0.9);
+
+  box-shadow: none;
+}
+
+#sidemenu nav{
+  background-color: rgba(16, 76, 56, 1);;
+}
+
+
 ol {
   list-style: symbols(cyclic "♪");
 }
@@ -276,11 +307,15 @@ ul {
 
 li {
   text-align: left;
-  padding : 0 5px
+  padding: 0 5px
 }
 
-.block{
-  display: block!important;
+.justify {
+  text-align: justify;
+}
+
+.block {
+  display: block !important;
 }
 
 /******** General Page Styling ********/
@@ -337,7 +372,14 @@ li {
 }
 
 .hero-content {
-  background: rgba(242, 205, 157, 0.85);
+  background: rgba(242, 205, 157, 0.9);
+  /*padding: 30px;*/
+  margin: 20px;
+  color: #333;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+
+
   padding: 30px 70px;
   width: calc(100% - 260px);
   border-radius: 20px;
@@ -345,19 +387,24 @@ li {
 }
 
 .elegant-text {
+  font-size: 28px;
+  /*margin-bottom: 20px;*/
+  color: #3b2b20;
+
+  padding: 20px 0;
   display: block;
   text-align: center;
   font-weight: 500;
-  font-size: 32px;
+  /*font-size: 32px;*/
   font-style: italic;
-  color: #333;
+  /*color: #333;*/
 }
 
 .description {
   display: flex;
   font-family: cursive;
   gap: 18px;
-  align-items: center;
+  /*align-items: center;*/
   font-size: 20px;
   color: #333;
 }
@@ -402,16 +449,48 @@ li {
 }
 
 .gvidoImg {
+  float: right;
+  margin: 10px 0 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
   width: 200px;
+  height: 266px;
   border-radius: 50%;
   border: 3px solid #333;
   padding: 10px
 }
 
 .hymnImg {
+  margin: 10px 0 10px 20px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
   width: 500px;
   border: 3px solid #333;
   padding: 10px
+}
+
+.notesImg {
+  margin: 10px 0 10px 20px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  width: 500px;
+  border: 3px solid rgb(51, 51, 51);
+  padding: 10px;
+}
+
+.handImg {
+  margin: 10px 0 10px 20px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+
+  border-radius: 50%;
+  border: 3px solid rgb(51, 51, 51);
+  padding: 10px;
+  width: 200px;
+  height: 300px;
 }
 
 .sectionContainer {
@@ -420,22 +499,10 @@ li {
   padding: 10px 0px;
 }
 
-.notesImg {
-  width: 500px;
-  border: 3px solid rgb(51, 51, 51);
-  padding: 10px;
-}
-
-.handImg {
-  border-radius: 50%;
-  border: 3px solid rgb(51, 51, 51);
-  padding: 10px;
-  width: 200px;
-}
-
 .listContainer {
   display: flex;
-  padding: 10px 0;gap: 10px;
+  padding: 10px 0;
+  gap: 10px;
   justify-content: space-between;
   align-items: center
 }
@@ -447,25 +514,93 @@ li {
 
 /* less than 1225 */
 @media only screen and (max-width: 1225px) {
-  .gvidoImg  {
-    width: 230px;
+  .hymnImg, .notesImg {
+    width: 330px;
   }
-.listContainer{
-  flex-direction: column;
-  justify-content: center;
+  ul {
+    /*align-items: center;*/
+  }
+
+  li {
+    /*text-align: center;*/
+  }
 }
-  ul{
-    align-items: center;
-  }
-  li{
+
+
+/* less than 950 */
+@media only screen and (max-width: 950px) {
+  .elegant-text {
     text-align: center;
   }
+
+  .description{
+    font-size: 18px;
+  }
+
+  a > .description{
+    align-items: initial!important;
+    text-align: left!important;
+  }
+
+  .sectionContainer> span {
+    text-align: center;
+  }
+  .justify{
+    text-align: center;
+  }
+
+  .sectionContainer {
+    flex-direction: column;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+
+  .show-mobile{
+    display: flex;
+  }
+
+  #sidemenu
+  {
+    display: flex!important;
+  }
+  .main-logo{
+    width: 130px!important;
+
+  }
+
+  .hero-content{
+    margin-top:130px;
+  }
+
+  .hero {
+    margin: 30px 0;
+  }
+
+  .gvidoImg, .hymnImg , .notesImg ,   .handImg {
+    margin:auto;
+  }
+
 }
 
-
-/* less than 1225 */
-@media only screen and (max-width: 1225px) {
-
+/* less than 850 */
+@media only screen and (max-width: 850px) {
+  .listContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  ul{
+    width: 100%;
+  }
 }
+
+/* less than 600 */
+@media only screen and (max-width: 600px) {
+ .hymnImg, .notesImg{
+   width: 100%;
+ }
+}
+
 
 </style>
