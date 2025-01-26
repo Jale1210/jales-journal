@@ -561,7 +561,7 @@ li {
     display: flex;
   }
 
-  .notes-page::before {
+  .notes-page{
     content: '';
     position: fixed; /* Fix the image in place */
     top: 50%; /* Center the background vertically */
