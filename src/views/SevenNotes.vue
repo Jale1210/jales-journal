@@ -571,7 +571,7 @@ li {
 
     /*background-size: cover; !* Ensures the background covers the viewport *!*/
     transform-origin: center; /* Ensures the rotation happens from the center */
-    z-index: -1; /* Pushes the background behind the content */
+
 
     background: url("../assets/roses-bg-mobile.jpg") no-repeat center center fixed;
   }
