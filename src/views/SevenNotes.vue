@@ -236,6 +236,9 @@ export default {
     }
   },
   mounted() {
+    if (window.innerWidth <= 768) {  // For mobile devices
+      document.querySelector('.notes-page').style.height = `${window.innerHeight}px`;
+    }
     // this.handleScroll = this.onScroll.bind(this);
     // window.addEventListener('scroll', this.handleScroll);
     this.scrollToTop()
@@ -565,7 +568,7 @@ li {
     overflow-x: hidden;
     overflow-y: auto;
     width: 100vw;
-    min-height: 100vh;
+     height: 100vh;
     background: url("../assets/roses-bg-mobile.jpg") no-repeat center center fixed;
   }
 
