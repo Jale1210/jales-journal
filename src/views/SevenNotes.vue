@@ -562,16 +562,15 @@ li {
   }
 
   .notes-page{
-    content: '';
     position: fixed; /* Fix the image in place */
     top: 50%; /* Center the background vertically */
     left: 50%; /* Center the background horizontally */
     /*width: 150vh; !* Cover the screen even after rotation *!*/
     /*height: 150vw; !* Adjust width/height to ensure full coverage *!*/
-    background: url('../assets/roses-bg.jpg') ; /* Replace with your image path */
+    /* Replace with your image path */
     /*  background-size: cover; Make sure it scales to cover the area */
     transform: rotate(90deg) translate(-50%, -50%); /* Rotate and center the image */
-    z-index: -1; /* Place it behind other content */
+    /*z-index: -1;  Place it behind other content */
   }
 
 
