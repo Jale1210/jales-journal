@@ -561,17 +561,17 @@ li {
     display: flex;
   }
 
-  .notes-page  {
-    /*content: '';*/
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 100vw;*/
-    /*height: 100vh;*/
-    background: url('../assets/roses-bg.jpg') no-repeat center center;
-    /*background-size: cover;*/
-    transform: rotate(90deg);
-    z-index: -1; /* Ensures it stays behind content */
+  .notes-page::before {
+    content: '';
+    position: fixed; /* Fix the image in place */
+    top: 50%; /* Center the background vertically */
+    left: 50%; /* Center the background horizontally */
+    width: 150vh; /* Cover the screen even after rotation */
+    height: 150vw; /* Adjust width/height to ensure full coverage */
+    background: url('../assets/roses-bg.jpg') no-repeat center center; /* Replace with your image path */
+    background-size: cover; /* Make sure it scales to cover the area */
+    transform: rotate(90deg) translate(-50%, -50%); /* Rotate and center the image */
+    z-index: -1; /* Place it behind other content */
   }
 
 
