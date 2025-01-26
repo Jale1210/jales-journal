@@ -562,8 +562,10 @@ li {
   }
 
   .notes-page{
-    background-size: auto 100%;
+    background-size: auto;
   }
+
+
 
   #sidemenu
   {
