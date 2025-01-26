@@ -562,14 +562,8 @@ li {
   }
 
   .notes-page  {
-    overflow-x: hidden;
-    width: 100vw; /* Covers the full viewport width */
-    height: 100vh; /* Covers the full viewport height */
-
-    /*background-size: cover; !* Ensures the background covers the viewport *!*/
-    transform-origin: center; /* Ensures the rotation happens from the center */
-
-
+    width: 100vw;
+    height: 100vh;
     background: url("../assets/roses-bg-mobile.jpg") no-repeat center center fixed;
   }
 
