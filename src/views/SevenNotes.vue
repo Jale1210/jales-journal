@@ -561,6 +561,10 @@ li {
     display: flex;
   }
 
+  .notes-page{
+    background-size: auto 100%;
+  }
+
   #sidemenu
   {
     display: flex!important;
