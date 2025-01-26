@@ -561,7 +561,18 @@ li {
     display: flex;
   }
 
-  .notes-page{
+  .notes-page::before {
+    content: '';
+    position: fixed; /* Keeps the background in place */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Covers the full viewport width */
+    height: 100vh; /* Covers the full viewport height */
+
+    background-size: cover; /* Ensures the background covers the viewport */
+    transform-origin: center; /* Ensures the rotation happens from the center */
+    z-index: -1; /* Pushes the background behind the content */
+
     background: url("../assets/roses-bg-mobile.jpg") no-repeat center center fixed;
   }
 
