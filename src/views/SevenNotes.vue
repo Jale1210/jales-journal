@@ -562,10 +562,7 @@ li {
   }
 
   .notes-page  {
-    content: '';
-    position: fixed; /* Keeps the background in place */
-    top: 0;
-    left: 0;
+    overflow-x: hidden;
     width: 100vw; /* Covers the full viewport width */
     height: 100vh; /* Covers the full viewport height */
 
