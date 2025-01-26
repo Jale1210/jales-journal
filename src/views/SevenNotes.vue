@@ -569,7 +569,7 @@ li {
     overflow-y: auto;
     width: 100vw;
      height: 100vh;
-    background: url("../assets/roses-bg-mobile.jpg") no-repeat center center fixed;
+    background: url("../assets/roses-bg-mobile.jpg") no-repeat center center ;
   }
 
 
