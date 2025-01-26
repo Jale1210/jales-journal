@@ -561,11 +561,11 @@ li {
     display: flex;
   }
 
-  .notes-page::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
+  .notes-page  {
+    /*content: '';*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
     /*width: 100vw;*/
     /*height: 100vh;*/
     background: url('../assets/roses-bg.jpg') no-repeat center center;
