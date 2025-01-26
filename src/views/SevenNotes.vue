@@ -569,7 +569,7 @@ li {
     width: 100vw;
     height: 100vh;
     background: url('../assets/roses-bg.jpg') no-repeat center center;
-    background-size: cover;
+    /*background-size: cover;*/
     transform: rotate(90deg);
     z-index: -1; /* Ensures it stays behind content */
   }
