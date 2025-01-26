@@ -561,12 +561,18 @@ li {
     display: flex;
   }
 
-  .notes-page{
-    background: url('../assets/roses-bg.jpg') no-repeat center center fixed;
-    background-size: 100% auto; /* Width covers the screen, height scales */
-    min-height: 100vh;
+  .notes-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/roses-bg.jpg') no-repeat center center;
+    background-size: cover;
+    transform: rotate(90deg);
+    z-index: -1; /* Ensures it stays behind content */
   }
-
 
 
   #sidemenu
