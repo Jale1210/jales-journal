@@ -562,7 +562,9 @@ li {
   }
 
   .notes-page{
-    background-size: auto;
+    background: url('../assets/roses-bg.jpg') no-repeat center center fixed;
+    background-size: 100% auto; /* Width covers the screen, height scales */
+    min-height: 100vh;
   }
 
 
