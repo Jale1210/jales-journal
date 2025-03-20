@@ -326,7 +326,7 @@ li {
   font-family: 'Playfair Display', serif;
   background: url('../assets/roses-bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  min-height: 100vh;
+   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -565,11 +565,13 @@ li {
   }
 
   .notes-page  {
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 100vw;
-     height: calc(100vh + 50px);
-    background: url("../assets/roses-bg-mobile.jpg") no-repeat center center ;
+    /*overflow-x: hidden;
+    //overflow-y: auto;
+    //width: 100vw;
+    height: calc(100vh + 50px);
+     no-repeat center center
+    */
+    background: url("../assets/roses-bg-mobile.jpg");
   }
 
 

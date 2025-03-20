@@ -8,7 +8,10 @@ const az = {
 
     //header
     'welcomeTxt': 'Bloquma xoş gəlmisiniz!',
-    'welcomeDesc': 'Sizin burda olmağınız məni çox sevindirir! Bu məkan mənim maraqlarımın, ehtiraslarımın və təcrübələrimin bir əksidir və bunu sizinlə bölüşməkdən məmnunam. Bu səyahəti birlikdə gözəl edəcəyimizə ümid edirəm — gəlin, bunu xüsusi bir şeyə çevirək!',
+    'welcomeDesc': 'Burada olduğunuz üçün çox sevinirəm. ' +
+                    'Bu bloq mənim düşüncələrimi, hisslərimi və müşahidələrimi bölüşdüyüm bir məkandır. ' +
+                    'Bəzən suallar verirəm, bəzən cavablar axtarıram, bəzən isə sadəcə düşüncələrimi yazıya tökürəm. ' +
+                    'Ümid edirəm ki, burada özünüzə yaxın nələrsə tapacaq və birlikdə maraqlı söhbətlər edəcəyik.',
     'sincerelyYours': '-Hörmətlə, Jalə',
 
 //navigation
@@ -19,14 +22,14 @@ const az = {
     'contact': 'Əlaqə',
 
 //about
-    'aboutDesc': 'Mənim adım Cale və mən musiqi, hekayələr, poeziya, mifologiya və fəlsəfə ilə maraqlanan bir frontend developerəm.\n' +
-        'Uzun müddətdir ki, insanların güc, enerji və motivasiya tapa biləcəkləri bir məkan yaratmaq istəyirdim.\n' +
-        'Bu saytı yaradarkən mən insanların özlərini rahat hiss edə biləcəkləri isti bir ev mühiti yaratmağa çalışdım — reallıqdan qaçmaq və ən möhtəşəm şeyləri başarmaq üçün güc toplamaq üçün bir məkan.\n' +
-        'İnanıram ki, sizi özünüzün ən yaxşı versiyasına çevirmək üçün ruhlandıra bilərəm.',
+    'aboutDesc': 'Mənim adım Jale və mən musiqini, hekayələri, poeziyanı, mifologiyanı və fəlsəfəni çox sevən frontend developerəm. ' +
+                'Uzun müddətdir ki, insanların güc, enerji və motivasiya tapa biləcəyi bir məkan yaratmaq istəyirdim. ' +
+                'Bu saytı quranda istəyim elə bir yer yaratmaq idi ki, insan özünü rahat hiss etsin—reallıqdan bir az uzaqlaşıb, güc toplaya bilsin.' +
+                'Ümid edirəm ki, burada sizə ilham verən nələrsə tapacaqsınız.',
 
 //music
-    'title-1': 'Yeddi musiqi notu',
-    'desc-1': 'Kim bu yeddi nota ad verib?',
+    'titleOne': 'Yeddi musiqi notu',
+    'descOne': 'Kim bu yeddi nota ad verib?',
     'readMore': 'Daha çox oxu',
     'legend': 'Bir rəvayətə görə: Əgər bir mahnı başınızdan çıxmırsa, sizin ruh yoldaşınız həmin mahnını həmin anda oxuyur.',
 
@@ -34,12 +37,14 @@ const az = {
 
 //contact
     'contactTitle': 'Əlaqə saxlayın',
-    'contactDesc': 'Özünüzü evdəki kimi hiss edin: araşdırın, fikirlərinizi bölüşün və rahat olun. Mən hər bir detalı sizin üçün buraya əlavə etdim, ümid edirəm ki, bu sizi ilhamlandıracaq. Zamanla hekayələr və düşüncələr əlavə edəcəyəm — sadəcə sevdiyiniz hekayələri göndərərək mənə kömək edə bilərsiniz.\n' +
-        'P.S. Burda mənimlə olduğunuz üçün təşəkkür edirəm. Xahiş edirəm, özünüzə yaxşı baxın.',
+    'contactDesc': 'Özünüzü rahat hiss edin, düşüncələrinizi paylaşın və buranı öz eviniz kimi qəbul edin. ' +
+                    'Hər detalı sevgi ilə əlavə etmişəm, ümid edirəm ki, sizə ilham verəcək. ' +
+                    'Zamanla yeni hekayələr və fikirlər bölüşəcəyəm—əgər istəsəniz, sevdiyiniz hekayələri mənimlə paylaşaraq bu məkanı daha da zənginləşdirə bilərsiniz.' +
+                    'P.S. Burada olduğunuz üçün minnətdaram. Özünüzə yaxşı baxın. ',
     'socialLinks': 'Sosial Şəbəkələr',
 
     //copyrights
-    'copyright': '© 2024 İsmayılova Jalə. Bütün hüquqlar qorunur.'
+    'copyright': '© 2025 İsmayılova Jalə. Bütün hüquqlar qorunur.'
 
 }
 

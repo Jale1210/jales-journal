@@ -49,7 +49,8 @@
         <div class="icons">
           <ul>
             <li>
-              <a  data-cursor-hover class="envelope" href="#">
+              <a href="mailto:jales_journal@mail.ru" target="_blank"
+                  data-cursor-hover class="envelope">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -57,14 +58,16 @@
                 <i class="fa fa-envelope" aria-hidden="true"></i>
               </a>
 
-              <span class="description" style="padding-top: 20px">
-                  jales_journal@mail.ru
-                </span>
+              <a  href="mailto:jales_journal@mail.ru" target="_blank"
+                  data-cursor-hover class="description" style="font-size:18px">
+                jales_journal@mail.ru
+              </a>
 
             </li>
 
             <li>
-              <a  data-cursor-hover class="instagram" href="#">
+              <a href="https://www.instagram.com/jales_journal" target="_blank"
+                  data-cursor-hover class="instagram">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -72,9 +75,10 @@
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
 
-              <span class="description" style="padding-top: 20px">
+              <a  href="https://www.instagram.com/jales_journal" target="_blank"
+                  data-cursor-hover class="description" style="font-size:18px">
                   jales_journal
-                </span>
+              </a>
             </li>
 
           </ul>
@@ -154,7 +158,13 @@ export default {
   text-align: justify;
   letter-spacing: 1px;
   display: flex;
+  margin: auto;
   padding: 20px 0
+}
+
+.description:hover {
+
+  color: #f8dcbf;
 }
 
 .film-container {
@@ -217,7 +227,7 @@ ul li a {
   display: block;
   position: relative;
   width: 100px;
-  height: 100px;
+  //height: 100px;
   line-height: 100px;
   font-size: 40px;
   text-align: center;

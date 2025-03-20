@@ -4,11 +4,11 @@
     <main class="page-content">
       <div class="d_card" v-for="(card, index) in cards" :key="index" :style="{ '--bg-image': `url(${card.image})` }">
         <div class="content">
-          <h2 class="heading">{{ card.title }}</h2>
-          <p class="data-content">{{ card.content }}</p>
+          <h2 class="heading">{{ loca.titleOne }}</h2>
+          <p class="data-content">{{ loca.descOne }}</p>
 
             <router-link  data-cursor-hover v-if="index == '0' " to="/notes">
-              <ReadButton :readMore="readMore" />
+              <ReadButton :readMore="loca.readMore" />
             </router-link>
 
           <router-link data-cursor-hover v-if="index == 1 "   to="/top">
@@ -27,19 +27,25 @@
 </template>
 
 <script>
-
+import {mapActions, mapState} from 'vuex';
 import ReadButton from "@/UI/ReadButton";
 
 export default {
   name: "CardSection",
   components: {ReadButton},
+  computed: {
+    ...mapState(['loca']),
+
+  },
+  mounted() {
+    console.log(111 + this.loca.titleOne);
+  },
   data() {
     return {
       readMore: "Read more",
 
       cards: [
         {
-          title: 'Seven Musical Notes',
           content: 'Who breathed names into the seven notes?',
           image: '',
         },

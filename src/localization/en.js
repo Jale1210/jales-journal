@@ -28,8 +28,8 @@ const en = {
     //
 
     //music
-    'title-1': 'Seven Musical Notes',
-    'desc-1': 'Who breathed names into the seven notes?',
+    'titleOne': 'Seven Musical Notes',
+    'descOne': 'Who breathed names into the seven notes?',
     'readMore': 'Read more',
     'legend': 'According to a legend: When a song gets stuck in your head, your soulmate is singing that very song at the same moment.',
     //
