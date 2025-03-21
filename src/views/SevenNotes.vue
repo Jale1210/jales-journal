@@ -90,7 +90,8 @@
         <div class="sectionContainer">
           <img class="gvidoImg" src="../assets/music-img/gvido.jpg"/>
 
-          <span class="description textRight">
+          <span class="main-txt">
+<!--         description textRight   -->
               Изобретателем всемирно известной нотной грамоты считается монах Гвидо Аретинский (Гвидо д'Ареццо), живший в 991–1060 годах. Как и многое прекрасное того времени, нотная грамота зародилась близ Флоренции, в небольшом городке Тосканы – Аретцо.
               Сегодня во Флоренции установлен памятник этому монаху. <br/>
               Гвидо был учителем музыки и хорового церковного пения при храмах. Он много путешествовал по Италии, встречался с Папой Иоанном XIX и трудился над созданием музыкальной грамоты, которая стала бы общепринятой.</span>
@@ -99,7 +100,8 @@
         <span class="elegant-text">Почему До-Ре-Ми?</span>
 
         <div>
-          <span class="description justify">
+          <span class="main-txt">
+<!--        description justify    -->
             Однажды Гвидо, чтобы облегчить заучивание незнакомых мелодий для песнопений, придумал систему сольмизации на основе молитвы к Иоанну Крестителю:
           </span>
 
@@ -132,7 +134,8 @@
 
           </div>
 
-          <span class="description justify">
+          <span class="main-txt"  >
+<!--         class="description justify"    -->
             Перевод с латинского:
            "Чтобы слуги твои голосами своими смогли воспеть чудные деяния твои, очисти грех с наших порочных уст, о, Святой Иоанн".
             <br/>
@@ -143,7 +146,8 @@
         <span class="elegant-text">Что означают названия нот?</span>
 
         <div>
-          <span class="description block">
+          <span class="main-txt" >
+<!--     class="description block"       -->
             Каждое название имеет латинский корень и свой смысл:
           </span>
 
@@ -180,7 +184,8 @@
         <span class="elegant-text">Вклад Гвидо в музыку</span>
 
         <div class="sectionContainer">
-          <span class="description textLeft">
+          <span class="main-txt">
+<!--        class="description textLeft"     -->
             Гвидо Аретинский также внёс огромный вклад в развитие нотной записи.
             <br/>Во время выступлений хора он использовал свою левую руку: сгибая суставы пальцев, он указывал, какую ноту нужно взять.
            <br/> Позже он начал отмечать звуки символами (от латинского nota – знак).
@@ -236,9 +241,9 @@ export default {
     }
   },
   mounted() {
-    if (window.innerWidth <= 768) {  // For mobile devices
-      document.querySelector('.notes-page').style.height = `${window.innerHeight}px`;
-    }
+    // if (window.innerWidth <= 768) {  // For mobile devices
+    //   document.querySelector('.notes-page').style.height = `${window.innerHeight}px`;
+    // }
     // this.handleScroll = this.onScroll.bind(this);
     // window.addEventListener('scroll', this.handleScroll);
     this.scrollToTop()
@@ -452,10 +457,9 @@ li {
 }
 
 .gvidoImg {
-  float: right;
-  margin: 10px 0 10px 20px;
+  /*float: right;
+   margin: 10px 0 10px 20px;*/
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
   width: 200px;
   height: 266px;
   border-radius: 50%;
@@ -465,9 +469,7 @@ li {
 
 .hymnImg {
   margin: 10px 0 10px 20px;
-
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
   width: 500px;
   border: 3px solid #333;
   padding: 10px
@@ -475,9 +477,7 @@ li {
 
 .notesImg {
   margin: 10px 0 10px 20px;
-
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
   width: 500px;
   border: 3px solid rgb(51, 51, 51);
   padding: 10px;
@@ -497,6 +497,7 @@ li {
 }
 
 .sectionContainer {
+  align-items: center;
   display: flex;
   gap: 20px;
   padding: 10px 0px;
@@ -571,7 +572,10 @@ li {
     height: calc(100vh + 50px);
      no-repeat center center
     */
-    background: url("../assets/roses-bg-mobile.jpg");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url("../assets/roses-bg-mobile.jpg") repeat;
   }
 
 
