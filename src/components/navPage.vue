@@ -3,7 +3,6 @@
     <img style="width: 150px; top:0 ;right: 0%" src="../assets/decorations/butterfly.png"/>fhdfgfdgfdg
     <nav class="nav">
 
-
       <a class="navTxt">Welcome</a>
       <a class="navTxt">About Me</a>
       <a class="navTxt">Music</a>

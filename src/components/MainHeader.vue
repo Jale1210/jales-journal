@@ -13,7 +13,6 @@
       <!--      color: #f8d3a5;-->
     </div>
 
-
     <div>
       <span class="main-txt">
      {{ loca.welcomeDesc }}

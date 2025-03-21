@@ -575,7 +575,7 @@ li {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  /*  background: url("../assets/roses-bg-mobile.jpg") repeat;*/
+    background: url("../assets/roses-bg-mobile.jpg") repeat-y;
   }
 
 
@@ -613,9 +613,13 @@ li {
     width: 100%;
   }
 }
+/* 625px and down) */
+@media only screen and (max-width: 625px) {
+  .footer-links {
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
 
-/* less than 600 */
-@media only screen and (max-width: 600px) {
  .hymnImg, .notesImg{
    width: 100%;
  }

@@ -103,7 +103,6 @@
     <!--      <img style="width:20%; left:-10%; position:absolute; bottom: 20%; z-index: 0"-->
     <!--           src="../assets/nirvana.png"/>-->
 
-
     <!--      <img src="../assets/linkin-park.png"-->
     <!--           style="position: absolute;width: 19%; left: -6%; bottom: -28%;"/>-->
     <!--    </div>-->
