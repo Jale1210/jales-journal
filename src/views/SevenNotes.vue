@@ -532,6 +532,7 @@ li {
 /* less than 950 */
 @media only screen and (max-width: 950px) {
   .elegant-text {
+    font-size: 22px;
     text-align: center;
   }
 
@@ -588,6 +589,7 @@ li {
   }
 
   .hero-content{
+    padding: 0px 30px;
     margin-top:130px;
   }
 
