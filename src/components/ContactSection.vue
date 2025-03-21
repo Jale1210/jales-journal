@@ -158,7 +158,7 @@ export default {
   text-align: justify;
   letter-spacing: 1px;
   display: flex;
-  margin: auto;
+  margin: auto 0;
   padding: 20px 0
 }
 

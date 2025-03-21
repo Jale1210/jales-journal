@@ -382,14 +382,12 @@ li {
 .hero-content {
   background: rgba(242, 205, 157, 0.9);
   /*padding: 30px;*/
-  margin: 20px;
+  margin: 20px 70px;
   color: #333;
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
-
-
   padding: 30px 70px;
-  width: calc(100% - 260px);
+  /*width: calc(100% - 260px);*/
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -547,7 +545,8 @@ li {
   }
 
   .sectionContainer> span {
-    text-align: center;
+    text-align: justify;
+    /*text-align: center;*/
   }
   .justify{
     text-align: center;
@@ -575,7 +574,7 @@ li {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("../assets/roses-bg-mobile.jpg") repeat;
+  /*  background: url("../assets/roses-bg-mobile.jpg") repeat;*/
   }
 
 
