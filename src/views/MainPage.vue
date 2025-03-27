@@ -6,8 +6,11 @@
       <div class="nav-mobile show-mobile ">
         <router-link  to="/">
           <img class="main-logo" style="width: 120px;" src="../assets/../assets/J5.png">
+
+
 <!--        <img class="main-logo" style="width: 50px" src="../assets/logo.png">-->
         </router-link>
+
       </div>
 
 
@@ -18,10 +21,19 @@
           <span class="mid"></span>
           <span class="bottom"></span>
         </button>
+
         <transition name="translateX">
           <nav v-show="isMenuOpen">
             <div class="sidemenu__wrapper">
               <ul class="sidemenu__list">
+
+                <div  data-cursor-hover class="container header-container"
+                      style="display: flex;   position: absolute;
+                            left: 50px; top: 30px; justify-content: flex-start;">
+                    <div class="lang-header">
+                <LangContainer style=" padding:0 "/>
+                </div>
+                </div>
 
                 <!--        <a href="#about"-->
                 <!--           @click.prevent="scrollToComponent('about')" class="navTxt">-->
@@ -93,7 +105,14 @@
         <!-- Navigation Menu -->
         <div class="frostedGlass">
           <!--            :class="{ 'menu-open': isMenuOpen }" -->
-          <LangContainer style=" padding: 0 50px;"/>
+
+          <div  data-cursor-hover class="container header-container"
+                style=" display: flex;  padding: 0 50px; justify-content: flex-end;">
+            <div class="lang-header">
+          <LangContainer/>
+<!--            style=""   -->
+            </div>
+          </div>
 
           <nav class="nav">
             <a data-cursor-hover class="navTxt">{{ loca.welcome }}</a>
@@ -287,6 +306,14 @@ export default {
 <style scoped>
 /* General styles */
 
+.lang-header{
+    box-sizing: border-box;
+    /*height: 42px;*/
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .flex {
   display: flex;

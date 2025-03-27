@@ -3,7 +3,7 @@
 
     <main class="page-content">
       <div class="d_card" v-for="(card, index) in cards" :key="index" :style="{ '--bg-image': `url(${card.image})` }">
-        <div class="content">
+       <div class="content">
           <h2 class="heading">{{ loca.titleOne }}</h2>
           <p class="data-content">{{ loca.descOne }}</p>
 

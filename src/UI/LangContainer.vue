@@ -1,7 +1,7 @@
 <template>
-  <div  data-cursor-hover class="container header-container"
-  style=" display: flex;  justify-content: flex-end;">
-    <div class="header">
+<!--  <div  data-cursor-hover class="container header-container"-->
+<!--  style=" display: flex;  justify-content: flex-end;">-->
+<!--    <div class="header">-->
       <Transition name="scale-lang">
         <div class="flags-container" :class="{scaleAnimation: isDropped}" @click="isDropped = !isDropped" >
           <ul class="list">
@@ -39,8 +39,8 @@
         </div>
       </Transition>
 
-    </div>
-  </div>
+<!--    </div>-->
+<!--  </div>-->
 </template>
 
 <script>
