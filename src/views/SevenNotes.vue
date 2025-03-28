@@ -576,6 +576,9 @@ li {
   }
 
   li {
+    /*text-align: center;*/
+  }
+  .sidemenu__item{
     text-align: center;
   }
 }
