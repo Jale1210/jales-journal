@@ -8,13 +8,13 @@
       </router-link>
     </div>
 
-<!--    <LangContainer class="show-mobile" style="display: block;-->
-<!--right: 100px;-->
-<!--    top: 20px;-->
+    <!--    <LangContainer class="show-mobile" style="display: block;-->
+    <!--right: 100px;-->
+    <!--    top: 20px;-->
 
-<!--    position: fixed;-->
-<!--    z-index: 100;-->
-<!--    cursor: pointer;" />-->
+    <!--    position: fixed;-->
+    <!--    z-index: 100;-->
+    <!--    cursor: pointer;" />-->
 
     <div id="sidemenu">
       <button class="sidemenu__btn" v-on:click="isMenuOpen=!isMenuOpen"
@@ -28,8 +28,8 @@
           <div class="sidemenu__wrapper">
             <ul class="sidemenu__list">
 
-              <div  data-cursor-hover class="container header-container"
-                    style="display: flex;   position: absolute;
+              <div data-cursor-hover class="container header-container"
+                   style="display: flex;   position: absolute;
                             left: 50px; top: 30px; justify-content: flex-start;">
                 <div class="lang-header">
                   <LangContainer style=" padding:0 "/>
@@ -78,21 +78,21 @@
 
       <nav class="nav">
         <a data-cursor-hover class="navTxt">{{ loca.welcome }}</a>
-        <a data-cursor-hover  href="/#about"
+        <a data-cursor-hover href="/#about"
 
            class="navTxt">{{ loca.about }}</a>
-<!--      @click.prevent=" scrollToComponent('about')"  -->
+        <!--      @click.prevent=" scrollToComponent('about')"  -->
 
-        <a data-cursor-hover href="/#music"  class="navTxt">{{ loca.music }}</a>
-<!--  @click.prevent="scrollToComponent('music')"      -->
-        <a data-cursor-hover href="/#stories"  class="navTxt">{{
+        <a data-cursor-hover href="/#music" class="navTxt">{{ loca.music }}</a>
+        <!--  @click.prevent="scrollToComponent('music')"      -->
+        <a data-cursor-hover href="/#stories" class="navTxt">{{
             loca.stories
           }}</a>
-<!--     @click.prevent="scrollToComponent('stories')"   -->
+        <!--     @click.prevent="scrollToComponent('stories')"   -->
         <a data-cursor-hover href="/#contact" class="navTxt">{{
             loca.contact
           }}</a>
-<!--       @click.prevent="scrollToComponent('contact')"   -->
+        <!--       @click.prevent="scrollToComponent('contact')"   -->
       </nav>
 
 
@@ -102,18 +102,18 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <span class="elegant-text textRight">{{music.inventor}}</span>
+        <span class="elegant-text textRight">{{ music.inventor }}</span>
 
         <div class="sectionContainer">
           <img class="gvidoImg" src="../assets/music-img/gvido.jpg"/>
 
           <span class="main-txt">
 <!--         description textRight   -->
-            {{music.inventorDesc}}
+            {{ music.inventorDesc }}
                </span>
         </div>
 
-        <span class="elegant-text"> {{music.doReMi}}</span>
+        <span class="elegant-text"> {{ music.doReMi }}</span>
 
         <div>
           <span class="main-txt">
@@ -122,27 +122,28 @@
           </span>
 
           <div class="listContainer">
-            <ul class="description">
+            <ul class="main-txt">
+              <!--            class="description"  -->
               <li>
-                UT queant laxis
+                <a class="main-txt" style="color: #333"> UT queant laxis</a>
               </li>
               <li>
-                REsonare fibris
+                <a class="main-txt" style="color: #333">REsonare fibris</a>
               </li>
               <li>
-                MIra gestorum
+                <a class="main-txt" style="color: #333">MIra gestorum</a>
               </li>
               <li>
-                FAmuli tuorum
+                <a class="main-txt" style="color: #333">FAmuli tuorum</a>
               </li>
               <li>
-                SOLve polluti
+                <a class="main-txt" style="color: #333">SOLve polluti</a>
               </li>
               <li>
-                LAbii reatum
+                <a class="main-txt" style="color: #333">LAbii reatum</a>
               </li>
               <li>
-                Sancte Ioannes
+                <a class="main-txt" style="color: #333">Sancte Ioannes</a>
               </li>
             </ul>
 
@@ -150,42 +151,43 @@
 
           </div>
 
-          <span class="main-txt"  >
+          <span class="main-txt">
 <!--         class="description justify"    -->
-           {{music.doReMiSecondDesc}}
+           {{ music.doReMiSecondDesc }}
           </span>
         </div>
 
         <span class="elegant-text">{{ music.notesMeaning }}</span>
 
         <div>
-          <span class="main-txt" >
+          <span class="main-txt">
 <!--     class="description block"       -->
             {{ music.notesMeaningDesc }}
           </span>
 
           <div class="listContainer">
-            <ul class="description">
+            <ul class="main-txt">
+              <!--         class="description"     -->
               <li>
-                <a class="description">До – Dominus <br/>({{ music.do }})</a>
+                <a class="main-txt" style="color: #333">До – Dominus <br/>({{ music.do }})</a>
               </li>
               <li>
-                <a class="description">Ре – Rerum <br/>({{ music.re }})</a>
+                <a class="main-txt" style="color: #333">Ре – Rerum <br/>({{ music.re }})</a>
               </li>
               <li>
-                <a class="description">Ми – Miraculum <br/>({{ music.mi }})</a>
+                <a class="main-txt" style="color: #333">Ми – Miraculum <br/>({{ music.mi }})</a>
               </li>
               <li>
-                <a class="description">Фа – Familias Planetarium <br/>({{ music.fa }})</a>
+                <a class="main-txt" style="color: #333">Фа – Familias Planetarium <br/>({{ music.fa }})</a>
               </li>
               <li>
-                <a class="description">Соль – Solis <br/>({{ music.sol }})</a>
+                <a class="main-txt" style="color: #333">Соль – Solis <br/>({{ music.sol }})</a>
               </li>
               <li>
-                <a class="description">Ля – Lactea Via <br/>({{music.la}})</a>
+                <a class="main-txt" style="color: #333">Ля – Lactea Via <br/>({{ music.la }})</a>
               </li>
               <li>
-                <a class="description">Си – Siderae <br/>({{ music.si }})</a>
+                <a class="main-txt" style="color: #333">Си – Siderae <br/>({{ music.si }})</a>
               </li>
             </ul>
 
@@ -199,19 +201,21 @@
         <div class="sectionContainer">
           <span class="main-txt">
 <!--        class="description textLeft"     -->
-      {{music.contributionDesc }}
+      {{ music.contributionDesc }}
           </span>
 
           <img class="handImg" src="../assets/music-img/hand.jpg"/>
 
         </div>
 
-        <div>
-          <span class="elegant-text source">
-            {{ music.siteDesc}}
+        <div style="text-align: left;">
+          <span style=" padding-bottom: 10px;font-style: italic;
+              font-size: 28px;  font-family: 'Playfair Display', serif;
+            animation: fadeIn-4f11bcd6 3s ease-in-out; transition: color 0.5s ease-in-out;">
+            {{ music.siteDesc }}
             <a href="https://velskdshi.ru/p17aa1detales6.html#:~:text=%D0%92%D0%BE..." target="_blank"
                data-cursor-hover
-              rel="noopener noreferrer">{{ music.siteLink}}</a>
+               rel="noopener noreferrer">{{ music.siteLink }}</a>
           </span>
         </div>
 
@@ -222,15 +226,15 @@
     <footer class="footer">
       <nav class="footer-links">
         <a href="#" class="footer-link">{{ loca.welcome }}</a>
-<!--       @click.prevent="scrollToTop()"   -->
+        <!--       @click.prevent="scrollToTop()"   -->
         <a href="/#about" class="footer-link">{{ loca.about }}</a>
-<!--    @click.prevent="scrollToComponent('about')"     -->
+        <!--    @click.prevent="scrollToComponent('about')"     -->
         <a href="/#music" class="footer-link">{{ loca.music }}</a>
-<!--   @click.prevent="scrollToComponent('music')"      -->
-        <a href="/#stories"  class="footer-link">{{ loca.stories }}</a>
-<!--     @click.prevent="scrollToComponent('stories')"   -->
+        <!--   @click.prevent="scrollToComponent('music')"      -->
+        <a href="/#stories" class="footer-link">{{ loca.stories }}</a>
+        <!--     @click.prevent="scrollToComponent('stories')"   -->
         <a href="/#contact" class="footer-link">{{ loca.contact }}</a>
-<!--     @click.prevent="scrollToComponent('contact')"    -->
+        <!--     @click.prevent="scrollToComponent('contact')"    -->
       </nav>
       <p class="footer-text">© 2025 Исмаилова Жале. Все права защищены.</p>
     </footer>
@@ -312,7 +316,7 @@ export default {
       this.$nextTick(() => {
         const component = this.$refs[refName];
         if (component) {
-          component.scrollIntoView({ behavior: "smooth", block: "start" });
+          component.scrollIntoView({behavior: "smooth", block: "start"});
         }
       });
     }
@@ -323,19 +327,20 @@ export default {
 
 <style scoped>
 
-.nav-mobile{
+.nav-mobile {
   padding: 10px 50px;
   text-align: center;
-  color: #f2cd9d;  background:none;
+  color: #f2cd9d;
+  background: none;
 }
 
-.nav-mobile:before{
+.nav-mobile:before {
   background-color: rgba(16, 76, 56, 0.9);
 
   box-shadow: none;
 }
 
-#sidemenu nav{
+#sidemenu nav {
   background-color: rgba(16, 76, 56, 1);;
 }
 
@@ -374,7 +379,7 @@ li {
   font-family: 'Playfair Display', serif;
   background: url('../assets/roses-bg.jpg') no-repeat center center fixed;
   background-size: cover;
-   min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -571,6 +576,7 @@ li {
   .hymnImg, .notesImg {
     width: 330px;
   }
+
   ul {
     /*align-items: center;*/
   }
@@ -578,7 +584,8 @@ li {
   li {
     /*text-align: center;*/
   }
-  .sidemenu__item{
+
+  .sidemenu__item {
     text-align: center;
   }
 }
@@ -591,20 +598,21 @@ li {
     text-align: center;
   }
 
-  .description{
+  .description {
     font-size: 18px;
   }
 
-  a > .description{
-    align-items: initial!important;
-    text-align: left!important;
+  a > .description {
+    align-items: initial !important;
+    text-align: left !important;
   }
 
-  .sectionContainer> span {
+  .sectionContainer > span {
     text-align: justify;
     /*text-align: center;*/
   }
-  .justify{
+
+  .justify {
     text-align: center;
   }
 
@@ -616,11 +624,11 @@ li {
     display: none;
   }
 
-  .show-mobile{
+  .show-mobile {
     display: flex;
   }
 
-  .notes-page  {
+  .notes-page {
     /*overflow-x: hidden;
     //overflow-y: auto;
     //width: 100vw;
@@ -632,27 +640,27 @@ li {
     flex-direction: column;
     background: url("../assets/roses-bg-mobile.jpg") repeat;
   }
+
   /*repeating-linear-gradient(45deg, black, transparent 100px);*/
-
-  #sidemenu
-  {
-    display: flex!important;
-  }
-  .main-logo{
-    width: 130px!important;
-
+  #sidemenu {
+    display: flex !important;
   }
 
-  .hero-content{
+  .main-logo {
+    width: 130px !important;
+
+  }
+
+  .hero-content {
     padding: 0px 30px;
-    margin-top:130px;
+    margin-top: 130px;
   }
 
   .hero {
     margin: 30px 0;
   }
 
-  .gvidoImg, .hymnImg , .notesImg ,   .handImg {
+  .gvidoImg, .hymnImg, .notesImg, .handImg {
     /*margin:auto; */
   }
 
@@ -664,10 +672,12 @@ li {
     flex-direction: column;
     justify-content: flex-start;
   }
-  ul{
+
+  ul {
     width: 100%;
   }
 }
+
 /* 625px and down) */
 @media only screen and (max-width: 625px) {
   .footer-links {
@@ -675,9 +685,9 @@ li {
     flex-wrap: wrap;
   }
 
- .hymnImg, .notesImg{
-   width: 100%;
- }
+  .hymnImg, .notesImg {
+    width: 100%;
+  }
 }
 
 
