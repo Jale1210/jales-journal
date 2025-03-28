@@ -39,7 +39,7 @@ const ru = {
     //
 
     //copyrights
-    'copyright': '© 2024 Исмаилова Жале. Все права защищены.'
+    'copyright': '© 2025 Исмаилова Жале. Все права защищены.'
 }
 
 export default ru

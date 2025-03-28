@@ -108,7 +108,7 @@
 
           <div  data-cursor-hover class="container header-container"
                 style=" display: flex;  padding: 0 50px; justify-content: flex-end;">
-            <div class="lang-header">
+            <div class="lang-header" style="height: 42px">
           <LangContainer/>
 <!--            style=""   -->
             </div>
@@ -123,21 +123,19 @@
           </nav>
         </div>
       </main>
-
-
     </div>
 
 
-    <div ref="about" class="page-section">
+    <div id="about" ref="about" class="page-section">
       <AboutPage :key="componentKeys.about"/>
     </div>
-    <div ref="music" class="page-section">
+    <div id="music" ref="music" class="page-section">
       <MusicPage :key="componentKeys.music"/>
     </div>
     <!--    <div ref="stories" class="page-section">-->
     <!--      <StoriesPage :key="componentKeys.stories"/>-->
     <!--    </div>-->
-    <div ref="contact" class="page-section">
+    <div id="contact" ref="contact" class="page-section">
       <ContactPage :key="componentKeys.contact"/>
     </div>
 
@@ -243,10 +241,25 @@ export default {
 
 
     scrollToComponent(refName) {
-      const component = this.$refs[refName];
-      if (component) {
-        component.scrollIntoView({behavior: 'smooth', block: 'start'});
+      if (this.$route.path !== "/") {
+        // If not on home page, navigate first
+        this.$router.push("/").then(() => {
+          this.$nextTick(() => {
+            this.scrollToRef(refName);
+          });
+        });
+      } else {
+        // If already on home page, just scroll
+        this.scrollToRef(refName);
       }
+    },
+    scrollToRef(refName) {
+      this.$nextTick(() => {
+        const component = this.$refs[refName];
+        if (component) {
+          component.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
     },
 
     handleIntersection(entries) {
@@ -286,10 +299,9 @@ export default {
       });
     });
 
-
-
     console.log('mainpage' + JSON.stringify(this.loca))
   },
+
   beforeDestroy() {
     // Clean up Intersection Observer when the component is destroyed
     if (this.observer) {

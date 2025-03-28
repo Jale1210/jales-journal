@@ -68,14 +68,21 @@
 
       <nav class="nav">
         <a data-cursor-hover class="navTxt">{{ loca.welcome }}</a>
-        <a data-cursor-hover href="#" @click.prevent="scrollToComponent('about')" class="navTxt">{{ loca.about }}</a>
-        <a data-cursor-hover href="#" @click.prevent="scrollToComponent('music')" class="navTxt">{{ loca.music }}</a>
-        <a data-cursor-hover href="#" @click.prevent="scrollToComponent('stories')" class="navTxt">{{
+        <a data-cursor-hover  href="/#about"
+
+           class="navTxt">{{ loca.about }}</a>
+<!--      @click.prevent=" scrollToComponent('about')"  -->
+
+        <a data-cursor-hover href="/#music"  class="navTxt">{{ loca.music }}</a>
+<!--  @click.prevent="scrollToComponent('music')"      -->
+        <a data-cursor-hover href="/#stories"  class="navTxt">{{
             loca.stories
           }}</a>
-        <a data-cursor-hover href="#" @click.prevent="scrollToComponent('contact')" class="navTxt">{{
+<!--     @click.prevent="scrollToComponent('stories')"   -->
+        <a data-cursor-hover href="/#contact" class="navTxt">{{
             loca.contact
           }}</a>
+<!--       @click.prevent="scrollToComponent('contact')"   -->
       </nav>
 
 
@@ -92,7 +99,7 @@
 
           <span class="main-txt">
 <!--         description textRight   -->
-              Изобретателем всемирно известной нотной грамоты считается монах Гвидо Аретинский (Гвидо д'Ареццо), живший в 991–1060 годах. Как и многое прекрасное того времени, нотная грамота зародилась близ Флоренции, в небольшом городке Тосканы – Аретцо.
+              Изобретателем всемирно известной нотной грамоты считается монах Гвидо Аретинский (Гвидо д'Ареццо), живший в 991–1060 годах. Нотная грамота зародилась близ Флоренции, в небольшом городке Тосканы – Аретцо.
               Сегодня во Флоренции установлен памятник этому монаху. <br/>
               Гвидо был учителем музыки и хорового церковного пения при храмах. Он много путешествовал по Италии, встречался с Папой Иоанном XIX и трудился над созданием музыкальной грамоты, которая стала бы общепринятой.</span>
         </div>
@@ -211,13 +218,18 @@
     <!-- Footer Section -->
     <footer class="footer">
       <nav class="footer-links">
-        <a href="#" @click.prevent="scrollToTop()" class="footer-link">{{ loca.welcome }}</a>
-        <a href="#" @click.prevent="scrollToComponent('about')" class="footer-link">{{ loca.about }}</a>
-        <a href="#" @click.prevent="scrollToComponent('music')" class="footer-link">{{ loca.music }}</a>
-        <a href="#" @click.prevent="scrollToComponent('stories')" class="footer-link">{{ loca.stories }}</a>
-        <a href="#" @click.prevent="scrollToComponent('contact')" class="footer-link">{{ loca.contact }}</a>
+        <a href="#" class="footer-link">{{ loca.welcome }}</a>
+<!--       @click.prevent="scrollToTop()"   -->
+        <a href="/#about" class="footer-link">{{ loca.about }}</a>
+<!--    @click.prevent="scrollToComponent('about')"     -->
+        <a href="/#music" class="footer-link">{{ loca.music }}</a>
+<!--   @click.prevent="scrollToComponent('music')"      -->
+        <a href="/#stories"  class="footer-link">{{ loca.stories }}</a>
+<!--     @click.prevent="scrollToComponent('stories')"   -->
+        <a href="/#contact" class="footer-link">{{ loca.contact }}</a>
+<!--     @click.prevent="scrollToComponent('contact')"    -->
       </nav>
-      <p class="footer-text">© 2024 Исмаилова Жале. Все права защищены.</p>
+      <p class="footer-text">© 2025 Исмаилова Жале. Все права защищены.</p>
     </footer>
   </div>
 </template>
@@ -273,6 +285,35 @@ export default {
       this.isMenuOpen = !this.isMenuOpen;
     },
 
+    // navigateAndScroll(refName) {
+    //   this.$router.push("/").then(() => {
+    //     this.$nextTick(() => {
+    //       this.$emit("scrollToSection", refName);
+    //     });
+    //   });
+    // },
+    scrollToComponent(refName) {
+      if (this.$route.path !== "/") {
+        // If not on home page, navigate first
+        this.$router.push("/").then(() => {
+          this.$nextTick(() => {
+            this.scrollToRef(refName);
+          });
+        });
+      } else {
+        // If already on home page, just scroll
+        this.scrollToRef(refName);
+      }
+    },
+    scrollToRef(refName) {
+      this.$nextTick(() => {
+        const component = this.$refs[refName];
+        if (component) {
+          component.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    }
+
   }
 };
 </script>
@@ -280,8 +321,7 @@ export default {
 <style scoped>
 
 .nav-mobile{
-
-  padding: 20px 50px;
+  padding: 10px 50px;
   text-align: center;
   color: #f2cd9d;  background:none;
 }
@@ -354,7 +394,10 @@ li {
 
 .nav {
   display: flex;
-  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px
+  /*gap: 20px;*/
 }
 
 .navTxt {
@@ -410,13 +453,18 @@ li {
   display: flex;
   font-family: cursive;
   gap: 18px;
-  /*align-items: center;*/
-  font-size: 20px;
+  /*align-items: center;
+  font-size: 20px;*/
+  font-weight: 400;
+  padding-left: 20px;
+  font-size: 16px;
   color: #333;
 }
 
 /******** Footer Styling ********/
 .footer {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
   background-color: rgba(16, 76, 56, 0.9);
   padding: 20px 50px;
   text-align: center;
@@ -424,14 +472,18 @@ li {
 }
 
 .footer-links {
+  padding: 0 10px 20px 10px;
+  font-size: 22px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
+
+
   margin-bottom: 10px;
 }
 
 .footer-link {
-  font-size: 18px;
+  font-size: 22px;
   color: #f2cd9d;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -466,7 +518,7 @@ li {
 }
 
 .hymnImg {
-  margin: 10px 0 10px 20px;
+  margin: 10px 20px 10px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 500px;
   border: 3px solid #333;
@@ -474,7 +526,7 @@ li {
 }
 
 .notesImg {
-  margin: 10px 0 10px 20px;
+  margin: 10px 20px 10px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 500px;
   border: 3px solid rgb(51, 51, 51);
@@ -482,11 +534,8 @@ li {
 }
 
 .handImg {
-  margin: 10px 0 10px 20px;
-
+  margin: 10px 20px 10px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-
   border-radius: 50%;
   border: 3px solid rgb(51, 51, 51);
   padding: 10px;
@@ -575,7 +624,7 @@ li {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("../assets/roses-bg-mobile.jpg") repeat-y;
+    background: url("../assets/roses-bg-mobile.jpg") repeating-linear-gradient(45deg, black, transparent 100px);
   }
 
 
@@ -598,7 +647,7 @@ li {
   }
 
   .gvidoImg, .hymnImg , .notesImg ,   .handImg {
-    margin:auto;
+    /*margin:auto; */
   }
 
 }

@@ -265,6 +265,7 @@ h1 + hr {
 /* */
 
 .main-txt {
+  display: flex;
   font-weight: 700;
   font-family: 'Garamond', serif;
   line-height: 30px;

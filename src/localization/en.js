@@ -46,7 +46,7 @@ const en = {
     //
 
     //copyrights
-    'copyright': '© 2024 Ismayilova Jale. All rights reserved.'
+    'copyright': '© 2025 Ismayilova Jale. All rights reserved.'
 
 }
 

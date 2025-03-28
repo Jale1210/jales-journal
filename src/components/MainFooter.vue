@@ -17,7 +17,7 @@
   <!--          &lt;!&ndash;            <a href="#" @click.prevent="scrollToComponent('charity')" class="navTxt">Charity</a>&ndash;&gt;-->
   <!--        </nav>-->
 
-  <!--        <span class="footer-txt">© 2024 Ismayilova Jale. All rights reserved.</span></div>-->
+  <!--        <span class="footer-txt">© 2025 Ismayilova Jale. All rights reserved.</span></div>-->
   <!--    </div>-->
 
 
@@ -44,7 +44,7 @@
              @click.prevent="scrollToComponent('contact')">Contact</a>
         </nav>
 
-        <span class="footer-txt">© 2024 Ismayilova Jale. All rights reserved.</span></div>
+        <span class="footer-txt">© 2025 Ismayilova Jale. All rights reserved.</span></div>
     </div>
     </div>
   </footer>
