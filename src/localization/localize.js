@@ -1,17 +1,49 @@
 import Localize from 'v-localize';
-import az from './az'
-import en from './en'
-import ru from './ru'
+
+// Function to dynamically load all JSON files from a directory
+const loadTranslations = (lang) => {
+    return {
+        home: require(`./locales/${lang}/home.json`),
+        about: require(`./locales/${lang}/about.json`),
+        music: {
+            sevenNotes: require(`./locales/${lang}/music/sevenNotes.json`),
+            // music2: require(`./locales/${lang}/music/music2.json`),
+            // music3: require(`./locales/${lang}/music/music3.json`)
+        },
+        stories: require(`./locales/${lang}/stories.json`),
+        contact: require(`./locales/${lang}/contact.json`)
+    };
+};
 
 let localize = Localize.config({
     default: 'en',
     available: ['en', 'az', 'ru'],
     fallback: '?',
     localizations: {
-        "en": en,
-        "az": az,
-        "ru": ru,
+        en: loadTranslations('en'),
+        az: loadTranslations('az'),
+        ru: loadTranslations('ru')
     }
 });
 
-export default localize
+export default localize;
+
+
+
+// import Localize from 'v-localize';
+// import az from './az'
+// import en from './en'
+// import ru from './ru'
+//
+// let localize = Localize.config({
+//     default: 'en',
+//     available: ['en', 'az', 'ru'],
+//     fallback: '?',
+//     localizations: {
+//         "en": en,
+//         "az": az,
+//         "ru": ru,
+//     }
+// });
+//
+// export default localize

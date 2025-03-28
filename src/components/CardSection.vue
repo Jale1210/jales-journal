@@ -11,13 +11,13 @@
               <ReadButton :readMore="loca.readMore" />
             </router-link>
 
-          <router-link data-cursor-hover v-if="index == 1 "   to="/top">
-            <ReadButton :readMore="readMore" />
-          </router-link>
+<!--          <router-link data-cursor-hover v-if="index == 1 "   to="/top">-->
+<!--            <ReadButton :readMore="readMore" />-->
+<!--          </router-link>-->
 
-          <router-link  data-cursor-hover v-if="index == 2 "  to="">
-            <ReadButton :readMore="readMore" />
-          </router-link>
+<!--          <router-link  data-cursor-hover v-if="index == 2 "  to="">-->
+<!--            <ReadButton :readMore="readMore" />-->
+<!--          </router-link>-->
 
         </div>
       </div>
@@ -49,6 +49,11 @@ export default {
           content: 'Who breathed names into the seven notes?',
           image: '',
         },
+        {
+           title: 'Explore The Cavas',
+          content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+          image: 'https://images.unsplash.com/photo-1580986475035-f0778c60f5ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=633&q=80',
+         },
         // {
         //   title: 'Behind the Band Name',
         //   content: 'What is the significance of the name "21 Pilots"?',
@@ -107,13 +112,13 @@ body {
 
 @media (min-width: 600px) {
   .page-content {
-    /*grid-template-columns: repeat(2, 1fr);*/
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 800px) {
   .page-content {
-    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-columns: repeat(4, 1fr);*/
   }
 }
 

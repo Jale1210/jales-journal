@@ -1,15 +1,28 @@
-import en from '../localization/en'
-import az from '../localization/az'
-import ru from '../localization/ru'
+// import en from '../localization/en'
+// import az from '../localization/az'
+// import ru from '../localization/ru'
+
+import en from '../localization/en/home/en';
+import az from '../localization/az/home/az';
+import ru from '../localization/ru/home/ru';
+import enMusic from '../localization/en/music/sevenNotes.json';
+import azMusic from '../localization/az/music/sevenNotes.json';
+import ruMusic from '../localization/ru/music/sevenNotes.json';
 
 export default {
     setLoca(state, payload) {
-        if (payload == 'en')
+        if (payload == 'en'){
             state.loca = en
-        else if (payload == 'az')
+        state.music = enMusic;
+        }
+        else if (payload == 'az'){
             state.loca = az
-        else
+            state.music = azMusic;
+        }
+        else{
             state.loca = ru
+            state.music = ruMusic;
+        }
     },
     setLoading(state, payload) {
         state.loading = payload;

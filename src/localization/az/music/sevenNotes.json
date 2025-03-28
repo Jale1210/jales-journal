@@ -1,0 +1,27 @@
+{
+  "titleOne": "Yeddi musiqi notu",
+  "descOne": "Kim bu yeddi nota ad verib?",
+  "readMore": "Daha çox oxu",
+  "legend": "Bir rəvayətə görə: Əgər bir mahnı başınızdan çıxmırsa, sizin ruh yoldaşınız həmin mahnını həmin anda oxuyur.",
+
+
+  "inventor": "Notasiya Qrammatikasının İxtiraçısı",
+  "inventorDesc": "Dünyaca məşhur notasiya qrammatikasının ixtiraçısı, 991–1060-cı illərdə yaşamış rahib Qvido Aretinski (Qvido d'Arezzo) hesab olunur. Notasiya qrammatikasının doğulduğu yer İtaliyanın Florensiya yaxınlığında, Toskanada yerləşən Aretzo şəhəridir. Bu gün Florensiyada bu rahibin abidəsi ucaldılıb.\nQvido musiqi müəllimi və kilsə xorunun rəhbəri olub. O, İtaliya boyunca geniş səyahət edib, Papa XIX İoann ilə görüşüb və ümumiyyətlə qəbul olunan musiqi qrammatikasının yaradılması üzərində işləyib.",
+  "doReMi": "Niyə Do-Re-Mi?",
+  "doReMiDesc": "Bir dəfə Qvido, dini nəğmələr üçün naməlum melodiyaların öyrənilməsini asanlaşdırmaq məqsədilə, Yəhya peyğəmbərə dua əsasında solfej sistemi icad etdi:",
+  "doReMiSecondDesc": "Latından tərcüməsi: \"Sənin qulların sənin möcüzəli işlərini səsiylə oxuya bilsinlər, ey Müqəddəs Yəhya, bizdən günahlarımızı təmizlə.\"\nBütün notaların adları, ilk nöqtədən başqa, səslə bitir, bu isə onların oxunmasını asanlaşdırır. Birinci nota \"Ut\" bağlı bir səsə sahib idi və XVI əsrdə bu, ehtimal ki, latınca \"Dominus\" – \"Rəb\" mənasına gələn \"Do\" ilə əvəz olundu.",
+  "notesMeaning": "Notaların Adları Nə Deməkdir?",
+  "notesMeaningDesc": "Hər bir nota adı latın mənşəli olub öz mənasını daşıyır:",
+  "do": "Rəb",
+  "re": "Maddə",
+  "mi": "Möcüzə",
+  "fa": "Planetlər ailəsi, yəni Günəş sistemi",
+  "sol": "Günəş",
+  "la": "Məhlə yolu, yəni \"Müqəddəs Yolda\"",
+  "si": "Ulduzlar",
+  "contribution": "Qvidonun Musiqiyə Tövhəsi",
+  "contributionDesc": "Qvido Aretinski həmçinin notasiya yazısının inkişafına böyük töhfə vermişdir.\nXor nümayişləri zamanı, o, sol əlini istifadə edərək, barmaqlarının bucaqlarını əyərək hansı notanı vuracağını göstərirdi.\nSonralar, səsi simvollarla işarələməyə başladı (latınca \"nota\" – işarə).\nNotlar, dörd paralel xətlərlə rənglənmiş kvadratlar şəklində çəkilirdi.\nBu gün beş xətt istifadə olunur və notlar dairə formasında çəkilir, amma Qvidonun əsas prinsipi dəyişməz qalır.",
+  "siteDesc": "Daha ətraflı məlumat üçün" ,
+  "siteLink": "rəsmi vebsayta baxın."
+
+}

@@ -1,5 +1,6 @@
 export default {
     updateLoca({ commit }, payload) {
+
         commit('setLoca', payload)
     },
     updateLoading({commit}, payload) {

@@ -92,24 +92,23 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <span class="elegant-text textRight">Изобретатель нотной грамоты</span>
+        <span class="elegant-text textRight">{{music.inventor}}</span>
 
         <div class="sectionContainer">
           <img class="gvidoImg" src="../assets/music-img/gvido.jpg"/>
 
           <span class="main-txt">
 <!--         description textRight   -->
-              Изобретателем всемирно известной нотной грамоты считается монах Гвидо Аретинский (Гвидо д'Ареццо), живший в 991–1060 годах. Нотная грамота зародилась близ Флоренции, в небольшом городке Тосканы – Аретцо.
-              Сегодня во Флоренции установлен памятник этому монаху. <br/>
-              Гвидо был учителем музыки и хорового церковного пения при храмах. Он много путешествовал по Италии, встречался с Папой Иоанном XIX и трудился над созданием музыкальной грамоты, которая стала бы общепринятой.</span>
+            {{music.inventorDesc}}
+               </span>
         </div>
 
-        <span class="elegant-text">Почему До-Ре-Ми?</span>
+        <span class="elegant-text"> {{music.doReMi}}</span>
 
         <div>
           <span class="main-txt">
 <!--        description justify    -->
-            Однажды Гвидо, чтобы облегчить заучивание незнакомых мелодий для песнопений, придумал систему сольмизации на основе молитвы к Иоанну Крестителю:
+           {{ music.doReMiDesc }}
           </span>
 
           <div class="listContainer">
@@ -143,43 +142,40 @@
 
           <span class="main-txt"  >
 <!--         class="description justify"    -->
-            Перевод с латинского:
-           "Чтобы слуги твои голосами своими смогли воспеть чудные деяния твои, очисти грех с наших порочных уст, о, Святой Иоанн".
-            <br/>
-            Названия всех нот, кроме первой, заканчиваются на гласный звук, что делает их удобными для пения. Первая нота "Ут" была закрытым звуком, и в XVI веке её заменили на "До" (вероятно, от латинского Dominus – Господь).
+           {{music.doReMiSecondDesc}}
           </span>
         </div>
 
-        <span class="elegant-text">Что означают названия нот?</span>
+        <span class="elegant-text">{{ music.notesMeaning }}</span>
 
         <div>
           <span class="main-txt" >
 <!--     class="description block"       -->
-            Каждое название имеет латинский корень и свой смысл:
+            {{ music.notesMeaningDesc }}
           </span>
 
           <div class="listContainer">
             <ul class="description">
               <li>
-                <a class="description">До – Dominus <br/>(Господь)</a>
+                <a class="description">До – Dominus <br/>({{ music.do }})</a>
               </li>
               <li>
-                <a class="description">Ре – Rerum <br/>(Материя)</a>
+                <a class="description">Ре – Rerum <br/>({{ music.re }})</a>
               </li>
               <li>
-                <a class="description">Ми – Miraculum <br/>(Чудо)</a>
+                <a class="description">Ми – Miraculum <br/>({{ music.mi }})</a>
               </li>
               <li>
-                <a class="description">Фа – Familias Planetarium <br/>(Семья планет, то есть Солнечная система)</a>
+                <a class="description">Фа – Familias Planetarium <br/>({{ music.fa }})</a>
               </li>
               <li>
-                <a class="description">Соль – Solis <br/>(Солнце)</a>
+                <a class="description">Соль – Solis <br/>({{ music.sol }})</a>
               </li>
               <li>
-                <a class="description">Ля – Lactea Via <br/>(Млечный путь)</a>
+                <a class="description">Ля – Lactea Via <br/>({{music.la}})</a>
               </li>
               <li>
-                <a class="description">Си – Siderae <br/>(Небеса)</a>
+                <a class="description">Си – Siderae <br/>({{ music.si }})</a>
               </li>
             </ul>
 
@@ -188,16 +184,12 @@
         </div>
 
 
-        <span class="elegant-text">Вклад Гвидо в музыку</span>
+        <span class="elegant-text">{{ music.contribution }}</span>
 
         <div class="sectionContainer">
           <span class="main-txt">
 <!--        class="description textLeft"     -->
-            Гвидо Аретинский также внёс огромный вклад в развитие нотной записи.
-            <br/>Во время выступлений хора он использовал свою левую руку: сгибая суставы пальцев, он указывал, какую ноту нужно взять.
-           <br/> Позже он начал отмечать звуки символами (от латинского nota – знак).
-            <br/>Ноты изображались в виде закрашенных квадратиков на четырёх параллельных линиях.
-            <br/>Сегодня используется пять линий, а ноты рисуют в виде кружков, но основополагающий принцип Гвидо остаётся неизменным.
+      {{music.contributionDesc }}
           </span>
 
           <img class="handImg" src="../assets/music-img/hand.jpg"/>
@@ -206,9 +198,10 @@
 
         <div>
           <span class="elegant-text source">
-            For more details, visit the <a
-              href="https://velskdshi.ru/p17aa1detales6.html#:~:text=%D0%92%D0%BE..." target="_blank"
-              rel="noopener noreferrer">official website</a>.
+            {{ music.siteDesc}}
+            <a href="https://velskdshi.ru/p17aa1detales6.html#:~:text=%D0%92%D0%BE..." target="_blank"
+               data-cursor-hover
+              rel="noopener noreferrer">{{ music.siteLink}}</a>
           </span>
         </div>
 
@@ -242,7 +235,7 @@ export default {
   name: "SevenNotes",
   components: {LangContainer},
   computed: {
-    ...mapState(["loca"]),
+    ...mapState(["loca", "music"]),
   },
   data() {
     return {

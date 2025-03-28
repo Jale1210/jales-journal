@@ -1,0 +1,27 @@
+{
+  "titleOne": "Seven Musical Notes",
+  "descOne": "Who breathed names into the seven notes?",
+  "readMore": "Read more",
+  "legend": "According to a legend: When a song gets stuck in your head, your soulmate is singing that very song at the same moment.",
+
+  "inventor": "The Inventor of Musical Notation",
+  "inventorDesc": "The inventor of the world-famous musical notation is the monk Guido of Arezzo (Guido d'Arezzo), who lived from 991 to 1060. The notation originated near Florence, in the small Tuscan town of Arezzo. Today, a monument to this monk stands in Florence.\nGuido was a music teacher and choir leader at churches. He traveled extensively across Italy, met with Pope John XIX, and worked on creating a musical notation system that would become universally accepted.",
+  "doReMi": "Why Do-Re-Mi?",
+  "doReMiDesc": "One day, in order to make it easier to memorize unfamiliar melodies for chants, Guido came up with a system of solfeggio based on a prayer to John the Baptist:",
+  "doReMiSecondDesc": "Translation from Latin: \"That your servants, with their voices, may be able to sing your wonderful deeds, cleanse our sinful lips, O Holy John.\"\nThe names of all the notes, except for the first, end with a vowel sound, making them convenient for singing. The first note, \"Ut,\" had a closed sound, and in the 16th century, it was replaced with \"Do\" (likely from the Latin Dominus – Lord).",
+  "notesMeaning": "What Do the Note Names Mean?",
+  "notesMeaningDesc": "Each note name has a Latin root and its own meaning:",
+  "do": "Lord",
+  "re": "Matter",
+  "mi": "Miracle",
+  "fa": "The Family of Planets, i.e., the Solar System)",
+  "sol": "Sun",
+  "la": "Milky Way",
+  "si": "Stars",
+  "contribution": "Guido's Contribution to Music",
+  "contributionDesc": "Guido of Arezzo also made a huge contribution to the development of musical notation.\nDuring choir performances, he used his left hand, bending his finger joints to indicate which note to take.\nLater, he began marking sounds with symbols (from the Latin nota – sign).\nNotes were drawn as shaded squares on four parallel lines.\nToday, five lines are used, and notes are drawn as circles, but Guido's foundational principle remains unchanged.",
+  "siteDesc": "For more details, visit the",
+  "siteLink" :  "official website."
+
+
+}

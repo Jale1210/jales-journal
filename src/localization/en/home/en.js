@@ -43,9 +43,9 @@ const en = {
     'contactDesc': 'Feel free to explore, leave your thoughts, and make yourself at home. I’ve added every detail here for you, hoping it inspires you. I’ll be adding stories and thoughts over time—you can help me with that just by sending your favorite stories.\n' +
         'P.S. Thank you for being here with me. Please take care.',
     'socialLinks': 'Social Links',
+    // //
     //
-
-    //copyrights
+    // //copyrights
     'copyright': '© 2025 Ismayilova Jale. All rights reserved.'
 
 }
