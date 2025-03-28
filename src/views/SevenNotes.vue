@@ -38,27 +38,32 @@
 
 
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#welcome" @click.prevent="scrollToTop()">
+                <a href="/" >
+<!--                @click.prevent="scrollToTop()"  -->
                   {{ loca.welcome }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#about" @click.prevent="scrollToComponent('about')">
+                <a href="#about">
+<!--               @click.prevent="scrollToComponent('about')"    -->
                   {{ loca.about }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#music" @click.prevent="scrollToComponent('music')">
+                <a href="#music" >
+<!--             @click.prevent="scrollToComponent('music')"     -->
                   {{ loca.music }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="" @click.prevent="scrollToComponent('stories')">
+                <a href="">
+<!--                 @click.prevent="scrollToComponent('stories')"  -->
                   {{ loca.stories }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#contact" @click.prevent="scrollToComponent('contact')">
+                <a href="#contact" >
+<!--             @click.prevent="scrollToComponent('contact')"     -->
                   {{ loca.contact }}
                 </a>
               </li>
@@ -208,8 +213,8 @@
 
         </div>
 
-        <div style="text-align: left;">
-          <span style=" padding-bottom: 10px;font-style: italic;
+        <div style="text-align: left; padding-bottom: 20px;">
+          <span style="font-style: italic;
               font-size: 28px;  font-family: 'Playfair Display', serif;
             animation: fadeIn-4f11bcd6 3s ease-in-out; transition: color 0.5s ease-in-out;">
             {{ music.siteDesc }}

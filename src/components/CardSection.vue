@@ -11,9 +11,9 @@
               <ReadButton :readMore="loca.readMore" />
             </router-link>
 
-<!--          <router-link data-cursor-hover v-if="index == 1 "   to="/top">-->
-<!--            <ReadButton :readMore="readMore" />-->
-<!--          </router-link>-->
+          <router-link data-cursor-hover v-if="index == 1 "   to="/blue">
+            <ReadButton :readMore="readMore" />
+          </router-link>
 
 <!--          <router-link  data-cursor-hover v-if="index == 2 "  to="">-->
 <!--            <ReadButton :readMore="readMore" />-->
@@ -52,7 +52,7 @@ export default {
         {
            title: 'Explore The Cavas',
           content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          image: 'https://images.unsplash.com/photo-1580986475035-f0778c60f5ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=633&q=80',
+          image: '',
          },
         // {
         //   title: 'Behind the Band Name',
@@ -198,7 +198,7 @@ body {
 }
 
 .d_card:nth-child(2):before {
-  background-image: url('../assets/music-img/top.jpg');
+  background-image: url('../assets/music-img/vinyl.gif');
 }
 
 .d_card:nth-child(3):before {
