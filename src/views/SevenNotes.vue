@@ -27,6 +27,16 @@
         <nav v-show="isMenuOpen">
           <div class="sidemenu__wrapper">
             <ul class="sidemenu__list">
+
+              <div  data-cursor-hover class="container header-container"
+                    style="display: flex;   position: absolute;
+                            left: 50px; top: 30px; justify-content: flex-start;">
+                <div class="lang-header">
+                  <LangContainer style=" padding:0 "/>
+                </div>
+              </div>
+
+
               <li class="sidemenu__item" @click="this.toggleMenu">
                 <a href="#welcome" @click.prevent="scrollToTop()">
                   {{ loca.welcome }}
@@ -448,7 +458,7 @@ li {
   gap: 18px;
   /*align-items: center;
   font-size: 20px;*/
-  font-weight: 400;
+  font-weight: 500;
   padding-left: 20px;
   font-size: 16px;
   color: #333;
@@ -566,7 +576,7 @@ li {
   }
 
   li {
-    /*text-align: center;*/
+    text-align: center;
   }
 }
 
@@ -617,9 +627,9 @@ li {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url("../assets/roses-bg-mobile.jpg") repeating-linear-gradient(45deg, black, transparent 100px);
+    background: url("../assets/roses-bg-mobile.jpg") repeat;
   }
-
+  /*repeating-linear-gradient(45deg, black, transparent 100px);*/
 
   #sidemenu
   {
