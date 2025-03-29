@@ -668,7 +668,6 @@ li {
   .gvidoImg, .hymnImg, .notesImg, .handImg {
     /*margin:auto; */
   }
-
 }
 
 /* less than 850 */

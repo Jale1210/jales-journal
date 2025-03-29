@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import MainPage from "@/views/MainPage.vue";
 import TopPage from "@/views/TopPage";
 import SevenNotes from "@/views/SevenNotes";
+import BluePage from "@/views/BluePage.vue";
 
 Vue.use(VueRouter)
 
@@ -25,6 +26,11 @@ const routes = [
         path: '/notes',
         name: 'SevenNotes',
         component: SevenNotes
+    },
+    {
+        path: '/blue',
+        name: 'BluePage',
+        component: BluePage
     }
 
     // {
