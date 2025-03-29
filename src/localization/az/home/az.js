@@ -28,8 +28,15 @@ const az = {
                 'Ümid edirəm ki, burada sizə ilham verən nələrsə tapacaqsınız.',
 
 //music
+
+    //first one
     'titleOne': 'Yeddi musiqi notu',
     'descOne': 'Kim bu yeddi nota ad verib?',
+
+    //second one
+    'titleTwo': 'Niyə mahnılarda tez-tez "feeling blue" ifadəsi işlədilir?',
+    'descTwo': 'Piratlar, dəniz və musiqi necə mavi rəngi kədərin simvoluna çevirdi?',
+
     'readMore': 'Daha çox oxu',
     'legend': 'Bir rəvayətə görə: Əgər bir mahnı başınızdan çıxmırsa, sizin ruh yoldaşınız həmin mahnını həmin anda oxuyur.',
 

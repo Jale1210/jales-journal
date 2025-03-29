@@ -230,18 +230,18 @@
     <!-- Footer Section -->
     <footer class="footer">
       <nav class="footer-links">
-        <a href="#" class="footer-link">{{ loca.welcome }}</a>
+        <a data-cursor-hover href="#" class="footer-link">{{ loca.welcome }}</a>
         <!--       @click.prevent="scrollToTop()"   -->
-        <a href="/#about" class="footer-link">{{ loca.about }}</a>
+        <a data-cursor-hover href="/#about" class="footer-link">{{ loca.about }}</a>
         <!--    @click.prevent="scrollToComponent('about')"     -->
-        <a href="/#music" class="footer-link">{{ loca.music }}</a>
+        <a data-cursor-hover href="/#music" class="footer-link">{{ loca.music }}</a>
         <!--   @click.prevent="scrollToComponent('music')"      -->
-        <a href="/#stories" class="footer-link">{{ loca.stories }}</a>
+        <a data-cursor-hover href="/#stories" class="footer-link">{{ loca.stories }}</a>
         <!--     @click.prevent="scrollToComponent('stories')"   -->
-        <a href="/#contact" class="footer-link">{{ loca.contact }}</a>
+        <a data-cursor-hover href="/#contact" class="footer-link">{{ loca.contact }}</a>
         <!--     @click.prevent="scrollToComponent('contact')"    -->
       </nav>
-      <p class="footer-text">© 2025 Исмаилова Жале. Все права защищены.</p>
+      <p class="footer-text">{{ loca.copyright }}</p>
     </footer>
   </div>
 </template>
@@ -258,10 +258,7 @@ export default {
   },
   data() {
     return {
-
-
       isMenuOpen: false
-
     }
   },
   mounted() {
@@ -271,7 +268,6 @@ export default {
     // this.handleScroll = this.onScroll.bind(this);
     // window.addEventListener('scroll', this.handleScroll);
     this.scrollToTop()
-
   },
   methods: {
     scrollToTop() {

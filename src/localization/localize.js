@@ -7,7 +7,7 @@ const loadTranslations = (lang) => {
         about: require(`./locales/${lang}/about.json`),
         music: {
             sevenNotes: require(`./locales/${lang}/music/sevenNotes.json`),
-            // music2: require(`./locales/${lang}/music/music2.json`),
+            bluePage: require(`./locales/${lang}/music/bluePage.json`),
             // music3: require(`./locales/${lang}/music/music3.json`)
         },
         stories: require(`./locales/${lang}/stories.json`),

@@ -145,15 +145,15 @@
           <div style="  display: flex;
                   justify-content: center; flex-direction: column">
             <nav class="footer-links">
-              <a href="#" class="footer-link-txt"
+              <a data-cursor-hover href="#" class="footer-link-txt"
                  @click.prevent="scrollToTop()">{{loca.welcome}}</a>
-              <a href="#" class="footer-link-txt"
+              <a data-cursor-hover href="#" class="footer-link-txt"
                  @click.prevent="scrollToComponent('about')">{{loca.about}}</a>
-              <a href="#" class="footer-link-txt"
+              <a data-cursor-hover href="#" class="footer-link-txt"
                  @click.prevent="scrollToComponent('music')">{{loca.music}}</a>
-              <a href="#" class="footer-link-txt"
+              <a data-cursor-hover href="#" class="footer-link-txt"
                  @click.prevent="scrollToComponent('stories')">{{loca.stories}}</a>
-              <a href="#" class="footer-link-txt"
+              <a data-cursor-hover href="#" class="footer-link-txt"
                  @click.prevent="scrollToComponent('contact')">{{loca.contact}}</a>
             </nav>
             <span class="footer-txt">{{loca.copyright}}</span></div>

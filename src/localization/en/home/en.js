@@ -28,8 +28,15 @@ const en = {
     //
 
     //music
+        //first one
     'titleOne': 'Seven Musical Notes',
     'descOne': 'Who breathed names into the seven notes?',
+
+        // second one
+    'titleTwo': 'Why Do Songs So Often Mention "Feeling Blue"?',
+    'descTwo': 'How Pirates, the Sea, and Music Made Blue the Color of Sadness?',
+
+
     'readMore': 'Read more',
     'legend': 'According to a legend: When a song gets stuck in your head, your soulmate is singing that very song at the same moment.',
     //

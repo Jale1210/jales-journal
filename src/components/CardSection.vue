@@ -3,21 +3,19 @@
 
     <main class="page-content">
       <div class="d_card" v-for="(card, index) in cards" :key="index" :style="{ '--bg-image': `url(${card.image})` }">
-       <div class="content">
-          <h2 class="heading">{{ loca.titleOne }}</h2>
-          <p class="data-content">{{ loca.descOne }}</p>
+        <div class="content">
+          <!--          <h2 class="heading">{{ loca.titleOne }}</h2>-->
+          <!--          <p class="data-content">{{ loca.descOne }}</p>-->
+          <h2 class="heading">{{ card.title }}</h2>
+          <p class="data-content">{{ card.content }}</p>
 
-            <router-link  data-cursor-hover v-if="index == '0' " to="/notes">
-              <ReadButton :readMore="loca.readMore" />
-            </router-link>
-
-          <router-link data-cursor-hover v-if="index == 1 "   to="/blue">
-            <ReadButton :readMore="readMore" />
+          <router-link data-cursor-hover v-if="index == '0' " to="/notes">
+            <ReadButton :readMore="loca.readMore"/>
           </router-link>
 
-<!--          <router-link  data-cursor-hover v-if="index == 2 "  to="">-->
-<!--            <ReadButton :readMore="readMore" />-->
-<!--          </router-link>-->
+          <router-link data-cursor-hover v-if="index == 1 " to="/blue">
+            <ReadButton :readMore="readMore"/>
+          </router-link>
 
         </div>
       </div>
@@ -35,7 +33,20 @@ export default {
   components: {ReadButton},
   computed: {
     ...mapState(['loca']),
-
+    cards() {
+      return [
+        {
+          title: this.loca.titleOne, // Now it's reactive
+          content: this.loca.descOne,
+          image: '',
+        },
+        {
+          title: this.loca.titleTwo,
+          content: this.loca.descTwo,
+          image: '',
+        }
+      ];
+    }
   },
   mounted() {
     console.log(111 + this.loca.titleOne);
@@ -44,32 +55,33 @@ export default {
     return {
       readMore: "Read more",
 
-      cards: [
-        {
-          content: 'Who breathed names into the seven notes?',
-          image: '',
-        },
-        {
-           title: 'Explore The Cavas',
-          content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-          image: '',
-         },
-        // {
-        //   title: 'Behind the Band Name',
-        //   content: 'What is the significance of the name "21 Pilots"?',
-        //   image: '',
-        // },
-        // {
-        //   title: 'Who is Sandman?',
-        //   content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        //   image: '',
-        // },
-        // {
-        //   title: 'Explore The Cavas',
-        //   content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        //   image: 'https://images.unsplash.com/photo-1580986475035-f0778c60f5ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=633&q=80',
-        // },
-      ],
+      // cards: [
+      //   {
+      //     title: this.loca.titleOne,
+      //     content: 'Who breathed names into the seven notes?',
+      //     image: '',
+      //   },
+      //   {
+      //      title: 'Explore The Cavas',
+      //     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      //     image: '',
+      //    },
+      //   // {
+      //   //   title: 'Behind the Band Name',
+      //   //   content: 'What is the significance of the name "21 Pilots"?',
+      //   //   image: '',
+      //   // },
+      //   // {
+      //   //   title: 'Who is Sandman?',
+      //   //   content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      //   //   image: '',
+      //   // },
+      //   // {
+      //   //   title: 'Explore The Cavas',
+      //   //   content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      //   //   image: 'https://images.unsplash.com/photo-1580986475035-f0778c60f5ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=633&q=80',
+      //   // },
+      // ],
     };
   },
 };
@@ -141,7 +153,7 @@ body {
 @media (min-width: 600px) {
   .d_card {
     height: 350px;
-  /*  added by me */
+    /*  added by me */
     width: 350px;
   }
 }
