@@ -319,7 +319,7 @@ li {
 /******** General Page Styling ********/
 .blue-page {
   font-family: 'Playfair Display', serif;
-  background: url('../assets/music-img/sea.jpg') no-repeat center center fixed;
+  background: url('../assets/music-img/sea2.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -485,7 +485,7 @@ li {
 @media only screen and (max-width: 950px) {
 
   .blue-page {
-    background: url('../assets/music-img/seaMobile.jpg') no-repeat center center;
+    background: url('../assets/music-img/sea2.jpg') no-repeat center center;
     background-size: cover; /* Ensures it stretches to fit */
     background-attachment: scroll; /* Prevents issues on mobile */
     min-height: 100vh; /* Ensures it covers the full viewport */
