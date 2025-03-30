@@ -14,7 +14,7 @@
           </router-link>
 
           <router-link data-cursor-hover v-if="index == 1 " to="/blue">
-            <ReadButton :readMore="readMore"/>
+            <ReadButton :readMore="loca.readMore"/>
           </router-link>
 
         </div>

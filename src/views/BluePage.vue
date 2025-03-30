@@ -631,8 +631,8 @@ li {
   display: grid;
   grid-gap: 8px;
   /*grid-template-columns: repeat(2, 1fr);*/
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 16vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 20vw;
   /*grid-auto-rows: 12vw;
   grid-auto-rows: 30vw;*/
   list-style: none;
