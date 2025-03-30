@@ -485,7 +485,8 @@ li {
 @media only screen and (max-width: 950px) {
 
   .blue-page {
-    background: url('../assets/music-img/seaMobile.jpg') no-repeat center center cover;
+    background: url('../assets/music-img/seaMobile.jpg') no-repeat center center fixed;
+    background-size: cover;
   }
 
   /* just try*/
