@@ -483,6 +483,20 @@ li {
 
 /* less than 950 */
 @media only screen and (max-width: 950px) {
+
+  .blue-page {
+    font-family: 'Playfair Display', serif;
+    background: url("../assets/music-img/sea.jpg") no-repeat;
+    background-size: initial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* just try*/
+
+
   .elegant-text {
     font-size: 22px;
     text-align: center;
