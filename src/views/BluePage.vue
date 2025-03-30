@@ -283,7 +283,7 @@ export default {
 }
 
 #sidemenu nav {
-  background-color: rgba(5, 40, 51, 0.94);
+  background-color: rgb(5, 40, 51);
 }
 
 
@@ -485,13 +485,7 @@ li {
 @media only screen and (max-width: 950px) {
 
   .blue-page {
-    font-family: 'Playfair Display', serif;
-    background: url("../assets/music-img/sea.jpg") no-repeat;
-    background-size: initial;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background: url('../assets/music-img/seaMobile.jpg') no-repeat center center fixed;
   }
 
   /* just try*/
