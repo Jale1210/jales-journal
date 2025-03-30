@@ -654,7 +654,7 @@ li {
 
   .hero-content {
     padding: 0px 30px;
-    margin-top: 130px;
+    margin: 130px 50px 20px 50px;
   }
 
   .hero {
