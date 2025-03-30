@@ -597,14 +597,14 @@ li {
 
 .shellImg {
   position: absolute;
-  width: 10%;
+  width: 25%;
   right: 0;
   top: 0
 }
 
 .whaleImg {
   position: absolute;
-  width: 20%;
+  width: 25%;
   right: 0;
   bottom: -30px;
   transform: rotate(333deg);
@@ -612,7 +612,7 @@ li {
 
 .polaroidImg {
   position: absolute;
-  width: 20%;
+  width: 25%;
   right: 0;
   bottom: -30px;
   transform: rotate(10deg);
