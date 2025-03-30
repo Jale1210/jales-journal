@@ -485,8 +485,9 @@ li {
 @media only screen and (max-width: 950px) {
 
   .blue-page {
-    background: url('../assets/music-img/seaMobile.jpg') no-repeat center center fixed;
+    background: url('../assets/music-img/seaMobile.jpg') no-repeat center center;
     background-size: cover;
+    background-attachment: scroll;
   }
 
   /* just try*/
@@ -597,7 +598,7 @@ li {
 
 .shellImg {
   position: absolute;
-  width: 25%;
+  width: 17%;
   right: 0;
   top: 0
 }
