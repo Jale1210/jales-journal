@@ -485,11 +485,12 @@ li {
 @media only screen and (max-width: 950px) {
 
   .blue-page {
-    background: url('../assets/music-img/seaMobile.jpg') no-repeat center center;
+    background: image-set(
+        url('../assets/music-img/seaMobile.jpg') 2x,
+        url('../assets/music-img/seaMobile.jpg') 1x
+    ) no-repeat center center;
     background-size: cover;
-    background-attachment: scroll;
   }
-
   /* just try*/
 
 
