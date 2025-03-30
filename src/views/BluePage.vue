@@ -30,7 +30,7 @@
 
 
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="/" >
+                <a href="/">
                   {{ loca.welcome }}
                 </a>
               </li>
@@ -40,7 +40,7 @@
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#music" >
+                <a href="#music">
                   {{ loca.music }}
                 </a>
               </li>
@@ -50,7 +50,7 @@
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#contact" >
+                <a href="#contact">
                   {{ loca.contact }}
                 </a>
               </li>
@@ -89,15 +89,24 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-content">
+      <div class="hero-content" style="position: relative">
+        <img class="shellImg"
+             src="../assets/music-img/shell.png"/>
+        <div>
         <span class="elegant-text  ">
-          {{music.bluePage.blueMainTxt}}
+          {{ music.bluePage.blueMainTxt }}
         </span>
 
+        </div>
+
         <div class="sectionContainer">
-          <span class="main-txt">
+
+
+          <span class="main-txt" style="position:relative;">
             {{ music.bluePage.blueDescOne }}
-               </span>
+            <img class="whaleImg show-mobile" src="../assets/music-img/whale.png">
+          </span>
+
 
 
           <span class="main-txt">
@@ -105,7 +114,7 @@
                </span>
 
 
-<!--     class="imgContainer"       -->
+          <!--     class="imgContainer"       -->
 
           <ul style="padding: 0; margin: 0" class="grid">
             <li>
@@ -135,20 +144,20 @@
             </li>
           </ul>
 
-<!--            <img src="../assets/music-img/blueEyes.jpg"/>-->
-<!--            <img src="../assets/music-img/billie.jpg"/>-->
-<!--            <img src="../assets/music-img/ocean.jpg"/>-->
-<!--            <img src="../assets/music-img/blueVinyl.jpg"/>-->
-
-
-
-          <span class="main-txt">
+<div>
+      <span class="main-txt" style="position:relative;">
             {{ music.bluePage.blueDescThree }}
+  <img class="polaroidImg show-mobile" src="../assets/music-img/seaPolaroid.png">
                </span>
+</div>
 
-          <span class="main-txt">
+
+          <div style="padding-bottom: 10px">
+             <span class="main-txt">
             {{ music.bluePage.blueDescFour }}
-               </span>
+             </span>
+          </div>
+         
         </div>
 
       </div>
@@ -158,11 +167,11 @@
     <footer class="footer">
       <nav class="footer-links">
         <a data-cursor-hover href="#" class="footer-link">{{ loca.welcome }}</a>
-         <a data-cursor-hover href="/#about" class="footer-link">{{ loca.about }}</a>
-         <a data-cursor-hover href="/#music" class="footer-link">{{ loca.music }}</a>
-         <a data-cursor-hover href="/#stories" class="footer-link">{{ loca.stories }}</a>
-         <a data-cursor-hover href="/#contact" class="footer-link">{{ loca.contact }}</a>
-       </nav>
+        <a data-cursor-hover href="/#about" class="footer-link">{{ loca.about }}</a>
+        <a data-cursor-hover href="/#music" class="footer-link">{{ loca.music }}</a>
+        <a data-cursor-hover href="/#stories" class="footer-link">{{ loca.stories }}</a>
+        <a data-cursor-hover href="/#contact" class="footer-link">{{ loca.contact }}</a>
+      </nav>
       <p class="footer-text">{{ loca.copyright }}</p>
     </footer>
   </div>
@@ -245,10 +254,17 @@ export default {
 
 <style scoped>
 
-.imgContainer{
-  display: flex;
+
+
+.shellImg {
+  position: absolute;
+  width: 10%;
+  right: 0;
+  top: 0
 }
-.imgContainer> img{
+
+
+.imgContainer > img {
   width: 30%;
   display: flex;
   gap: 10px
@@ -257,18 +273,17 @@ export default {
 .nav-mobile {
   padding: 10px 50px;
   text-align: center;
-  color: #f2cd9d;
+  color: #fff;
   background: none;
 }
 
 .nav-mobile:before {
-  background-color: rgba(16, 76, 56, 0.9);
-
+  background-color: rgba(5, 40, 51, 0.94);
   box-shadow: none;
 }
 
 #sidemenu nav {
-  background-color: rgba(16, 76, 56, 1);;
+  background-color: rgba(5, 40, 51, 0.94);
 }
 
 
@@ -310,7 +325,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 /******** Header Styling ********/
@@ -332,7 +346,6 @@ li {
   width: 100%;
   justify-content: space-between;
   padding: 0 20px
-  /*gap: 20px;*/
 }
 
 .navTxt {
@@ -365,23 +378,18 @@ li {
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
   padding: 30px 70px;
-  /*width: calc(100% - 260px);*/
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .elegant-text {
   font-size: 28px;
-  /*margin-bottom: 20px;*/
   color: #3b2b20;
-
   padding: 20px 0;
   display: block;
   text-align: center;
   font-weight: 500;
-  /*font-size: 32px;*/
   font-style: italic;
-  /*color: #333;*/
 }
 
 .description {
@@ -499,6 +507,7 @@ li {
   }
 
   .sectionContainer {
+    gap: 30px;
     flex-direction: column;
   }
 
@@ -508,6 +517,20 @@ li {
 
   .show-mobile {
     display: flex;
+  }
+
+  /*images */
+  .shellImg {
+    position: absolute;
+    width: 10%;
+    right: 0;
+    top: 0
+  }
+
+  .whaleImg {
+    position: absolute;
+    width: 10%;
+
   }
 
   .notes-page {
@@ -563,13 +586,47 @@ li {
   }
 }
 
+.shellImg {
+  position: absolute;
+  width: 10%;
+  right: 0;
+  top: 0
+}
+
+.whaleImg {
+  position: absolute;
+  width: 20%;
+  right: 0;
+  bottom: -30px;
+  transform: rotate(333deg);
+}
+
+.polaroidImg {
+  position: absolute;
+  width: 20%;
+  right: 0;
+  bottom: -30px;
+  transform: rotate(10deg);
+}
+
+.grid li:nth-child(1) {
+  grid-column: span 1;
+  /*grid-column: span 2;*/
+  grid-row: span 2;
+}
 
 .grid {
   display: grid;
   grid-gap: 8px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 30vw;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 12vw;
+  /*grid-auto-rows: 30vw;*/
   list-style: none;
+}
+
+.grid li {
+  padding: 0;
 }
 
 .grid figure,
