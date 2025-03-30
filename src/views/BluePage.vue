@@ -258,7 +258,7 @@ export default {
 
 .shellImg {
   position: absolute;
-  width: 10%;
+  width: 10%!important;
   right: 0;
   top: 0
 }
@@ -372,7 +372,7 @@ li {
 }
 
 .hero-content {
-  background: rgb(245 235 222 / 90%);
+  background: rgba(255, 254, 253, 0.9);
   margin: 20px 70px;
   color: #333;
   font-family: 'Playfair Display', serif;
@@ -632,8 +632,9 @@ li {
   grid-gap: 8px;
   /*grid-template-columns: repeat(2, 1fr);*/
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 12vw;
-  /*grid-auto-rows: 30vw;*/
+  grid-auto-rows: 16vw;
+  /*grid-auto-rows: 12vw;
+  grid-auto-rows: 30vw;*/
   list-style: none;
 }
 

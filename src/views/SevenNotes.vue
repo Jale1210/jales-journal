@@ -107,23 +107,23 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <span class="elegant-text textRight">{{ music.inventor }}</span>
+        <span class="elegant-text textRight">{{ music.sevenNotes.inventor }}</span>
 
         <div class="sectionContainer">
           <img class="gvidoImg" src="../assets/music-img/gvido.jpg"/>
 
           <span class="main-txt">
 <!--         description textRight   -->
-            {{ music.inventorDesc }}
+            {{ music.sevenNotes.inventorDesc }}
                </span>
         </div>
 
-        <span class="elegant-text"> {{ music.doReMi }}</span>
+        <span class="elegant-text"> {{ music.sevenNotes.doReMi }}</span>
 
         <div>
           <span class="main-txt">
 <!--        description justify    -->
-           {{ music.doReMiDesc }}
+           {{ music.sevenNotes.doReMiDesc }}
           </span>
 
           <div class="listContainer">
@@ -158,41 +158,41 @@
 
           <span class="main-txt">
 <!--         class="description justify"    -->
-           {{ music.doReMiSecondDesc }}
+           {{ music.sevenNotes.doReMiSecondDesc }}
           </span>
         </div>
 
-        <span class="elegant-text">{{ music.notesMeaning }}</span>
+        <span class="elegant-text">{{ music.sevenNotes.notesMeaning }}</span>
 
         <div>
           <span class="main-txt">
 <!--     class="description block"       -->
-            {{ music.notesMeaningDesc }}
+            {{ music.sevenNotes.notesMeaningDesc }}
           </span>
 
           <div class="listContainer">
             <ul class="main-txt">
               <!--         class="description"     -->
               <li>
-                <a class="main-txt" style="color: #333">До – Dominus <br/>({{ music.do }})</a>
+                <a class="main-txt" style="color: #333">До – Dominus <br/>({{ music.sevenNotes.do }})</a>
               </li>
               <li>
-                <a class="main-txt" style="color: #333">Ре – Rerum <br/>({{ music.re }})</a>
+                <a class="main-txt" style="color: #333">Ре – Rerum <br/>({{ music.sevenNotes.re }})</a>
               </li>
               <li>
-                <a class="main-txt" style="color: #333">Ми – Miraculum <br/>({{ music.mi }})</a>
+                <a class="main-txt" style="color: #333">Ми – Miraculum <br/>({{ music.sevenNotes.mi }})</a>
               </li>
               <li>
-                <a class="main-txt" style="color: #333">Фа – Familias Planetarium <br/>({{ music.fa }})</a>
+                <a class="main-txt" style="color: #333">Фа – Familias Planetarium <br/>({{ music.sevenNotes.fa }})</a>
               </li>
               <li>
-                <a class="main-txt" style="color: #333">Соль – Solis <br/>({{ music.sol }})</a>
+                <a class="main-txt" style="color: #333">Соль – Solis <br/>({{ music.sevenNotes.sol }})</a>
               </li>
               <li>
-                <a class="main-txt" style="color: #333">Ля – Lactea Via <br/>({{ music.la }})</a>
+                <a class="main-txt" style="color: #333">Ля – Lactea Via <br/>({{ music.sevenNotes.la }})</a>
               </li>
               <li>
-                <a class="main-txt" style="color: #333">Си – Siderae <br/>({{ music.si }})</a>
+                <a class="main-txt" style="color: #333">Си – Siderae <br/>({{ music.sevenNotes.si }})</a>
               </li>
             </ul>
 
@@ -201,12 +201,12 @@
         </div>
 
 
-        <span class="elegant-text">{{ music.contribution }}</span>
+        <span class="elegant-text">{{ music.sevenNotes.contribution }}</span>
 
         <div class="sectionContainer">
           <span class="main-txt">
 <!--        class="description textLeft"     -->
-      {{ music.contributionDesc }}
+      {{ music.sevenNotes.contributionDesc }}
           </span>
 
           <img class="handImg" src="../assets/music-img/hand.jpg"/>
@@ -217,10 +217,10 @@
           <span style="font-style: italic;
               font-size: 28px;  font-family: 'Playfair Display', serif;
             animation: fadeIn-4f11bcd6 3s ease-in-out; transition: color 0.5s ease-in-out;">
-            {{ music.siteDesc }}
+            {{ music.sevenNotes.siteDesc }}
             <a href="https://velskdshi.ru/p17aa1detales6.html#:~:text=%D0%92%D0%BE..." target="_blank"
                data-cursor-hover
-               rel="noopener noreferrer">{{ music.siteLink }}</a>
+               rel="noopener noreferrer">{{ music.sevenNotes.siteLink }}</a>
           </span>
         </div>
 

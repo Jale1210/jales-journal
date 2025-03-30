@@ -258,8 +258,10 @@ body {
   }
 
   .content {
-    transform: translateY(calc(100% - 4.5rem));
-    -webkit-transform: translateY(calc(100% - 4.5rem));
+    transform: translateY(calc(100% - 8.5rem));
+    -webkit-transform: translateY(calc(100% - 8.5rem));
+    /*transform: translateY(calc(100% - 4.5rem));
+    -webkit-transform: translateY(calc(100% - 4.5rem));*/
   }
 
   .content > *:not(.heading) {
