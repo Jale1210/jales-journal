@@ -6,7 +6,7 @@
       <div style="display: flex; flex-direction: row-reverse; width: 100%; justify-content: space-between;">
         <div style="width: 100%; display: flex; justify-content: center; position: relative;">
           <img style="height: 300px; position: absolute; left: 0" src="../assets/decorations/details3.png"/>
-          <img style="height: 300px; position: absolute; right: 0" src="../assets/decorations/pages.png"/>
+          <img style="top: -100px; height: 300px; position: absolute; right: 0" src="../assets/decorations/pages.png"/>
           <h1 class="elegant-text" style="color: #703719; border-bottom: 1px solid #703719; padding: 0 17px">
             Stories
           </h1>
@@ -18,31 +18,38 @@
         <div class="animationPage">
           <div class="blocks-container">
 
-            <div v-for="block in blocks"
-                 :key="block.id"
+            <div v-for="(block, index) in blocks"
+                 :key="index"
                  class="mouse-cursor-gradient-tracking"
                  @mousemove="handleMouseMove($event, block.id)"
-            >
-              <div class="container">
+                 :style="{background: `url(${block.image}) no-repeat center`,
+                          'background-size': 'cover'    }" >
+<!--      --bg-image        :key="block.id"  -->
+              <div class="container" style="color: white">
                 <!--              <img :src="block.image" class="block-image" />-->
-                <span class="heading">{{ block.title }}</span>
-                <span class="description">{{ block.description }}</span>
+                <span class="heading" style="display: block">
+                  {{ block.title }}
+                </span>
+                <span class="description">
+                  {{ block.description }}
+                </span>
               </div>
+
+              <router-link data-cursor-hover v-if="index == '0' " to="/">
+                <ReadButton :readMore="loca.readMore"/>
+              </router-link>
+
+
               <div class="hover-container"></div>
             </div>
+
           </div>
         </div>
 
-
       </div>
 
-      <!--        <div style="padding: 30px 0 50px 0">-->
-      <!--          If you like reading about-->
-      <!--        </div>-->
-
-
     </div>
-    <FirstParallax/>
+<!--    <FirstParallax class="show-desktop"/>-->
   </div>
 </template>
 
@@ -51,18 +58,26 @@
 
 
 import FirstParallax from "@/components/FirstParallax";
+import ReadButton from "@/UI/ReadButton.vue";
+import {mapState} from "vuex";
 
 export default {
-  components: {FirstParallax},
+  components: {
+    ReadButton,
+    // FirstParallax
+  },
 
   name: "StoriesSection",
   data() {
     return {
       blocks: [
-        {id: 1, title: 'Block ', description: 'Description 1', image: require('@/assets/images/universe.jpg')},
-        {id: 2, title: 'Block 2', description: 'Description 2', image: require('@/assets/images/universe.jpg')},
-        {id: 3, title: 'Block 3', description: 'Description 3', image: require('@/assets/images/universe.jpg')}
-
+        {id: 1, title: 'Block ',
+          description: 'Description 1',
+          image: require('@/assets/images/universe.jpg')},
+        {id: 2,
+          title: 'Block 2',
+          description: 'Description 2',
+          image: require('@/assets/images/universe.jpg')},
       ],
 
       x: 0,
@@ -70,6 +85,9 @@ export default {
 
 
     };
+  },
+  computed: {
+    ...mapState(["loca", "stories"]),
   },
   methods: {
     handleMouseMove(event) {
@@ -90,13 +108,15 @@ export default {
 
 <style scoped>
 .storiesPage {
-  height: 100vh;
+  //height: 100vh;
 }
 
 .blocks-container {
   display: flex;
   gap: 20px;
-  width: 80%;
+  justify-content: center;
+  align-content: center;
+  /*width: 80%;*/
   margin: auto;
   flex-wrap: wrap;
 }
@@ -106,23 +126,30 @@ export default {
 
 
 .mouse-cursor-gradient-tracking {
+
+height: 200px;
+  width: 300px;
+  background-size: cover;
   transition: all 0.5s ease;
   position: relative;
-  background: #ccc;
+  /* background: #ccc; */
   padding: 15px;
   font-size: 16px;
   border: none;
   color: #111;
-  /*cursor: pointer;*/
+  /* cursor: pointer; */
   outline: none;
   overflow: hidden;
-  width: 400px;
-  /*width: 50%;*/
-  /*margin: 5% auto;*/
+  /* width: 400px; */
+  /* width: 50%; */
+  /* margin: 5% auto; */
   margin: 30px auto 0 auto;
   border-radius: 20px;
-  display: block;
+  display: flex;
   box-shadow: 1px 1px 0 rgba(25, 25, 25, 0.25);
+  justify-content: end;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .mouse-cursor-gradient-tracking:hover {
@@ -151,5 +178,9 @@ export default {
 .mouse-cursor-gradient-tracking:hover::before {
   --size: 5vw;
 }
+
+
+
+
 </style>
 

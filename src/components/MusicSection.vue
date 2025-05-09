@@ -896,6 +896,12 @@ span {
 
 /* less than 600 */
 @media only screen and (max-width: 600px) {
+  .music {
+    padding: 50px 30px 0 30px;
+    /*height: 100vh*/
+  }
+
+
   .arctic {
     height: 140px;
   }

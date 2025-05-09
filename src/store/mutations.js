@@ -5,12 +5,16 @@
 import en from '../localization/en/home/en';
 import az from '../localization/az/home/az';
 import ru from '../localization/ru/home/ru';
+
+// music part
 import enSevenNotes from '../localization/en/music/sevenNotes.json';
 import azSevenNotes from '../localization/az/music/sevenNotes.json';
 import ruSevenNotes from '../localization/ru/music/sevenNotes.json';
 import enBluePage from '../localization/en/music/bluePage.json';
 import azBluePage from '../localization/az/music/bluePage.json';
 import ruBluePage from '../localization/ru/music/bluePage.json';
+
+//stories part
 
 
 export default {
@@ -21,6 +25,9 @@ export default {
                 sevenNotes: enSevenNotes,
                 bluePage: enBluePage
             };
+            state.stories = {
+
+            }
         }
         else if (payload == 'az'){
             state.loca = az
@@ -28,6 +35,9 @@ export default {
                 sevenNotes: azSevenNotes,
                 bluePage: azBluePage
             };
+            state.stories = {
+
+            }
         }
         else{
             state.loca = ru
@@ -35,6 +45,9 @@ export default {
                 sevenNotes: ruSevenNotes,
                 bluePage: ruBluePage
             };
+            state.stories = {
+
+            }
         }
     },
     setLoading(state, payload) {

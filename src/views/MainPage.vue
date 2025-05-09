@@ -132,9 +132,11 @@
     <div id="music" ref="music" class="page-section">
       <MusicPage :key="componentKeys.music"/>
     </div>
-    <!--    <div ref="stories" class="page-section">-->
-    <!--      <StoriesPage :key="componentKeys.stories"/>-->
-    <!--    </div>-->
+<!--    try to add stories 3/30-->
+        <div ref="stories" class="page-section">
+          <StoriesPage :key="componentKeys.stories"/>
+        </div>
+<!--    -->
     <div id="contact" ref="contact" class="page-section">
       <ContactPage :key="componentKeys.contact"/>
     </div>
@@ -172,7 +174,7 @@ import MainHeader from "@/components/MainHeader";
 // import NavPage from "@/components/navPage";
 import AboutPage from "@/components/AboutSection";
 import MusicPage from "@/components/MusicSection";
-// import StoriesPage from "@/components/StoriesSection.vue";
+import StoriesPage from "@/components/StoriesSection.vue";
 import ContactPage from "@/components/ContactSection.vue";
 import LangContainer from "@/UI/LangContainer";
 
@@ -189,7 +191,7 @@ export default {
     // CharityPage,
     // ThankYouPage,
     ContactPage,
-    // StoriesPage,
+    StoriesPage,
     MusicPage,
     AboutPage,
     MainHeader

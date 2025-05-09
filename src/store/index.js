@@ -11,6 +11,7 @@ export default new Vuex.Store({
   state: {
     loca: {},
     music: {},
+    stories: {},
     currentLang: 'en',
     authed: false,
     // form: [],
