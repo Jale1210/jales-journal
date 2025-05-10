@@ -5,65 +5,105 @@
     <div class="storiesPage" style="margin: 50px 0">
       <div style="display: flex; flex-direction: row-reverse; width: 100%; justify-content: space-between;">
         <div style="width: 100%; display: flex; justify-content: center; position: relative;">
-          <img style="height: 300px; position: absolute; left: 0" src="../assets/decorations/details3.png"/>
-          <img style="top: -100px; height: 300px; position: absolute; right: 0" src="../assets/decorations/pages.png"/>
+          <img style="height: 300px; position: absolute; left: 0" src="../assets/decorations/details2.png"/>
+          <img style="top: -100px; height: 200px; position: absolute; right: 0" src="../assets/decorations/pages.png"/>
           <h1 class="elegant-text" style="color: #703719; border-bottom: 1px solid #703719; padding: 0 17px">
             Stories
           </h1>
         </div>
       </div>
 
-      <div class="blocks-container">
+<!--      <div class="blocks-container">-->
 
+<!--        <div class="animationPage">-->
+<!--          <div class="blocks-container">-->
+
+<!--            <div v-for="(block, index) in blocks"-->
+<!--                 :key="index"-->
+<!--                 class="mouse-cursor-gradient-tracking"-->
+<!--                 @mousemove="handleMouseMove($event, block.id)"-->
+<!--                 :style="{background: `url(${block.image}) no-repeat center`,-->
+<!--                          'background-size': 'cover'    }">-->
+<!--              &lt;!&ndash;      &#45;&#45;bg-image        :key="block.id"  &ndash;&gt;-->
+<!--              <div class="container">-->
+<!--                &lt;!&ndash;              <img :src="block.image" class="block-image" />&ndash;&gt;-->
+<!--                <span class="heading" style="display: block">-->
+<!--                  {{ block.title }}-->
+<!--                </span>-->
+<!--                <span class="description">-->
+<!--                  {{ block.description }}-->
+<!--                </span>-->
+<!--              </div>-->
+
+<!--              <router-link data-cursor-hover v-if="index == '0' " to="/">-->
+<!--                <ReadButton :readMore="loca.readMore"/>-->
+<!--              </router-link>-->
+
+<!--              <router-link data-cursor-hover v-if="index == '1' " to="/greenStick">-->
+<!--                <ReadButton :readMore="loca.readMore"/>-->
+<!--              </router-link>-->
+
+
+<!--              <div class="hover-container"></div>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+      <div class="blocks-container">
         <div class="animationPage">
           <div class="blocks-container">
-
-            <div v-for="(block, index) in blocks"
-                 :key="index"
-                 class="mouse-cursor-gradient-tracking"
+            <div v-for="(block, index) in this.paginatedBlocks"
                  @mousemove="handleMouseMove($event, block.id)"
                  :style="{background: `url(${block.image}) no-repeat center`,
-                          'background-size': 'cover'    }" >
-<!--      --bg-image        :key="block.id"  -->
-              <div class="container" style="color: white">
-                <!--              <img :src="block.image" class="block-image" />-->
-                <span class="heading" style="display: block">
-                  {{ block.title }}
-                </span>
-                <span class="description">
-                  {{ block.description }}
-                </span>
+                   'background-size': 'cover'}"
+                 :key="index" class="mouse-cursor-gradient-tracking">
+              <div class="container">
+                <span class="heading">{{ block.title }}</span>
+                <span class="description">{{ block.description }}</span>
               </div>
-
-              <router-link data-cursor-hover v-if="index == '0' " to="/">
+              <router-link v-if="index == 0" to="/">
                 <ReadButton :readMore="loca.readMore"/>
               </router-link>
-
-
+              <router-link v-if="index == 1" to="/greenStick">
+                <ReadButton :readMore="loca.readMore"/>
+              </router-link>
               <div class="hover-container"></div>
             </div>
-
+          </div>
+          <div class="pagination-controls">
+            <button @click="previousPage" :disabled="currentPage === 1">Previous</button>
+            <button @click="nextPage" :disabled="currentPage === totalPages">Next</button>
           </div>
         </div>
+<!--      </div>-->
+    </div>
 
-      </div>
 
     </div>
-<!--    <FirstParallax class="show-desktop"/>-->
+    <!--    <FirstParallax class="show-desktop"/>-->
   </div>
 </template>
 
 
 <script>
+// import { Swiper, SwiperSlide } from 'swiper/vue';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import SwiperCore, { Navigation, Pagination } from 'swiper';
 
-
+// SwiperCore.use([Navigation, Pagination]);
 import FirstParallax from "@/components/FirstParallax";
 import ReadButton from "@/UI/ReadButton.vue";
 import {mapState} from "vuex";
 
 export default {
   components: {
-    ReadButton,
+   ReadButton,
+  //   Swiper,
+  //   SwiperSlide,
     // FirstParallax
   },
 
@@ -71,23 +111,49 @@ export default {
   data() {
     return {
       blocks: [
-        {id: 1, title: 'Block ',
+        {
+          id: 1, title: 'Block ',
           description: 'Description 1',
-          image: require('@/assets/images/universe.jpg')},
-        {id: 2,
-          title: 'Block 2',
-          description: 'Description 2',
-          image: require('@/assets/images/universe.jpg')},
+          image: require('@/assets/images/universe.jpg')
+        },
+        {
+          id: 2,
+          title: 'Тайна могилы Толстого',
+          description: 'А ты слышал легенду о Зелёной палочке?',
+          image: require('@/assets/stories/Tolstoy.jpg')
+        },
+        {
+          id: 2,
+          title: 'Тайна могилы Толстого',
+          description: 'А ты слышал легенду про зелёную палочку?',
+          image: require('@/assets/stories/Tolstoy.jpg')
+        },
+        {
+          id: 2,
+          title: 'Тайна могилы Толстого',
+          description: 'А ты слышал легенду про зелёную палочку?',
+          image: require('@/assets/stories/Tolstoy.jpg')
+        },
       ],
 
       x: 0,
       y: 0,
 
-
+      currentPage: 1,
+      itemsPerPage: 2
     };
+
   },
   computed: {
     ...mapState(["loca", "stories"]),
+    totalPages() {
+      return Math.ceil(this.blocks.length / this.itemsPerPage);
+    },
+    paginatedBlocks() {
+      const start = (this.currentPage - 1) * this.itemsPerPage;
+      const end = start + this.itemsPerPage;
+      return this.blocks.slice(start, end);
+    }
   },
   methods: {
     handleMouseMove(event) {
@@ -100,6 +166,16 @@ export default {
       btn.style.setProperty("--x", `${this.x}px`);
       btn.style.setProperty("--y", `${this.y}px`);
     },
+    nextPage() {
+      if (this.currentPage < this.totalPages) {
+        this.currentPage++;
+      }
+    },
+    previousPage() {
+      if (this.currentPage > 1) {
+        this.currentPage--;
+      }
+    },
   }
 
 };
@@ -108,7 +184,37 @@ export default {
 
 <style scoped>
 .storiesPage {
-  //height: 100vh;
+  /*height: 100vh;*/
+}
+
+
+
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  padding: 10px;
+  background-color: #703719;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.container {
+  color: white;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
 }
 
 .blocks-container {
@@ -126,8 +232,7 @@ export default {
 
 
 .mouse-cursor-gradient-tracking {
-
-height: 200px;
+  height: 250px;
   width: 300px;
   background-size: cover;
   transition: all 0.5s ease;
@@ -149,7 +254,8 @@ height: 200px;
   box-shadow: 1px 1px 0 rgba(25, 25, 25, 0.25);
   justify-content: end;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px
+  /*gap: 30px;*/
 }
 
 .mouse-cursor-gradient-tracking:hover {
@@ -178,8 +284,6 @@ height: 200px;
 .mouse-cursor-gradient-tracking:hover::before {
   --size: 5vw;
 }
-
-
 
 
 </style>
