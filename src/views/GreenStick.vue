@@ -89,7 +89,38 @@
 
     <!-- Hero Section -->
     <section class="hero">
+
+      <div class=" mobile-slider">
+
+        <div class="slider-wrapper">
+          <div class="slider-track">
+            <div class="image-top slide">
+
+      <img src="../assets/stories/Tolstoy2.jpg"/>
+
+      <div class="quote">
+          <span class="quote-span">
+          {{ stories.greenStick.quoteOne }}
+          </span>
+        <img class="quote-sign" src="../assets/stories/leoSign.png"/>
+      </div>
+      <img src="../assets/stories/Tolstoy3.jpg"/>
+      <img src="../assets/stories/Tolstoy4.jpg"/>
+      <div class="quote">
+          <span class="quote-span">
+         {{ stories.greenStick.quoteTwo }}
+          </span>
+        <img class="quote-sign" src="../assets/stories/leoSign.png"/>
+      </div>
+      <img src="../assets/stories/Tolstoy5.jpg"/>
+      <img src="../assets/stories/Tolstoy6.jpg"/>
+    </div>
+          </div>
+        </div>
+      </div>
+
       <div class="hero-content">
+
 
         <div>
         <span class="elegant-text  ">
@@ -253,6 +284,10 @@ export default {
   }
 }
 
+.image-top{
+  display: none;
+}
+
 .decorated-image {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -356,12 +391,12 @@ export default {
 }
 
 .nav-mobile:before {
-  background-color: rgba(5, 40, 51, 0.94);
+  background-color: black;
   box-shadow: none;
 }
 
 #sidemenu nav {
-  background-color: rgb(5, 40, 51);
+  background-color: black;
 }
 
 
@@ -443,19 +478,23 @@ li {
 /******** Hero Section Styling ********/
 .hero {
   display: flex;
-  justify-content: center;
-  align-items: center;
+ /* justify-content: center;
+  align-items: center;*/
+  justify-content: space-between;
   margin: 30px auto;
   text-align: center;
 }
 
 .hero-content {
   background: rgba(255, 254, 253, 0.9);
-  margin: 20px 70px;
+ /* margin: 20px 70px;*/
+  margin: auto;
+  width: 55%;
   color: #333;
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
-  max-width: calc(80% - 140px);
+  /* max-width: 50.1%;
+  max-width: calc(80% - 140px);*/
   padding: 30px 70px;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -543,21 +582,57 @@ li {
 }
 
 
-/* less than 1225 */
-@media only screen and (max-width: 1225px) {
-
-  ul {
-    /*align-items: center;*/
-  }
-
-  li {
-    /*text-align: center;*/
-  }
-
-  .sidemenu__item {
-    text-align: center;
-  }
+/* less than 1077 */
+@media only screen and (max-width: 1077px) {
+.image-right{
+  display: none;
 }
+  .hero{
+    flex-direction: column;
+  }
+  .image-top{
+    margin-top: 120px;
+    display: flex;
+  }
+  .image-top>img{
+    max-height: 250px;
+  }
+  .quote{
+    padding: 30px 20px 50px 20px;
+  }
+.quote-span{
+  margin: auto;
+  font-size: 14px;
+  width: 200px;
+}
+  .quote-sign {
+      width: 110px;
+    }
+
+
+  .slider-wrapper {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slider-track {
+    display: flex;
+    width: max-content;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+   /* padding: 1rem;*/
+  }
+
+
+
+}
+
+
 
 
 /* less than 950 */
