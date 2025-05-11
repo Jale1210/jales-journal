@@ -96,25 +96,25 @@
           <div class="slider-track">
             <div class="image-top slide">
 
-      <img src="../assets/stories/Tolstoy2.jpg"/>
+              <img src="../assets/stories/Tolstoy2.jpg"/>
 
-      <div class="quote">
+              <div class="quote">
           <span class="quote-span">
           {{ stories.greenStick.quoteOne }}
           </span>
-        <img class="quote-sign" src="../assets/stories/leoSign.png"/>
-      </div>
-      <img src="../assets/stories/Tolstoy3.jpg"/>
-      <img src="../assets/stories/Tolstoy4.jpg"/>
-      <div class="quote">
+                <img class="quote-sign" src="../assets/stories/leoSign.png"/>
+              </div>
+              <img src="../assets/stories/Tolstoy3.jpg"/>
+              <img src="../assets/stories/Tolstoy4.jpg"/>
+              <div class="quote">
           <span class="quote-span">
          {{ stories.greenStick.quoteTwo }}
           </span>
-        <img class="quote-sign" src="../assets/stories/leoSign.png"/>
-      </div>
-      <img src="../assets/stories/Tolstoy5.jpg"/>
-      <img src="../assets/stories/Tolstoy6.jpg"/>
-    </div>
+                <img class="quote-sign" src="../assets/stories/leoSign.png"/>
+              </div>
+              <img src="../assets/stories/Tolstoy5.jpg"/>
+              <img src="../assets/stories/Tolstoy6.jpg"/>
+            </div>
           </div>
         </div>
       </div>
@@ -151,8 +151,7 @@
           </span>
 
 
-          <img style="height:100px;  float: right"
-               src="../assets/decorations/ink.png" alt=""/>
+          <img class="inkImg"  src="../assets/decorations/ink.png" alt=""/>
 
         </div>
 
@@ -284,7 +283,7 @@ export default {
   }
 }
 
-.image-top{
+.image-top {
   display: none;
 }
 
@@ -316,6 +315,10 @@ export default {
 .image-frame {
   text-align: center;
   margin: 2rem 0;
+}
+
+.inkImg{
+  height:100px;  float: right
 }
 
 .image-frame figcaption {
@@ -478,8 +481,8 @@ li {
 /******** Hero Section Styling ********/
 .hero {
   display: flex;
- /* justify-content: center;
-  align-items: center;*/
+  /* justify-content: center;
+   align-items: center;*/
   justify-content: space-between;
   margin: 30px auto;
   text-align: center;
@@ -487,7 +490,7 @@ li {
 
 .hero-content {
   background: rgba(255, 254, 253, 0.9);
- /* margin: 20px 70px;*/
+  /* margin: 20px 70px;*/
   margin: auto;
   width: 55%;
   color: #333;
@@ -584,30 +587,49 @@ li {
 
 /* less than 1077 */
 @media only screen and (max-width: 1077px) {
-.image-right{
-  display: none;
-}
-  .hero{
+  .image-right {
+    display: none;
+  }
+
+  .hero {
     flex-direction: column;
   }
-  .image-top{
+
+  .hero-content {
+    margin: 40px 50px !important;
+    width: auto;
+  }
+
+  .image-top {
     margin-top: 120px;
     display: flex;
   }
-  .image-top>img{
+
+  .image-top > img {
     max-height: 250px;
   }
-  .quote{
+
+  .image-row{
+    flex-direction: column;
+    gap:0;
+  }
+.inkImg{
+  padding-bottom: 20px;
+}
+
+  .quote {
     padding: 30px 20px 50px 20px;
   }
-.quote-span{
-  margin: auto;
-  font-size: 14px;
-  width: 200px;
-}
+
+  .quote-span {
+    margin: auto;
+    font-size: 14px;
+    width: 200px;
+  }
+
   .quote-sign {
-      width: 110px;
-    }
+    width: 110px;
+  }
 
 
   .slider-wrapper {
@@ -625,14 +647,11 @@ li {
     flex: 0 0 100%;
     scroll-snap-align: start;
     box-sizing: border-box;
-   /* padding: 1rem;*/
+    /* padding: 1rem;*/
   }
 
 
-
 }
-
-
 
 
 /* less than 950 */
