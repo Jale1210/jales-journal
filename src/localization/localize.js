@@ -10,7 +10,10 @@ const loadTranslations = (lang) => {
             bluePage: require(`./locales/${lang}/music/bluePage.json`),
             // music3: require(`./locales/${lang}/music/music3.json`)
         },
-        stories: require(`./locales/${lang}/stories.json`),
+        // stories: require(`./locales/${lang}/stories.json`),
+        stories: {
+            greenStick : require(`./locales/${lang}/stories/greenStick.json`),
+        },
         contact: require(`./locales/${lang}/contact.json`)
     };
 };

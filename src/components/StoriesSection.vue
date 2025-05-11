@@ -88,13 +88,7 @@
 
 
 <script>
-// import { Swiper, SwiperSlide } from 'swiper/vue';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import SwiperCore, { Navigation, Pagination } from 'swiper';
 
-// SwiperCore.use([Navigation, Pagination]);
 import FirstParallax from "@/components/FirstParallax";
 import ReadButton from "@/UI/ReadButton.vue";
 import {mapState} from "vuex";
@@ -102,8 +96,6 @@ import {mapState} from "vuex";
 export default {
   components: {
    ReadButton,
-  //   Swiper,
-  //   SwiperSlide,
     // FirstParallax
   },
 

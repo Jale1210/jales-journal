@@ -16,44 +16,45 @@ import ruBluePage from '../localization/ru/music/bluePage.json';
 
 //stories part
 
+import enGreenStick from '../localization/en/stories/greenStick.json';
+import azGreenStick from '../localization/az/stories/greenStick.json';
+import ruGreenStick from '../localization/ru/stories/greenStick.json';
 
 export default {
     setLoca(state, payload) {
-        if (payload == 'en'){
+        if (payload == 'en') {
             state.loca = en
             state.music = {
                 sevenNotes: enSevenNotes,
                 bluePage: enBluePage
             };
             state.stories = {
-
+                greenStick: enGreenStick
             }
-        }
-        else if (payload == 'az'){
+        } else if (payload == 'az') {
             state.loca = az
             state.music = {
                 sevenNotes: azSevenNotes,
                 bluePage: azBluePage
             };
             state.stories = {
-
+                greenStick: azGreenStick
             }
-        }
-        else{
+        } else {
             state.loca = ru
             state.music = {
                 sevenNotes: ruSevenNotes,
                 bluePage: ruBluePage
             };
             state.stories = {
-
+                greenStick: ruGreenStick
             }
         }
     },
     setLoading(state, payload) {
         state.loading = payload;
     },
-    setPage(state, payload){
+    setPage(state, payload) {
         state.page = payload
     },
     setAuthed(state, payload) {

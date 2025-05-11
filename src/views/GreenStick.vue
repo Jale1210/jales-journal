@@ -89,12 +89,39 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-content" style="position: relative">
+      <div class="hero-content">
 
         <div>
         <span class="elegant-text  ">
-          {{ music.bluePage.blueMainTxt }}
+            {{ stories.greenStick.greenMainTxt }}
         </span>
+
+          <span class="main-txt">
+            <span>{{ stories.greenStick.greenDescOne }}</span>
+            <span>{{ stories.greenStick.greenDescTwo }}</span>
+            <span>{{ stories.greenStick.greenDescThree }}</span>
+
+            <div class="image-row">
+              <figure class="image-frame">
+              <img class="decorated-image vintage-style" src="../assets/stories/greenBook.jpeg" alt=""/>
+                <figcaption>The book “Зелёная палочка”</figcaption>
+              </figure>
+
+              <figure class="image-frame">
+              <img class="decorated-image vintage-style" src="../assets/stories/polyana.jpeg" alt=""/>
+                <figcaption>Leo Tolstoy grave, Yasnaya Polyana</figcaption>
+              </figure>
+            </div>
+
+            <span>{{ stories.greenStick.greenDescFour }}</span>
+            <span>{{ stories.greenStick.greenDescFive }}</span>
+            <span>{{ stories.greenStick.greenDescSix }}</span>
+            <span>{{ stories.greenStick.greenDescSeven }}</span>
+          </span>
+
+
+          <img style="height:100px;  float: right"
+               src="../assets/decorations/ink.png" alt=""/>
 
         </div>
 
@@ -105,18 +132,18 @@
         <img src="../assets/stories/Tolstoy2.jpg"/>
 
         <div class="quote">
-          <span>
-            If you feel  pain, you're alive.<br/>
-            If you feel other people's pain, you're a human being.<br/>
+          <span class="quote-span">
+          {{ stories.greenStick.quoteOne }}
           </span>
+          <img class="quote-sign" src="../assets/stories/leoSign.png"/>
         </div>
         <img src="../assets/stories/Tolstoy3.jpg"/>
         <img src="../assets/stories/Tolstoy4.jpg"/>
         <div class="quote">
-          <span>
-          Seize the moments of happiness, love and be loved! <br/>
-            That is the only reality in the world, all else is folly. It is the one thing we are interested in here.
+          <span class="quote-span">
+         {{ stories.greenStick.quoteTwo }}
           </span>
+          <img class="quote-sign" src="../assets/stories/leoSign.png"/>
         </div>
         <img src="../assets/stories/Tolstoy5.jpg"/>
         <img src="../assets/stories/Tolstoy6.jpg"/>
@@ -145,7 +172,7 @@ export default {
   name: "greenStick",
   components: {LangContainer},
   computed: {
-    ...mapState(["loca", "music"]),
+    ...mapState(["loca", "stories", "music"]),
   },
   data() {
     return {
@@ -215,23 +242,101 @@ export default {
 <style scoped>
 
 
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.decorated-image {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 250px;
+  width: 100%;
+}
+
+.decorated-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.vintage-style {
+  filter: sepia(0.3) contrast(1.1);
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  gap: 20px
+}
+
+
+.image-frame {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.image-frame figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.main-txt {
+  padding-top: 30px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-family: 'Garamond', serif;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.quote-sign {
+  width: 150px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0; /* Start hidden */
+  animation: fadeInSlideUp 1.2s ease-out forwards;
+  animation-delay: 0.3s; /* Optional delay for dramatic effect */
+}
+
+.quote-span {
+  display: inline-block;
+  opacity: 0; /* Start hidden */
+  animation: fadeInSlideUp 1.2s ease-out forwards;
+  animation-delay: 0.3s; /* Optional delay for dramatic effect */
+}
+
 .image-right {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  width: 20%;
+  max-width: 20%;
   margin-top: -30px;
   margin-bottom: -30px;
 }
 
 .quote {
-  padding: 30px 20px;
+  position: relative;
+  padding: 30px 20px 80px 20px;
   margin: 0;
   display: flex;
-  font-family: 'Tangerine', cursive;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
   flex-direction: column;
   line-height: 40px;
-  font-size: 32px;
+  font-size: 20px;
   /* gap: 15px;*/
   background-color: black;
   color: white
@@ -302,7 +407,7 @@ li {
 
 /******** Header Styling ********/
 .header {
-  background-color: rgba(37, 37, 33, 0.89);
+  background-color: black;
   padding: 20px 70px;
   display: flex;
   align-items: center;
@@ -350,6 +455,7 @@ li {
   color: #333;
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
+  max-width: calc(80% - 140px);
   padding: 30px 70px;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -381,7 +487,7 @@ li {
 .footer {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  background-color: rgba(5, 40, 51, 0.94);
+  background-color: black;
   padding: 20px 50px;
   text-align: center;
   color: #fff;
