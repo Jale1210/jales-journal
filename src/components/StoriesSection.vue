@@ -7,8 +7,8 @@
         <div style="width: 100%; display: flex; justify-content: center; position: relative;">
           <img style="height: 300px; position: absolute; left: 0" src="../assets/decorations/details2.png"/>
           <img style="top: -100px; height: 200px; position: absolute; right: 0" src="../assets/decorations/pages.png"/>
-          <h1 class="elegant-text" style="color: #703719; border-bottom: 1px solid #703719; padding: 0 17px">
-            Stories
+          <h1 class="elegant-text" style="color:#f8dcbf; border-bottom: 1px solid #f8dcbf; padding: 0 17px">
+            {{loca.stories}}
           </h1>
         </div>
       </div>
@@ -63,7 +63,7 @@
                 <span class="heading">{{ block.title }}</span>
                 <span class="description">{{ block.description }}</span>
               </div>
-              <router-link v-if="index == 0" to="/">
+              <router-link v-if="index == 0" to="/azeriStories">
                 <ReadButton :readMore="loca.readMore"/>
               </router-link>
               <router-link v-if="index == 1" to="/greenStick">
@@ -79,7 +79,6 @@
         </div>
 <!--      </div>-->
     </div>
-
 
     </div>
     <!--    <FirstParallax class="show-desktop"/>-->
@@ -102,31 +101,31 @@ export default {
   name: "StoriesSection",
   data() {
     return {
-      blocks: [
-        {
-          id: 1, title: 'Block ',
-          description: 'Description 1',
-          image: require('@/assets/images/universe.jpg')
-        },
-        {
-          id: 2,
-          title: 'Тайна могилы Толстого',
-          description: 'А ты слышал легенду о Зелёной палочке?',
-          image: require('@/assets/stories/Tolstoy.jpg')
-        },
-        {
-          id: 2,
-          title: 'Тайна могилы Толстого',
-          description: 'А ты слышал легенду про зелёную палочку?',
-          image: require('@/assets/stories/Tolstoy.jpg')
-        },
-        {
-          id: 2,
-          title: 'Тайна могилы Толстого',
-          description: 'А ты слышал легенду про зелёную палочку?',
-          image: require('@/assets/stories/Tolstoy.jpg')
-        },
-      ],
+      // blocks: [
+      //   {
+      //     id: 1, title: this.loca.storyOne ,
+      //     description: 'Description 1',
+      //     image: require('@/assets/stories/Nizami.png')
+      //   },
+      //   {
+      //     id: 2,
+      //     title: 'Тайна могилы Толстого',
+      //     description: 'А ты слышал легенду о Зелёной палочке?',
+      //     image: require('@/assets/stories/Tolstoy.jpg')
+      //   },
+      //   {
+      //     id: 3,
+      //     title: 'Тайна могилы Толстого',
+      //     description: 'А ты слышал легенду про зелёную палочку?',
+      //     image: require('@/assets/stories/orpheus-Copy.png')
+      //   },
+      //   // {
+      //   //   id: 2,
+      //   //   title: 'Тайна могилы Толстого',
+      //   //   description: 'А ты слышал легенду про зелёную палочку?',
+      //   //   image: require('@/assets/stories/Tolstoy.jpg')
+      //   // },
+      // ],
 
       x: 0,
       y: 0,
@@ -145,7 +144,29 @@ export default {
       const start = (this.currentPage - 1) * this.itemsPerPage;
       const end = start + this.itemsPerPage;
       return this.blocks.slice(start, end);
-    }
+    },
+
+    blocks() {
+      return [
+        {
+          id: 1, title: this.loca.storyOne,
+          description: this.loca.storyDescOne,
+          image: require('@/assets/stories/Nizami.png')
+        },
+        {
+          id: 2,
+          title: this.loca.storyTwo,
+          description: this.loca.storyDescTwo,
+          image: require('@/assets/stories/Tolstoy.jpg')
+        },
+        {
+          id: 3,
+          title: 'Тайна могилы Толстого',
+          description: 'А ты слышал легенду про зелёную палочку?',
+          image: require('@/assets/stories/orpheus-Copy.png')
+        },
+      ]}
+
   },
   methods: {
     handleMouseMove(event) {
@@ -206,7 +227,9 @@ export default {
   color: white;
   display: flex;
   gap: 15px;
+  width: 270px;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .blocks-container {

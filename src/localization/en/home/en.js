@@ -42,7 +42,12 @@ const en = {
     //
 
     //stories
-
+    // first one
+        'storyOne': 'When Words Become Magic:',
+        'storyDescOne': 'Mystical Legends of Azerbaijan’s Poets',
+    // second one
+        'storyTwo': 'The Mystery of Tolstoy’s Grave:',
+        'storyDescTwo': 'Have you heard the legend of the Green Stick?',
     //
 
     //contact

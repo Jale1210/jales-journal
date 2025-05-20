@@ -41,7 +41,12 @@ const az = {
     'legend': 'Bir rəvayətə görə: Əgər bir mahnı başınızdan çıxmırsa, sizin ruh yoldaşınız həmin mahnını həmin anda oxuyur.',
 
 //stories
-
+    // first one
+        'storyOne': 'Sözlər sehrə çevriləndə:',
+        'storyDescOne': 'Azərbaycan şairlərinin mistik əfsanələri',
+    // second one
+        'storyTwo': 'Tolstoyun qəbrinin sirri:',
+        'storyDescTwo': 'Yaşıl çubuq haqqında əfsanəni eşitmisən?',
 //contact
     'contactTitle': 'Əlaqə saxlayın',
     'contactDesc': 'Özünüzü rahat hiss edin, düşüncələrinizi paylaşın və buranı öz eviniz kimi qəbul edin. ' +

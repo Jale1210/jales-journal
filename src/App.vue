@@ -47,9 +47,9 @@ export default {
       const color2 = `#F0AB86`;   //2
       const color3 = `#F7DBA7`;   //2
       const color4 = `#F7E7CE`;   //3
-      const color5 = `rgba(20, 200, 246, 0.87)`;   //3
-      const color9 = `rgba(1, 145, 191, 0.87)`;
-      const color10 = `#1a99bc`;
+      const color5 = `rgba(95, 139, 205, 0.87)`;   //3
+      const color9 = `rgba(11, 72, 142, 0.87)`;
+      const color10 = `#0f1b5a`;
       const color6 = `#c0fdfb`;
 
       const color7 = `#e8d8c4`;

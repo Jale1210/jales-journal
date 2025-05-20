@@ -5,6 +5,7 @@ import TopPage from "@/views/TopPage";
 import SevenNotes from "@/views/SevenNotes";
 import BluePage from "@/views/BluePage.vue";
 import GreenStick from "@/views/GreenStick.vue";
+import AzeriStories from "@/views/AzeriStories.vue";
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,11 @@ const routes = [
         path: '/greenStick',
         name: 'greenStick',
         component: GreenStick
+    },
+    {
+        path: '/azeriStories',
+        name: 'azeriStories',
+        component: AzeriStories
     }
 
     // {
