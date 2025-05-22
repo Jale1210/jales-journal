@@ -74,7 +74,7 @@
 
     <div class="aboutContainer">
       <img class="bow" src="../assets/decorations/details1.png"/>
-      <h1 class="elegant-text" style="margin-top: 0; color: rgb(181 113 52);">{{loca.about}}</h1>
+      <h1 class="elegant-text" style="margin-top: 0; color: rgb(112 59 13); ">{{loca.about}}</h1>
 
       <span class="main-txt txt-brown">
         {{loca.aboutDesc}}
@@ -153,7 +153,7 @@ export default {
 }
 
 .txt-brown {
-  color: rgb(181 113 52);
+  color: rgb(115 54 0);
 }
 
 .imagesContainer {

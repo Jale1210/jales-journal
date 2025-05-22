@@ -63,7 +63,7 @@
                   </a>
                 </li>
                 <li class="sidemenu__item" @click="this.toggleMenu">
-                  <a href="" @click.prevent="scrollToComponent('stories')">
+                  <a href="#stories" @click.prevent="scrollToComponent('stories')">
                     {{ loca.stories }}
                   </a>
                 </li>
@@ -133,7 +133,7 @@
       <MusicPage :key="componentKeys.music"/>
     </div>
 <!--    try to add stories 3/30-->
-        <div ref="stories" class="page-section">
+        <div id="stories" ref="stories" class="page-section">
           <StoriesPage :key="componentKeys.stories"/>
         </div>
 <!--    -->

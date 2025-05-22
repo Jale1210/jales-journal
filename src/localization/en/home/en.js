@@ -23,8 +23,8 @@ const en = {
     //about
     'aboutDesc': 'My name is Jale and I am a frontend developer with a passion for music, stories, poetry, mythology, and philosophy.\n' +
         'For a long time, I wanted to create a place where people could find strength, energy and motivation.\n' +
-        'When I was creating this website, I aimed to craft a space that feels like a warm home — a place where we can escape reality and gather the strength to achieve the most wonderful things.\n' +
-        'I believe that I can inspire you to become the best version of yourself.',
+        'When I was creating this website, I aimed to craft a space that feels like a warm home — a place where we can escape reality and gather the strength to achieve the most wonderful things. ',
+
     //
 
     //music
