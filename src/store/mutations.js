@@ -16,6 +16,10 @@ import ruBluePage from '../localization/ru/music/bluePage.json';
 
 //stories part
 
+import enAzeriStories from '../localization/en/stories/azeriStories.json';
+import azAzeriStories from '../localization/az/stories/azeriStories.json';
+import ruAzeriStories from '../localization/ru/stories/azeriStories.json';
+
 import enGreenStick from '../localization/en/stories/greenStick.json';
 import azGreenStick from '../localization/az/stories/greenStick.json';
 import ruGreenStick from '../localization/ru/stories/greenStick.json';
@@ -29,6 +33,7 @@ export default {
                 bluePage: enBluePage
             };
             state.stories = {
+                azeriStories: enAzeriStories,
                 greenStick: enGreenStick
             }
         } else if (payload == 'az') {
@@ -38,6 +43,7 @@ export default {
                 bluePage: azBluePage
             };
             state.stories = {
+                azeriStories: azAzeriStories,
                 greenStick: azGreenStick
             }
         } else {
@@ -47,6 +53,7 @@ export default {
                 bluePage: ruBluePage
             };
             state.stories = {
+                azeriStories: ruAzeriStories,
                 greenStick: ruGreenStick
             }
         }

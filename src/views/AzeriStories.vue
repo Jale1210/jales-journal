@@ -93,79 +93,153 @@
 
       <div class="hero-content">
 
-
-        <div>
-        <span class="elegant-text  ">
-         Mystical Stories from Azerbaijan’s Cultural Soul
-        </span>
+          <span class="elegant-text  ">
+            {{ stories.azeriStories.storyHeader }}
+          </span>
 
           <div class="title-with-underline">
-            <span class="fancy-title"> The Dream of Nizami Ganjavi</span>
+            <span class="fancy-title">{{ stories.azeriStories.firstHeader }}</span>
             <img style="width: 150px" src="../assets/stories/line.png">
           </div>
 
 
-          <span class="main-txt">
-Nizami Ganjavi, the legendary 12th-century poet, is said to have received divine inspiration through dreams. In one legend, Nizami was stuck while writing his epic Haft Peykar. Frustrated, he fell asleep beneath a tree. That night, a woman in white robes appeared in his dream, revealing lost verses in Persian script floating through the air like fireflies.
-When he awoke, he rushed to write them down—and those became part of the final story. Some Sufis believe the woman was a manifestation of divine wisdom (Hikmat) sent to guide him, and that his poetry carries secrets accessible only to the awakened soul.
+          <div class="main-txt">
+            {{ stories.azeriStories.firstDesc }}
+
+            <div style="display: block; height: max-content">
+              <ul class="grid-layout">
+                <li class="tall">
+                  <figure>
+                    <img src="../assets/stories/nizami2.png" alt="Nizami 2" />
+                  </figure>
+                </li>
+
+                <li class="tall">
+                  <figure>
+                    <div class="quote">
+                      {{ stories.azeriStories.nizamiQuote }}
+
+                    </div>
+                  </figure>
+                </li>
+
+                <li class="tall">
+                  <figure>
+                    <img src="../assets/stories/poetry1.jpg" alt="Nizami 3" />
+                  </figure>
+                </li>
+
+                <li class="tall">
+                  <figure>
+                    <img src="../assets/stories/nizami1.png" alt="Nizami 1" />
+                  </figure>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+            <div class="title-with-underline"  >
+              <span class="fancy-title">{{ stories.azeriStories.secondHeader }}</span>
+              <img style="width: 150px" src="../assets/stories/line.png">
+            </div>
+
+          <div class="main-txt">
+            {{ stories.azeriStories.secondDesc }}
+
+            <div style="display: block; height: max-content">
+              <ul class="grid-layout">
+                <li class="tall">
+                  <figure>
+                    <img   src="../assets/stories/mirror.jpg">
+                  </figure>
+                </li>
+
+                <li class="tall">
+                  <figure>
+                    <img     src="../assets/stories/mirze.jpeg">
+                  </figure>
+                </li>
+
+                <li class="tall">
+                  <figure>
+                    <img    src="../assets/stories/mirze2.jpg">
+                  </figure>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+
+          <div class="title-with-underline"  >
+              <span class="fancy-title">{{ stories.azeriStories.thirdHeader }}</span>
+              <img style="width: 150px" src="../assets/stories/line.png">
+          </div>
+
+          <div class="main-txt">
+            {{ stories.azeriStories.thirdDesc }}
+
+            <div style="display: block; height: max-content">
+              <ul class="grid-layout">
+                <li class="tall">
+                  <figure>
+                    <img   src="../assets/stories/roseBook.jpg">
+                  </figure>
+                </li>
+
+                <li class="tall">
+                  <figure>
+                    <img     src="../assets/stories/Natavan.jpg">
+                  </figure>
+                </li>
+
+                <li class="tall">
+                  <figure>
+                   <img    src="../assets/stories/roses.gif">
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+            <div class="title-with-underline"  >
+              <span class="fancy-title">{{ stories.azeriStories.forthHeader }}</span>
+              <img style="width: 150px" src="../assets/stories/line.png">
+            </div>
+
+            <div class="main-txt">
+              {{ stories.azeriStories.forthDesc }}
+
 
             <div style="display: flex; justify-content: center;">
 
- <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
-      src="../assets/stories/nizami2.png">
-                   <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
-                        src="../assets/stories/nizami3.jpg">
+              <img style="height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
+                   src="../assets/stories/Celil.jpg">
+              <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
+                   src="../assets/stories/poetry.jpg">
               <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
                    src="../assets/stories/nizami1.png">
 
             </div>
-            
-            
-     <div class="title-with-underline" style="padding-bottom: 30px">
-            <span class="fancy-title">Mirza Shafi Vazeh and the Mirror of Secrets</span>
+          </div>
+
+          <div class="title-with-underline" >
+            <span class="fancy-title">{{ stories.azeriStories.fifthHeader }}</span>
             <img style="width: 150px" src="../assets/stories/line.png">
           </div>
 
-Mirza Shafi Vazeh, the 19th-century “philosopher-poet,” was known for mixing mysticism with biting social critique. According to a tale passed down in Ganja, Vazeh was gifted a “mirror of truth” by a wandering dervish. The mirror could show a person’s inner self.
-One night, as he sat writing, he looked into the mirror and saw himself engulfed in fire—but smiling. The next day, he wrote a poem about how truth burns the ego but purifies the soul. Locals believed he had glimpsed his spiritual death and rebirth.
-     <div class="title-with-underline" style="padding-bottom: 30px">
-            <span class="fancy-title">Khurshidbanu Natavan’s Cursed Rose</span>
-            <img style="width: 150px" src="../assets/stories/line.png">
-          </div>
+          <div class="main-txt">
+            {{ stories.azeriStories.fifthDesc }}
+            <div style="display: flex; justify-content: center;">
 
-Natavan, a 19th-century poetess and princess of Karabakh, was known for her beauty, sorrowful verses, and her love of roses. Legend says that in her palace garden, there grew a single rosebush that would never die. It bloomed even in winter.
-After her son died, she composed a poem at its base, mourning not just him, but her entire lineage. When she passed away, the rose turned black—and never bloomed again. Locals called it the “mourning rose.” Some believed her soul lived in the plant, weeping silently.
-     <div class="title-with-underline" style="padding-bottom: 30px">
-            <span class="fancy-title">Jalil Mammadguluzadeh and the Spirit of the Pen</span>
-            <img style="width: 150px" src="../assets/stories/line.png">
-          </div>
-
-
-Jalil Mammadguluzadeh, a satirical writer and reformist, was known for fighting ignorance through words. After publishing harsh critiques of clerics and corrupt officials, he reportedly suffered strange visions and hauntings. One account tells of him writing alone at night, when his pen began writing by itself, finishing a sentence he had only half-formed in thought.
-Rather than fear it, Mammadguluzadeh said: “If it is a spirit, it is one that hates ignorance as I do.” To this day, some Azerbaijani writers say that “the spirit of Jalil” helps those who write for truth, not praise.
-     <div class="title-with-underline" style="padding-bottom: 30px">
-            <span class="fancy-title">The Wandering Bard Dede Gorgud</span>
-            <img style="width: 150px" src="../assets/stories/line.png">
-          </div>
-
-Though semi-legendary, Dede Gorgud, the epic poet-sage of the Oghuz Turks, is central to Azerbaijani identity. Stories say that he never died, but instead wanders through the mountains of the Caucasus, waiting to return when his people lose their way.
-Some shepherds claim to have seen an old man playing a saz (a traditional instrument) near a fire in the highlands—only for him to vanish when approached. It’s said if you hear his melody in a dream, you’ll be blessed with storytelling power.
-
-                        <div style="display: flex; justify-content: center;">
-
-                           <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
-                                src="../assets/stories/saz.jpg">
- <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
-      src="../assets/stories/dedeqorgud.png">
-
+              <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
+                   src="../assets/stories/saz.jpg">
+              <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
+                   src="../assets/stories/dedeqorgud.png">
 
             </div>
-
-          </span>
-
-        </div>
-
-
+          </div>
       </div>
 
     </section>
@@ -260,6 +334,7 @@ export default {
 </script>
 
 <style scoped>
+
 
 .title-with-underline {
   display: flex;
@@ -388,18 +463,22 @@ export default {
 }
 
 .quote {
-  position: relative;
-  padding: 30px 20px 80px 20px;
-  margin: 0;
-  display: flex;
+  white-space: pre-line;
   font-style: italic;
+  font-weight: 500;
+  position: relative;
+  padding: 0 10%;
+  display: flex;
+  height: 100%;
+  text-align: center;
+  line-height: 1.6;
+  justify-content: center;
   font-family: 'Playfair Display', serif;
   flex-direction: column;
-  line-height: 40px;
+
   font-size: 20px;
-  /* gap: 15px;*/
-  background-color: black;
-  color: white
+  background-color: #DDBA9A;
+  color: #333;
 }
 
 .imgContainer > img {
@@ -435,16 +514,6 @@ ol {
   suffix: " ";
 }
 
-ul {
-  flex-direction: column;
-  align-items: initial;
-  list-style: thumbs;
-}
-
-li {
-  text-align: left;
-  padding: 0 5px
-}
 
 .justify {
   text-align: justify;
@@ -802,39 +871,54 @@ li {
   bottom: -30px;
   transform: rotate(10deg);
 }
-
-.grid li:nth-child(1) {
-  grid-column: span 1;
-  /*grid-column: span 2;*/
-  grid-row: span 2;
-}
-
-.grid {
-  display: grid;
-  grid-gap: 8px;
-  /*grid-template-columns: repeat(2, 1fr);*/
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 20vw;
-  /*grid-auto-rows: 12vw;
-  grid-auto-rows: 30vw;*/
+.grid-layout {
+  display: grid
+;
+  grid-template-columns: repeat(4, 2fr);
+  /* grid-auto-rows: 200px; */
+  gap: 20px;
+  padding: 0;
   list-style: none;
 }
 
-.grid li {
-  padding: 0;
+/* Default styling */
+.grid-layout li {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid figure,
-.grid img {
+.grid-layout li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.grid-layout figure {
   margin: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
-.grid img {
+.grid-layout img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
-  background: #f5f3f4;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-layout li:hover img {
+  transform: scale(1.05);
+}
+
+/* Custom height behavior */
+.grid-layout .tall {
+  grid-row: span 2;
+}
+
+.grid-layout .short {
+  grid-row: span 1;
 }
 
 @media (min-width: 850px) {

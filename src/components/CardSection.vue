@@ -217,9 +217,10 @@ body {
   background-image: url('../assets/music-img/sandman.jpg');
 }
 
+/*
 .d_card:nth-child(4):before {
-  background-image: url('../assets/music-img/baloons.jpg');
-}
+   background-image: url('../assets/music-img/baloons.jpg');
+}*/
 
 .content {
   position: relative;

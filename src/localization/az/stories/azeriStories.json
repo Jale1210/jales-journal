@@ -1,10 +1,14 @@
 {
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
+  "storyHeader": "Azərbaycan şairlərinin mistik əfsanələri",
+  "firstHeader": "Nizaminin İlhamlı Yuxusu",
+  "firstDesc": "XII əsrin dahi şairi Nizami Gəncəvinin yuxular vasitəsilə ilahi ilham aldığı söylənir. Rəvayətə görə, 'Yeddi Gözəl'i yazarkən bir məqamda ilhamı tükənir və ağac altında mürgüləyir. Gecə yuxusunda ağ libaslı bir qadın ona havada süzülən farsca misraları göstərir. Ayıldıqdan sonra bu misraları yazır və əsərinin bir hissəsinə çevirir. Sufilər bu qadının ilahi hikmətin simvolu olduğunu düşünür və deyirlər ki, Nizaminin şeirləri yalnız mənəvi oyanış yaşamış insanlara açılır.",
+  "secondHeader": "Mirzə Şəfi və Həqiqətin Aynası",
+  "secondDesc": "XIX əsrdə yaşamış filosof-şair Mirzə Şəfi Vazeh həm mistik düşüncələri, həm də cəmiyyətə yönəlik kəskin tənqidləri ilə tanınırdı. Gəncədə yayılan bir rəvayətə görə, ona səyyah bir dərviş 'həqiqət aynası' hədiyyə edir. Bu güzgü insanın iç dünyasını göstərirmiş. Bir gecə yazı yazarkən aynaya baxır və özünü alov içində, amma gülümsəyən halda görür. Səhəri gün ruhu saflaşdıran həqiqət barədə bir şeir yazır. Yerli əhali onun mənəvi yenidən doğuluş yaşadığına inanır.",
+  "thirdHeader": "Xurşidbanu Natəvanın Lənətli Gülü",
+  "thirdDesc": "Qarabağlı şairə və şahzadə Xurşidbanu Natəvan gözəlliyi, kədərli şeirləri və güllərə olan sevgisi ilə tanınırdı. Rəvayətə görə, onun saray bağında heç vaxt solmayan bir qızılgül kolu var idi. Hətta qışda belə çiçək açardı. Oğlu öldükdən sonra həmin kolda oturaraq, təkcə oğluna deyil, bütün nəsli üçün ağı deyən bir şeir yazır. Natəvan dünyasını dəyişdikdən sonra isə gül qara rəngə dönür və bir daha heç vaxt çiçək açmır. Yerli camaat bu güllə onun ruhunun ağladığını deyirdi.",
+  "forthHeader": "Cəlil Məmmədquluzadə və Qələmin Ruhu",
+  "forthDesc": " Satirik yazıçı və islahatçı Cəlil Məmmədquluzadə cəhalətlə mübarizə aparan bir qələm sahibi idi. Dindarları və məmurları tənqid edən yazılarından sonra qəribə görüntülər və hadisələr yaşadığı söylənir. Bir dəfə gecə yazı yazarkən, yarımçıq qoyduğu cümləni qələmin özü tamamlayır. Cəlil qorxmaq əvəzinə deyir: “Əgər bu bir ruhdursa, deməli o da mənim kimi cəhalətə nifrət edir.” Bu gün də bəzi azərbaycanlı yazıçılar “Cəlilin ruhu”nun yalnız həqiqət üçün yazanlara kömək etdiyinə inanır.",
+  "fifthHeader": "Dədə Qorqudun Səssiz Melodiyası",
+  "fifthDesc": "Əfsanə ilə həqiqət arasında bir siluet kimi qalan Dədə Qorqud — Oğuz türklərinin dastançı müdriki — Azərbaycan kimliyinin mərkəzində dayanır. Rəvayətlərə görə, o heç vaxt ölməyib; Qafqaz dağlarında dolaşaraq, xalqı yolunu itirdiyi zaman qayıtmaq üçün fürsət gözləyir. Bəzi çobanlar, dağların zirvələrində bir tonqal yanında saz çalan ağsaqqal bir qoca gördüklərini deyirlər — amma yaxınlaşan kimi həmin adam yoxa çıxırmış. Deyirlər ki, əgər yuxunda onun saz səsini eşitsən, sənə hekayə danışmaq qabiliyyəti bəxş olunar.",
+  "nizamiQuote" : "Bilik bir xəzinədir, əməl isə onun açarıdır. \n -Nizami Gəncəvi"
 }

@@ -12,6 +12,7 @@ const loadTranslations = (lang) => {
         },
         // stories: require(`./locales/${lang}/stories.json`),
         stories: {
+            azeriStories : require(`./locales/${lang}/stories/azeriStories.json`),
             greenStick : require(`./locales/${lang}/stories/greenStick.json`),
         },
         contact: require(`./locales/${lang}/contact.json`)
