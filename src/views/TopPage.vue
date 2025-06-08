@@ -85,8 +85,8 @@ export default {
 
 .parallax {
   background-image: url('../assets/music-img/top1.jpg');
-  /*filter: brightness(50%);*/
-  background-attachment: fixed;
+  /*filter: brightness(50%);
+  background-attachment: fixed;*/
   background-repeat: no-repeat;
   background-size: 100% auto;
 }

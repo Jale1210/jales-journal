@@ -654,9 +654,9 @@ li {
 }
 
 
-/* less than 950 */
-@media only screen and (max-width: 950px) {
-
+/* less than 950
+ @media only screen and (max-width: 950px) {*/
+  @media only screen and (max-width: 1050px) {
   .blue-page {
     background: url('../assets/music-img/sea2.jpg') no-repeat center center;
     background-size: cover; /* Ensures it stretches to fit */

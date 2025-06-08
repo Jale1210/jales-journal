@@ -80,8 +80,8 @@ footer {
   /* Full height */
   /*height: 200px;*/
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* Create the parallax scrolling effect
+  background-attachment: fixed;*/
   /*background-position: left;*/
   background-repeat: no-repeat;
   background-size: 100% auto;

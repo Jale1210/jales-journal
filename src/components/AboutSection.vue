@@ -280,17 +280,6 @@ export default {
   }
 }
 
-/* less than 1160 */
-@media only screen and (max-width: 1160px) {
-  .aboutPage {
-    flex-direction: column;
-  }
-
-  .show-desktop {
-    display: none;
-  }
-}
-
 
 /* less than 1275px */
 @media only screen and (max-width: 1275px) {
@@ -332,6 +321,14 @@ export default {
 
 /* less than 1160 */
 @media only screen and (max-width: 1160px) {
+  .aboutPage {
+    flex-direction: column;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+
 
   .bow {
     display: none;

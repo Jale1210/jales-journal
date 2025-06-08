@@ -166,6 +166,12 @@
                     <img    src="../assets/stories/mirze2.jpg">
                   </figure>
                 </li>
+
+                <li class="tall">
+                  <figure>
+                    <img    src="../assets/stories/candles.webp">
+                  </figure>
+                </li>
               </ul>
             </div>
 
@@ -199,6 +205,13 @@
                    <img    src="../assets/stories/roses.gif">
                   </figure>
                 </li>
+
+                <li class="tall">
+                  <figure>
+                    <img    src="../assets/stories/natavan-poetry.jpg">
+                  </figure>
+                </li>
+
               </ul>
             </div>
           </div>
@@ -212,16 +225,36 @@
               {{ stories.azeriStories.forthDesc }}
 
 
-            <div style="display: flex; justify-content: center;">
+              <div style="display: block; height: max-content">
+                <ul class="grid-layout">
+                  <li class="tall">
+                    <figure>
+                      <img  src="../assets/stories/poetry.jpg">
+                    </figure>
+                  </li>
 
-              <img style="height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
-                   src="../assets/stories/Celil.jpg">
-              <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
-                   src="../assets/stories/poetry.jpg">
-              <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
-                   src="../assets/stories/nizami1.png">
+                  <li class="tall">
+                    <figure>
+                      <img      src="../assets/stories/Celil.jpg">
+                    </figure>
+                  </li>
 
-            </div>
+                  <li class="tall">
+                    <figure>
+                      <img    src="../assets/stories/poetry2.webp">
+                    </figure>
+                  </li>
+
+                  <li class="tall">
+                    <figure>
+                      <img    src="../assets/stories/celil2.webp">
+                    </figure>
+                  </li>
+
+                </ul>
+              </div>
+
+
           </div>
 
           <div class="title-with-underline" >
@@ -231,14 +264,41 @@
 
           <div class="main-txt">
             {{ stories.azeriStories.fifthDesc }}
-            <div style="display: flex; justify-content: center;">
 
-              <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
-                   src="../assets/stories/saz.jpg">
-              <img style=" height: 350px;  display: flex;max-width: 400px;  object-fit: cover;"
-                   src="../assets/stories/dedeqorgud.png">
+            <div style="display: block; height: max-content">
+              <ul class="grid-layout">
+                <li class="tall">
+                  <figure>
+                    <img   src="../assets/stories/saz.jpg">
+                  </figure>
+                </li>
 
+                <li class="tall">
+                  <figure>
+                    <img      src="../assets/stories/dedeqorgud.png">
+                  </figure>
+                </li>
+
+                <li class="tall">
+                  <figure>
+                    <img    src="../assets/stories/mountains.webp">
+                  </figure>
+                </li>
+
+                <li class="tall">
+                  <figure>
+                    <img    src="../assets/stories/church.webp">
+                  </figure>
+                </li>
+
+              </ul>
             </div>
+
+
+
+
+
+
           </div>
       </div>
 
@@ -495,12 +555,12 @@ export default {
 }
 
 .nav-mobile:before {
-  background-color: black;
+  background-color: #38050F;
   box-shadow: none;
 }
 
 #sidemenu nav {
-  background-color: black;
+  background-color: #38050F;
 }
 
 
@@ -677,6 +737,12 @@ ol {
 }
 
 
+@media only screen and (max-width: 1180px) {
+.quote{
+  padding: 0 18px!important;
+}
+}
+
 /* less than 1077 */
 @media only screen and (max-width: 1077px) {
   .image-right {
@@ -747,15 +813,19 @@ ol {
 }
 
 
-/* less than 950 */
-@media only screen and (max-width: 950px) {
 
-  .blue-page {
-    background: url('../assets/music-img/sea2.jpg') no-repeat center center;
-    background-size: cover; /* Ensures it stretches to fit */
-    background-attachment: scroll; /* Prevents issues on mobile */
-    min-height: 100vh; /* Ensures it covers the full viewport */
-    width: 100%; /* Ensures it spans the full width */
+
+
+/* less than 950
+@media only screen and (max-width: 950px) {*/
+  @media only screen and (max-width: 1050px) {
+.hero-content{
+  margin: 130px 50px 20px 50px !important;
+  }
+
+
+  .fancy-title:first-child{
+    padding-top:0;
   }
 
   /* just try*/
@@ -844,8 +914,14 @@ ol {
 /* 625px and down) */
 @media only screen and (max-width: 625px) {
   .footer-links {
-    font-size: 20px;
-    flex-wrap: wrap;
+    font-size: 20px!important;
+    flex-wrap: wrap!important;
+  }
+  .footer{
+    padding: 30px 0;
+  }
+  .grid-layout{
+    grid-template-columns: repeat(2, 2fr)!important;
   }
 }
 
