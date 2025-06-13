@@ -9,10 +9,13 @@ const az = {
     //header
     'welcomeTxt': 'Bloquma xoş gəlmisiniz!',
     'welcomeDesc': 'Burada olduğunuz üçün çox sevinirəm. ' +
-                    'Bu bloq mənim düşüncələrimi, hisslərimi və müşahidələrimi bölüşdüyüm bir məkandır. ' +
-                    'Bəzən suallar verirəm, bəzən cavablar axtarıram, bəzən isə sadəcə düşüncələrimi yazıya tökürəm. ' +
-                    'Ümid edirəm ki, burada özünüzə yaxın nələrsə tapacaq və birlikdə maraqlı söhbətlər edəcəyik.',
+                    'Bu məkan mənim maraqlarımın, sevdiyim mövzuların və yaşadığım təcrübələrin bir aynasıdır. ' +
+                    'Bütün bunları sizinlə bölüşmək üçün səbirsizlənirəm. ' +
+                    'Qarşıda bizi maraqlı bir yol gözləyir — gəlin onu birlikdə gözəl və mənalı edək!',
     'sincerelyYours': '-Hörmətlə, Jalə',
+
+
+
 
 //navigation
     'welcome': 'Xoş Gəlmisiniz',

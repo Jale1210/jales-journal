@@ -44,12 +44,13 @@
         </span>
 
       <div>
-        <span class="mainTxt">{{loca.socialLinks}}</span>
+        <span class="elegant-text" >{{loca.socialLinks}}</span>
+<!--       mainTxt -->
 
         <div class="icons">
           <ul>
             <li>
-              <a href="mailto:jales_journal@mail.ru" target="_blank"
+              <a href="mailto:jales.journal@gmail.com" target="_blank"
                   data-cursor-hover class="envelope">
                 <span></span>
                 <span></span>
@@ -58,9 +59,9 @@
                 <i class="fa fa-envelope" aria-hidden="true"></i>
               </a>
 
-              <a  href="mailto:jales_journal@mail.ru" target="_blank"
-                  data-cursor-hover class="description" style="font-size:18px">
-                jales_journal@mail.ru
+              <a  href="mailto:jales.journal@gmail.com" target="_blank"
+                  data-cursor-hover class="description" style="font-size:14px">
+                jales.journal@gmail.com
               </a>
 
             </li>
@@ -76,7 +77,7 @@
               </a>
 
               <a  href="https://www.instagram.com/jales_journal" target="_blank"
-                  data-cursor-hover class="description" style="font-size:18px">
+                  data-cursor-hover class="description" style="font-size:14px">
                   jales_journal
               </a>
             </li>
@@ -135,6 +136,11 @@ export default {
 </script>
 
 <style scoped>
+
+.elegant-text{
+  display: block;
+}
+
 .contactPage {
   display: flex;
   gap: 30px;
@@ -162,10 +168,9 @@ export default {
   padding: 20px 0
 }
 
-.description:hover {
-
+/*.description:hover {
   color: #f8dcbf;
-}
+}*/
 
 .film-container {
   /*display: flex;*/

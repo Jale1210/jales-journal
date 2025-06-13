@@ -44,8 +44,8 @@
 
     <div class="vinylContainer">
       <!--      first vinyl-->
-      <div style="z-index: 999; position: relative; ">
-        <!--       margin-left: 40px  -->
+      <div style="position: relative; ">
+        <!--  z-index: 999; margin-left: 40px  -->
         <div class="vinyl-jacket">
           <div class="vinyl-wrapper">
             <div class="vinyl"></div>
@@ -67,11 +67,11 @@
       </div>
 
       <!--      forth  vinyl-->
-      <div class="vinyl-jacket4">
-        <div class="vinyl-wrapper4">
-          <div class="vinyl4"></div>
-        </div>
-      </div>
+<!--      <div class="vinyl-jacket4">-->
+<!--        <div class="vinyl-wrapper4">-->
+<!--          <div class="vinyl4"></div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
 
 
@@ -172,12 +172,12 @@ export default {
 .vinylContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  /*justify-content: space-evenly;*/
+  /*justify-content: flex-start;*/
+justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   /*padding : 0 10px 50px 10px;*/
-  gap: 125px
+  gap: 115px
 }
 
 /* first vinyl*/

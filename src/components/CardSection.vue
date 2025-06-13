@@ -122,7 +122,8 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-@media (min-width: 600px) {
+/*it used to be 600px*/
+@media (min-width: 900px) {
   .page-content {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -3,8 +3,6 @@ h1{
     margin: 0
 }
 
-
-
 .nav-mobile {
     left: 0;
     top: 0px;
@@ -137,9 +135,11 @@ h1{
 }
 
 #sidemenu .sidemenu__item a {
+    font-style: italic;
     text-decoration: none;
     line-height: 1.6em;
     font-size: 1.6em;
+    font-family: 'Playfair Display', serif;
     /*padding: 0.5em;*/
     padding: 10px 100px;
     display: block;
@@ -168,8 +168,9 @@ h1{
     opacity: 0;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 600px and down) ,
+it used to be 600 */
+@media only screen and (max-width: 900px) {
     .header-nav {
         flex-direction: column;
     }
@@ -212,8 +213,9 @@ h1{
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 900px and up)
+it used to be 600px , i changed it to 900px */
+@media only screen and (min-width: 900px) {
     .header-nav {
         flex-direction: column;
     }
