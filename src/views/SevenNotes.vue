@@ -681,7 +681,7 @@ li {
 /* 625px and down) */
 @media only screen and (max-width: 625px) {
   .footer-links {
-    font-size: 20px;
+    font-size: 20px!important;
     flex-wrap: wrap;
   }
 

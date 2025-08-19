@@ -16,7 +16,7 @@
     <div>
       <span class="main-txt">
      {{ loca.welcomeDesc }}
-        <!-- Whether you're here to find insightful articles, practical tips, or just to enjoy some engaging stories, you’re in the right place.-->
+        <!-- Whether you're here to find insightful articles, practical tips, or just to enjoy some engaging stories, you're in the right place.-->
         <!--        My goal is to create a community where we can explore ideas, learn together, and inspire each other. I believe in the power of connection, and through this blog, I hope to connect with you on topics that matter to us both.-->
       </span>
 
@@ -134,15 +134,16 @@ export default {
 
 .heart-img {
   position: absolute;
-  position: absolute;
   height: 50px;
-  right: 10%;
-  /*left: 190px;*/
+  right: -50px;
+  /* right: 10%;
+ left: 190px;*/
   top: 50px;
   transform: rotate(40deg);
 }
 
 .sincerelyYours {
+  width: fit-content;
   font-family: 'Playfair Display', cursive;
   font-style: italic;
   font-size: 34px;
