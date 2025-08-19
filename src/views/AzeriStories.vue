@@ -35,22 +35,22 @@
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#about">
+                <a href="/#about">
                   {{ loca.about }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#music">
+                <a href="/#music">
                   {{ loca.music }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="">
+                <a href="/#stories">
                   {{ loca.stories }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#contact">
+                <a href="/#contact">
                   {{ loca.contact }}
                 </a>
               </li>

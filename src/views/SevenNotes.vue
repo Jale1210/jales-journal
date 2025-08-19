@@ -44,25 +44,25 @@
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#about">
+                <a href="/#about">
 <!--               @click.prevent="scrollToComponent('about')"    -->
                   {{ loca.about }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#music" >
+                <a href="/#music" >
 <!--             @click.prevent="scrollToComponent('music')"     -->
                   {{ loca.music }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="">
+                <a href="/#stories">
 <!--                 @click.prevent="scrollToComponent('stories')"  -->
                   {{ loca.stories }}
                 </a>
               </li>
               <li class="sidemenu__item" @click="this.toggleMenu">
-                <a href="#contact" >
+                <a href="/#contact" >
 <!--             @click.prevent="scrollToComponent('contact')"     -->
                   {{ loca.contact }}
                 </a>
