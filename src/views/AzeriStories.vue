@@ -117,7 +117,10 @@
                 <li class="tall">
                   <figure>
                     <div class="quote">
-                      {{ stories.azeriStories.nizamiQuote }}
+                      <span class="quote-span">
+                         {{ stories.azeriStories.nizamiQuote }}
+                      </span>
+
 
                     </div>
                   </figure>
@@ -293,12 +296,6 @@
 
               </ul>
             </div>
-
-
-
-
-
-
           </div>
       </div>
 
@@ -783,7 +780,7 @@ ol {
   .quote-span {
     margin: auto;
     font-size: 14px;
-    width: 200px;
+    //width: 200px;
   }
 
   .quote-sign {
