@@ -842,4 +842,24 @@ li {
   }
 }
 
+/* less than 1225 */
+@media only screen and (max-width: 1225px) {
+  .hymnImg, .notesImg {
+    width: 330px;
+  }
+
+  ul {
+    /*align-items: center;*/
+  }
+
+  li {
+    /*text-align: center;*/
+  }
+
+  .sidemenu__item {
+    text-align: center;
+  }
+}
+
+
 </style>
