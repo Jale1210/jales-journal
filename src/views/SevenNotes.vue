@@ -214,9 +214,7 @@
         </div>
 
         <div style="text-align: left; padding-bottom: 20px;">
-          <span style="font-style: italic;
-              font-size: 28px;  font-family: 'Playfair Display', serif;
-            animation: fadeIn-4f11bcd6 3s ease-in-out; transition: color 0.5s ease-in-out;">
+          <span class="link-txt" >
             {{ music.sevenNotes.siteDesc }}
             <a href="https://velskdshi.ru/p17aa1detales6.html#:~:text=%D0%92%D0%BE..." target="_blank"
                data-cursor-hover
@@ -327,6 +325,12 @@ export default {
 </script>
 
 <style scoped>
+
+.link-txt{
+  font-style: italic;
+  font-size: 28px;  font-family: 'Playfair Display', serif;
+  animation: fadeIn-4f11bcd6 3s ease-in-out; transition: color 0.5s ease-in-out;
+}
 
 .nav-mobile {
   padding: 10px 50px;
@@ -682,7 +686,23 @@ li {
 @media only screen and (max-width: 625px) {
   .footer-links {
     font-size: 20px!important;
-    flex-wrap: wrap;
+    flex-wrap: wrap!important;
+  }
+
+  .link-txt{
+    font-size: 20px!important;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding:30px 0!important;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: white;
   }
 
   .hymnImg, .notesImg {

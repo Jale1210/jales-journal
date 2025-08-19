@@ -135,12 +135,12 @@
             <div class="image-row">
               <figure class="image-frame">
               <img class="decorated-image vintage-style" src="../assets/stories/greenBook.jpeg" alt=""/>
-                <figcaption>The book “Зелёная палочка”</figcaption>
+<!--                <figcaption>The book “Зелёная палочка”</figcaption>-->
               </figure>
 
               <figure class="image-frame">
               <img class="decorated-image vintage-style" src="../assets/stories/polyana.jpeg" alt=""/>
-                <figcaption>Leo Tolstoy grave, Yasnaya Polyana</figcaption>
+<!--                <figcaption>Leo Tolstoy grave, Yasnaya Polyana</figcaption>-->
               </figure>
             </div>
 
@@ -754,6 +754,21 @@ li {
     font-size: 20px;
     flex-wrap: wrap;
   }
+
+  footer {
+    display: flex;
+    padding:30px 0!important;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: white;
+  }
+
+
+
 }
 
 .shellImg {

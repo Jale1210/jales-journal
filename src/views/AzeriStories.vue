@@ -923,6 +923,10 @@ ol {
   .grid-layout{
     grid-template-columns: repeat(2, 2fr)!important;
   }
+
+  .quote{
+    font-size: 14px!important;
+  }
 }
 
 .shellImg {

@@ -596,6 +596,20 @@ li {
     font-size: 20px;
     flex-wrap: wrap;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding:30px 0!important;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: white;
+  }
+
+
 }
 
 .shellImg {
